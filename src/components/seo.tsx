@@ -24,7 +24,10 @@ function Seo ({ description='', lang='en', meta=[], title }: SEOProps) {
           siteMetadata {
             title
             description
-            author
+            author {
+              name
+              summary
+            }
           }
         }
       }
@@ -64,7 +67,7 @@ function Seo ({ description='', lang='en', meta=[], title }: SEOProps) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: site.siteMetadata?.author.name || ``,
         },
         {
           name: `twitter:title`,

@@ -2,6 +2,7 @@
 
 This is the Hello Tham Corporate Website Static Web App built using the following technologies:
 - [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-default)
+- [How To Set Up a Gatsby Project with TypeScript](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-gatsby-project-with-typescript)
 - [Gatsby](https://gatsbyjs.org)
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and is deployed on Gatsby Cloud.

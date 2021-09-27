@@ -1,16 +1,41 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "hellotham-website-gatsby4",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Hello Tham Website in Gatsby v4",
+  "version": "2.0.0",
+  "author": "Hello Tham <info@hell0tham.com>",
+  "bugs": {
+    "url": "https://github.com/ChristineTham/hellotham-website-gatsby4/issues"
+  },
+  "homepage": "https://hellotham.com",
+  "keywords": [
+    "gatsby",
+    "typescript",
+    "MDX",
+    "Prism",
+    "TailwindCSS",
+    "blog"
+  ],
+  "license": "0BSD",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristineTham/hellotham-website-gatsby4.git"
+  },
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.4",
+    "@svgr/webpack": "^5.5.0",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
     "gatsby": "^3.14.0",
     "gatsby-plugin-image": "^1.14.0",
     "gatsby-plugin-manifest": "^3.14.0",
     "gatsby-plugin-offline": "^4.14.0",
     "gatsby-plugin-react-helmet": "^4.14.0",
     "gatsby-plugin-sharp": "^3.14.0",
+    "gatsby-plugin-svgr-svgo": "^1.2.2",
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-transformer-sharp": "^3.14.0",
     "prop-types": "^15.7.2",
@@ -22,18 +47,19 @@
     "@types/node": "^16.10.1",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
+    "@types/react-helmet": "^6.1.2",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
+    "autoprefixer": "^10.3.6",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "gatsby-plugin-postcss": "^4.14.0",
+    "postcss": "^8.3.8",
     "prettier": "^2.1.1",
+    "tailwindcss": "^2.2.16",
     "typescript": "^4.4.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -44,12 +70,5 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
