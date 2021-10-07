@@ -2,7 +2,6 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import * as React from "react"
 
 import HelloTham from "../images/hellotham.svg"
-import { Linkedin } from '../../../hellotham-website-gatsby4/src/components/icons';
 
 export default function Footer() {
   const data = useStaticQuery(graphql`
@@ -26,7 +25,7 @@ export default function Footer() {
     <footer className="text-gray-600">
       <div className="container fixed bottom-0 inset-x-0 bg-pink-100 px-4 py-4 mx-auto flex items-center sm:flex-row flex-col">
         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <img src={HelloTham} width="150" />
+          <img src={HelloTham} alt="Footer Logo" width="150" />
         </a>
         <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
           © {new Date().getFullYear()} Hello Tham Pty Ltd
@@ -56,6 +55,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
+            <span className="sr-only">Facebook</span>
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -73,6 +73,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
+            <span className="sr-only">Twitter</span>
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -90,6 +91,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
+            <span className="sr-only">Instagram</span>
             <svg
               fill="none"
               stroke="currentColor"
@@ -109,6 +111,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
+            <span className="sr-only">LinkedIn</span>
             <svg
               fill="currentColor"
               stroke="currentColor"

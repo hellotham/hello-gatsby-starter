@@ -44,6 +44,7 @@ export default function Hero() {
                       <img
                         className="h-10 w-auto"
                         src={Logo}
+                        alt="Logo"
                       />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
@@ -112,7 +113,7 @@ export default function Hero() {
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <img src={HelloTham} width="350" />
+                <img src={HelloTham} width="350" alt="Hello Tham logo" />
                 <span className="block xl:inline">Visualise Your</span>{' '}
                 <span className="block text-purple-700 xl:inline">Future</span>
               </h1>
