@@ -1,5 +1,5 @@
 {
-  "include": ["./src/**/*", "./content/**/*"],
+  "include": ["./src/**/*"],
   "exclude": ["node_modules", "public", ".cache"],
   "compilerOptions": {
     "target": "esnext",
@@ -18,6 +18,13 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "ts-graphql-plugin",
+        "schema": "schema.graphql",   /* Path to your GraphQL schema */
+        "tag": "gql"                 /* Template tag function name */
+      }
+    ]
   }
 }

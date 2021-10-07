@@ -10,9 +10,7 @@ import FeaturedImage from '../images/undraw_ideas_flow_cy7b.svg'
 import HelloTham from '../images/hellotham.svg'
 
 const navigation = [
-  { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'People', href: '/people' },
+  { name: 'Privacy', href: '/pages/privacy' },
   { name: 'Blog', href: '/blog' },
 ]
 
@@ -39,27 +37,24 @@ export default function Hero() {
                     <a href="#">
                       <span className="sr-only">Hello Tham</span>
                       <img
-                        className="h-8 w-auto sm:h-10"
+                        className="h-10 w-auto"
                         src={Logo}
                       />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-purple-600 hover:text-pink-600 hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-300">
                         <span className="sr-only">Open main menu</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-4">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                    <a key={item.name} href={item.href} className="font-medium text-purple-600 hover:bg-purple-200 hover:text-pink-600 px-3 py-2 rounded-md text-lg">
                       {item.name}
                     </a>
                   ))}
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                    Log in
-                  </a>
                 </div>
               </nav>
             </div>
@@ -153,7 +148,7 @@ export default function Hero() {
           </main>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-pink-100">
         <img
           className="h-56 w-full object-contain sm:h-72 md:h-96 lg:w-full lg:h-full"
           src={FeaturedImage}
