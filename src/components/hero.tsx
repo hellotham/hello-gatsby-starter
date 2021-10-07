@@ -13,9 +13,9 @@ import { Link } from "gatsby"
 const navigation = [
   { name: 'About', href: '/pages/about' },
   { name: 'Services', href: '/pages/services' },
-  { name: 'Consultants', href: '/pages/consultants' },
+  { name: 'People', href: '/pages/consultants' },
   { name: 'Partners', href: '/pages/partners' },
-  { name: 'Recent Work', href: '/pages/work' },
+  { name: 'Achievements', href: '/pages/work' },
   { name: 'Blog', href: '/blog' },
 ]
 
@@ -104,12 +104,6 @@ export default function Hero() {
                       </a>
                     ))}
                   </div>
-                  <a
-                    href="#"
-                    className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                  >
-                    Log in
-                  </a>
                 </div>
               </Popover.Panel>
             </Transition>
@@ -122,13 +116,13 @@ export default function Hero() {
                 <span className="block xl:inline">Visualise Your</span>{' '}
                 <span className="block text-purple-700 xl:inline">Future</span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Hello Tham is a boutique management consulting firm. 
               </p>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.
               </p>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 We also assist our clients in implementing recommendations, models and strategies. 
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -145,7 +139,7 @@ export default function Hero() {
                     href="/pages/services"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-800 bg-pink-100 hover:bg-pink-200 md:py-4 md:text-lg md:px-10"
                   >
-                    Contact Us
+                    Our Services
                   </a>
                 </div>
               </div>

@@ -9,9 +9,11 @@ module.exports = {
     description: `Hello Tham is a boutique management consulting firm. We deliver consulting services to clients around the world. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design. We also assist our clients in implementing our recommendations, models and strategies.`,
     siteUrl: `https://hellotham.com/`,
     social: {
-      twitter: `HelloThamCom`,
-      linkedin: `company/hellotham`,
-      github: `hellotham`,
+      facebook: `https://www.facebook.com/HelloThamCom`,
+      instagram: `https://www.instagram.com/HelloThamCom/`,
+      twitter: `https://twitter.com/HelloThamCom`,
+      linkedin: `https://www.linkedin.com/company/17950469`,
+      github: `https://github.com/hellotham`,
     },
   },
   plugins: [

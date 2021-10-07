@@ -1,31 +1,31 @@
 import * as React from "react"
 
-import Services from "@/images/undraw_features_overview_jg7a.svg"
+import Partners from "@/images/undraw_features_overview_jg7a.svg"
 import Work from "@/images/undraw_All_the_data_re_hh4w.svg"
 import People from "@/images/undraw_Team_page_re_cffb.svg"
 
 const callouts = [
   {
-    name: "Our Services",
+    name: "People",
     description:
-      "Business and IT Strategies, Operating Models, Strategic Roadmaps, Enterprise Architecture, Analytics, Business Process Design ",
-    imageSrc: Services,
-    imageAlt: "Services drawing",
-    href: "#",
+      "Find out more about our consultants",
+    imageSrc: People,
+    imageAlt: "People drawing",
+    href: "/pages/consultants",
+  },
+  {
+    name: "Partners",
+    description: "Find out more about our consultants and partners",
+    imageSrc: Partners,
+    imageAlt: "Partners drawing",
+    href: "/pages/partners",
   },
   {
     name: "Recent Work",
-    description: "Recent examples of work we have performed for our clients",
+    description: "Recent work we have performed for our clients",
     imageSrc: Work,
     imageAlt: "Recent work drawing",
-    href: "#",
-  },
-  {
-    name: "People and Partners",
-    description: "Find out more about our consultants and partners",
-    imageSrc: People,
-    imageAlt: "People and Partners drawing",
-    href: "#",
+    href: "/pages/work",
   },
 ]
 
