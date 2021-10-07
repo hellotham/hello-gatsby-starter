@@ -9,6 +9,11 @@ import HelloTham from '../images/hellotham.svg'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
+  { name: 'About', href: '/pages/about', current: false },
+  { name: 'Services', href: '/pages/services', current: false },
+  { name: 'Consultants', href: '/pages/consultants', current: false },
+  { name: 'Partners', href: '/pages/partners', current: false },
+  { name: 'Recent Work', href: '/pages/work', current: false },
   { name: 'Privacy', href: '/pages/privacy', current: false },
   { name: 'Blog', href: '/blog', current: false },
 ]
@@ -66,6 +71,34 @@ export default function Header() {
                   </div>
                 </div>
               </div>
+
+            </div>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={classNames(
+                    item.current ? 'bg-pink-200 text-pink-600' : 'text-purple-600 hover:bg-purple-200 hover:text-pink-600',
+                    'block px-3 py-2 rounded-md text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
+  )
+}
+
+/*
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
@@ -75,7 +108,6 @@ export default function Header() {
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
 
-                {/* Profile dropdown */}
                 <Menu as="div" className="ml-3 relative">
                   <div>
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -131,28 +163,4 @@ export default function Header() {
                   </Transition>
                 </Menu>
               </div>
-            </div>
-          </div>
-
-          <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-pink-200 text-pink-600' : 'text-purple-600 hover:bg-purple-200 hover:text-pink-600',
-                    'block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
-  )
-}
+*/

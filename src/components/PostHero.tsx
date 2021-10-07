@@ -32,6 +32,7 @@ const PostHero = ({
     <GatsbyImage
       image={image!}
       alt="featured image"
+      loading="eager"
       className="absolute left-0 top-0 w-full h-full z-0 object-cover"
     />
     <div className="p-4 absolute bottom-0 left-0 z-20">

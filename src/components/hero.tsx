@@ -8,9 +8,14 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../images/logo.svg'
 import FeaturedImage from '../images/undraw_ideas_flow_cy7b.svg'
 import HelloTham from '../images/hellotham.svg'
+import { Link } from "gatsby"
 
 const navigation = [
-  { name: 'Privacy', href: '/pages/privacy' },
+  { name: 'About', href: '/pages/about' },
+  { name: 'Services', href: '/pages/services' },
+  { name: 'Consultants', href: '/pages/consultants' },
+  { name: 'Partners', href: '/pages/partners' },
+  { name: 'Recent Work', href: '/pages/work' },
   { name: 'Blog', href: '/blog' },
 ]
 
@@ -128,16 +133,16 @@ export default function Hero() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a
-                    href="/about"
+                  <Link
+                    to="/pages/about"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 md:py-4 md:text-lg md:px-10"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="/services"
+                    href="/pages/services"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-800 bg-pink-100 hover:bg-pink-200 md:py-4 md:text-lg md:px-10"
                   >
                     Contact Us

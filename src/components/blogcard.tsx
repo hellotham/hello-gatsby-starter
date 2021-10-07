@@ -33,6 +33,7 @@ const BlogCard = ({
             <div className="relative w-full h-48 bg-white rounded-lg overflow-hidden group-hover:opacity-75 aspect-w-3 aspect-h-2 sm:h-40">
               <GatsbyImage
                 image={getImage(image!)!}
+                loading="eager"
                 alt={title + " featured image"}
                 imgClassName="w-full h-full object-center object-cover"
               />
