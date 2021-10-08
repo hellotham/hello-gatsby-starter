@@ -3,9 +3,23 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "@/components/layout"
 import Seo from "@/components/seo"
-import { ImageDataLike } from "gatsby-plugin-image"
+// import { ImageDataLike } from "gatsby-plugin-image"
 import BlogCard from "@/components/blogcard"
 import BlogHero from "@/components/bloghero"
+
+type NodeType = {
+  frontmatter: {
+    title: string
+    description: string
+    author: string
+    date: string
+    image: { publicURL: string }
+    tags: string[]
+  }
+  id: string
+  slug: string
+  fields: { source: string }
+}
 
 export default function BlogPage() {
   const data = useStaticQuery(graphql`
@@ -19,9 +33,9 @@ export default function BlogPage() {
             date(formatString: "YYYY-MM-DD")
             image {
               publicURL
-              # childImageSharp {
-              #   gatsbyImageData
-              # }
+              childImageSharp {
+                gatsbyImageData
+              }
             }
             tags
           }
@@ -47,7 +61,7 @@ export default function BlogPage() {
         <div className="mt-6 space-y-12 lg:space-y-0 flex flex-wrap mb-24">
           {data.allMdx.nodes
             // .filter(node => node.fields.source === "posts")
-            .map(node => (
+            .map((node: NodeType) => (
               <BlogCard
                 href={`/${node.fields.source}/${node.slug}`}
                 title={node.frontmatter.title}
@@ -64,29 +78,3 @@ export default function BlogPage() {
     </Layout>
   )
 }
-
-// export const query = graphql`
-//   query {
-//     allMdx(filter: { fields: { source: { eq: "posts" } } }, sort: { fields: frontmatter___date, order: DESC }) {
-//       nodes {
-//         frontmatter {
-//           title
-//           description
-//           author
-//           date(formatString: "YYYY-MM-DD")
-//           image {
-//             childImageSharp {
-//               gatsbyImageData(width: 1024)
-//             }
-//           }
-//           tags
-//         }
-//         id
-//         slug
-//         fields {
-//           source
-//         }
-//       }
-//     }
-//   }
-// `
