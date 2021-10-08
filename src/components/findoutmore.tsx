@@ -15,13 +15,13 @@ const callouts = [
   },
   {
     name: "Partners",
-    description: "Find out more about our consultants and partners",
+    description: "Find out more about our partners",
     imageSrc: Partners,
     imageAlt: "Partners drawing",
     href: "/pages/partners",
   },
   {
-    name: "Recent Work",
+    name: "Achievements",
     description: "Recent work we have performed for our clients",
     imageSrc: Work,
     imageAlt: "Recent work drawing",
