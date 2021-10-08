@@ -1,29 +1,26 @@
 import * as React from "react"
-import { MapIcon, SparklesIcon, PuzzleIcon, PresentationChartBarIcon } from '@heroicons/react/outline'
+import { MapIcon, SparklesIcon, PuzzleIcon, PresentationChartBarIcon } from "@heroicons/react/outline"
 
 const features = [
   {
-    name: 'Business and IT Strategies',
-    description:
-      'Business and IT strategy and plans, operating models, business process design and standardisation',
+    name: "Business and IT Strategies",
+    description: "Business and IT strategy and plans, operating models, business process design and standardisation",
     icon: SparklesIcon,
   },
   {
-    name: 'Enterprise Architecture',
+    name: "Enterprise Architecture",
     description:
-      'Enterprise analysis, design, planning, and implementation for the successful development and execution of a strategy',
+      "Enterprise analysis, design, planning, and implementation for the successful development and execution of a strategy",
     icon: PuzzleIcon,
   },
   {
-    name: 'Analytics and Data Science',
-    description:
-      'Data discovery, analysis, deep and reinforced learning, insights and recommendations',
+    name: "Analytics and Data Science",
+    description: "Data discovery, analysis, deep and reinforced learning, insights and recommendations",
     icon: PresentationChartBarIcon,
   },
   {
-    name: 'Strategic Roadmaps',
-    description:
-      'Aligning portfolio to strategy, business cases, project planning and initiation',
+    name: "Strategic Roadmaps",
+    description: "Aligning portfolio to strategy, business cases, project planning and initiation",
     icon: MapIcon,
   },
 ]
@@ -44,7 +41,7 @@ export default function Features() {
 
         <div className="mt-10">
           <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            {features.map((feature) => (
+            {features.map(feature => (
               <div key={feature.name} className="relative">
                 <dt>
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white">

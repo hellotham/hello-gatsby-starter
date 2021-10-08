@@ -1,7 +1,7 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
 import * as React from "react"
 
-import HelloTham from "../images/hellotham.svg"
+import HelloTham from "@/svg/hellotham.svg"
 
 export default function Footer() {
   const data = useStaticQuery(graphql`
@@ -29,22 +29,12 @@ export default function Footer() {
         </a>
         <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
           © {new Date().getFullYear()} Hello Tham Pty Ltd
-          <a
-            href={social.twitter}
-            className="text-purple-600 ml-1"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <a href={social.twitter} className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             @HelloThamCom
           </a>
         </p>
         <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
-          <Link
-            to="/pages/privacy"
-            className="text-purple-600 ml-1"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <Link to="/pages/privacy" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             Privacy Policy
           </Link>
         </p>

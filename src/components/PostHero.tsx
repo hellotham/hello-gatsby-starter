@@ -11,18 +11,8 @@ interface PostHeroProps {
   tags?: string[]
 }
 
-const PostHero = ({
-  title,
-  description,
-  author,
-  date,
-  image,
-  tags,
-}: PostHeroProps) => (
-  <div
-    className="mb-4 md:mb-0 w-full max-w-screen-xl mx-auto relative"
-    style={{ height: "24em" }}
-  >
+const PostHero = ({ title, description, author, date, image, tags }: PostHeroProps) => (
+  <div className="mb-4 md:mb-0 w-full max-w-screen-xl mx-auto relative" style={{ height: "24em" }}>
     <div
       className="absolute left-0 bottom-0 w-full h-full z-10"
       style={{
@@ -36,11 +26,9 @@ const PostHero = ({
       className="absolute left-0 top-0 w-full h-full z-0 object-cover"
     />
     <div className="p-4 absolute bottom-0 left-0 z-20">
-      {tags ? <Tags tags={tags} /> : ''}
+      {tags ? <Tags tags={tags} /> : ""}
       <h2 className="text-4xl font-bold text-white leading-tight">{title}</h2>
-      <h2 className="text-xl font-medium italic text-pink-200">
-        {description}
-      </h2>
+      <h2 className="text-xl font-medium italic text-pink-200">{description}</h2>
       {author ? (
         <div className="flex mt-3">
           <StaticImage

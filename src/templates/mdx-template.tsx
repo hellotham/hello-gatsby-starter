@@ -34,7 +34,7 @@ const MDXTemplate = ({ pageContext, children }: LayoutProps) => {
       <main className="mt-10">
         <article className="post">
           <header>
-          <PostHero
+            <PostHero
               title={frontmatter.title}
               description={frontmatter.description}
               author={frontmatter.author}

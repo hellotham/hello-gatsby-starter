@@ -1,24 +1,23 @@
 import * as React from "react"
 
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Disclosure } from "@headlessui/react"
+import { MenuIcon, XIcon } from "@heroicons/react/outline"
 
-import Logo from '../images/logo.svg'
-import HelloTham from '../images/hellotham.svg'
+import Logo from "@/svg/logo.svg"
+import HelloTham from "@/svg/hellotham.svg"
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '/pages/about', current: false },
-  { name: 'Services', href: '/pages/services', current: false },
-  { name: 'Consultants', href: '/pages/consultants', current: false },
-  { name: 'Partners', href: '/pages/partners', current: false },
-  { name: 'Achievements', href: '/pages/work', current: false },
-  { name: 'Blog', href: '/blog', current: false },
+  { name: "Home", href: "/", current: true },
+  { name: "About", href: "/pages/about", current: false },
+  { name: "Services", href: "/pages/services", current: false },
+  { name: "Consultants", href: "/pages/consultants", current: false },
+  { name: "Partners", href: "/pages/partners", current: false },
+  { name: "Achievements", href: "/pages/work", current: false },
+  { name: "Blog", href: "/blog", current: false },
 ]
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ")
 }
 
 export default function Header() {
@@ -41,28 +40,22 @@ export default function Header() {
               </div>
               <div className="flex-1 flex items-center justify-center lg:items-stretch lg:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block md:hidden h-10 w-auto"
-                    src={Logo}
-                    alt="Logo"
-                  />
-                  <img
-                    className="hidden md:block h-10 w-auto"
-                    src={HelloTham}
-                    alt="Logo"
-                  />
+                  <img className="block md:hidden h-10 w-auto" src={Logo} alt="Logo" />
+                  <img className="hidden md:block h-10 w-auto" src={HelloTham} alt="Logo" />
                 </div>
                 <div className="hidden lg:block lg:ml-6">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
+                    {navigation.map(item => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-pink-200 text-pink-600' : 'text-purple-600 hover:bg-purple-200 hover:text-pink-600',
-                          'px-3 py-2 rounded-md text-lg font-medium'
+                          item.current
+                            ? "bg-pink-200 text-pink-600"
+                            : "text-purple-600 hover:bg-purple-200 hover:text-pink-600",
+                          "px-3 py-2 rounded-md text-lg font-medium"
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </a>
@@ -70,21 +63,22 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
           <Disclosure.Panel className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
+              {navigation.map(item => (
                 <a
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-pink-200 text-pink-600' : 'text-purple-600 hover:bg-purple-200 hover:text-pink-600',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "bg-pink-200 text-pink-600"
+                      : "text-purple-600 hover:bg-purple-200 hover:text-pink-600",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </a>

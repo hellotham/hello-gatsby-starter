@@ -6,7 +6,6 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -16,15 +15,15 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-//   const data: any = useStaticQuery(graphql`
-//     query SiteTitleQuery {
-//       site {
-//         siteMetadata {
-//           title
-//         }
-//       }
-//     }
-//   `)
+  //   const data: any = useStaticQuery(graphql`
+  //     query SiteTitleQuery {
+  //       site {
+  //         siteMetadata {
+  //           title
+  //         }
+  //       }
+  //     }
+  //   `)
 
   // const siteTitle: string = data.site.siteMetadata?.title || `Title`
 

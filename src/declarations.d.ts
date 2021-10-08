@@ -7,6 +7,7 @@
 // And to shim assets, use (one file extension per `declare`):
 // declare module "*.png"
 declare module "*.svg" {
-    const content: any;
-    export default content;
-  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const content: any
+  export default content
+}
