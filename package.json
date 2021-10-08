@@ -1,9 +1,9 @@
 {
-  "name": "hellotham-website-gatsby4",
+  "name": "hellotham-gatsby",
   "private": true,
   "description": "Hello Tham Website in Gatsby",
   "version": "2.0.0",
-  "author": "Hello Tham <info@hell0tham.com>",
+  "author": "Hello Tham <info@hellotham.com>",
   "bugs": {
     "url": "https://github.com/ChristineTham/hellotham-gatsby/issues"
   },

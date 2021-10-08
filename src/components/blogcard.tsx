@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { Link } from "gatsby"
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image"
+// import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image"
 import { CalendarIcon, UserCircleIcon } from "@heroicons/react/outline"
 
 import Tags from "@/components/tags"
@@ -12,7 +12,7 @@ interface BlogCardProps {
   description: string
   author: string
   date: string
-  image: ImageDataLike
+  image: { publicURL: string }
   tags: string[]
 }
 
@@ -23,11 +23,16 @@ const BlogCard = ({ href, title, description, author, date, image, tags }: BlogC
         <a>
           <div className="h-full border-1 border-pink-200 bg-white rounded-lg shadow-xl overflow-hidden p-2">
             <div className="relative w-full h-48 bg-white rounded-lg overflow-hidden group-hover:opacity-75 aspect-w-3 aspect-h-2 sm:h-40">
-              <GatsbyImage
+              {/* <GatsbyImage
                 image={getImage(image)!}
                 loading="eager"
                 alt={title + " featured image"}
                 imgClassName="w-full h-full object-center object-cover"
+              /> */}
+              <img
+                src={image.publicURL}
+                alt={title + " featured image"}
+                className="w-full h-full object-center object-cover"
               />
             </div>
             <div className="p-6">

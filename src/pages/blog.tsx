@@ -19,9 +19,9 @@ export default function BlogPage() {
             date(formatString: "YYYY-MM-DD")
             image {
               publicURL
-              childImageSharp {
-                gatsbyImageData
-              }
+              # childImageSharp {
+              #   gatsbyImageData
+              # }
             }
             tags
           }
