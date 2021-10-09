@@ -105,7 +105,6 @@ module.exports = {
                 title
                 description
                 siteUrl
-                site_url: siteUrl
               }
             }
           }
@@ -144,18 +143,18 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Your Site's RSS Feed",
+            title: "Hello Tham",
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
-            match: "^/blog/",
+            // match: "^/post/",
           },
         ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    "gatsby-plugin-offline",
   ],
 }
