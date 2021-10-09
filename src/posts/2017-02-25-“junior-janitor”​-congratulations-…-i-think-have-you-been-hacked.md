@@ -9,6 +9,7 @@ tags:
   - advice
   - Hello Tham
 ---
+
 I updated my LinkedIn profile last week. I have recently established Hello Tham, a boutique management consulting company that showcases my consulting skills and hopefully those of my associates as well. I have created a[company page on LinkedIn](http://www.linkedin.com/company/17950469/), plus I also have a vanity web page at [www.hellotham.com](http://localhost/). We are @HelloThamCom on Facebook, Instagram, Pinterest and Twitter.
 
 I took the opportunity of updating my [LinkedIn profile](http://linkedin.com/in/christham), and as the owner of my company, I suppose I can give myself any job title I wanted. Hmm … Executive Chairman of the Board, Chief Executive Officer, Managing Director, Managing Consultant, … the possibilities are endless.
@@ -17,7 +18,7 @@ In the end, I felt that grandiose self awarded job titles are silly. People who 
 
 When I was young, the advice often given to those starting a career is:
 
-> *“You have to be willing to start at the bottom and work your way up.”*
+> _“You have to be willing to start at the bottom and work your way up.”_
 
 And sometimes people will joke that starting at the very bottom means working as a janitor, or in the mail room. Indeed, Michael J. Fox starred in a rom-com called*“The Secret of My Success”*which basically has him starting as a mail boy in a large corporation and end up being the president by marrying the owner’s daughter.
 
@@ -25,15 +26,15 @@ I thought to myself: “Janitor” is fairly accurate description of the role I 
 
 The Oxford English Dictionary (V3) defines the word “janitor” as:
 
-> **1. a.** *A door-keeper, porter, ostiary.*
+> **1. a.** _A door-keeper, porter, ostiary._
 
 I can certainly be regarded as the door-keeper or porter of my company. So far so good.
 
-> **b.** *A caretaker of a building, esp. a school, who has charge of the cleaning, heating, etc., of it.*
+> **b.** _A caretaker of a building, esp. a school, who has charge of the cleaning, heating, etc., of it._
 
 Again, this is appropriate – I have to pay the bills etc. to keep the company as a going concern.
 
-> **2.** *An usher in a school.*
+> **2.** _An usher in a school._
 
 Okay, this one is a bit of a stretch. I guess if I regard the company as a “school” where I learn what it means to own and run a company, but also a “school” where I teach my clients in the areas of strategy, or operating models, or enterprise architecture then I am the “usher” of that “school.”
 
@@ -49,29 +50,29 @@ This caused LinkedIn to post an update to my connections:
 
 The responses I received from my connections over the next few days were interesting.
 
-> *Congrats on the new job! Let me know if you need help, I’m pretty wicked on a retro broom!*
+> _Congrats on the new job! Let me know if you need help, I’m pretty wicked on a retro broom!_
 >
-> *Hi Chris I think your Linked In may have been hacked. In your experience there is a junior janitor role*
+> _Hi Chris I think your Linked In may have been hacked. In your experience there is a junior janitor role_
 >
-> *Congrats on the new job! Looks exciting … I think*
+> _Congrats on the new job! Looks exciting … I think_
 >
-> *Congrats on the new role! Hope you’re doing well. Wtf?*
+> _Congrats on the new role! Hope you’re doing well. Wtf?_
 >
-> *Hi Chris How are you. Is this you turning Entrepreneur?? Congrats anyways. Always liked the way you think. Quite Unconventional..*
+> _Hi Chris How are you. Is this you turning Entrepreneur?? Congrats anyways. Always liked the way you think. Quite Unconventional.._
 >
-> *Hi Chris – How are you – I saw your linked in update with your new status. Welcome to the consulting world*
+> _Hi Chris – How are you – I saw your linked in update with your new status. Welcome to the consulting world_
 >
-> *Congratulations on your new position! The world can always do with more Junior Janitors!*
+> _Congratulations on your new position! The world can always do with more Junior Janitors!_
 >
-> *Hey Chris, how’s everything going? Saw your junior janitor post, you’re hilarious. That’s awesome.*
+> _Hey Chris, how’s everything going? Saw your junior janitor post, you’re hilarious. That’s awesome._
 >
-> *Well done Chris!*
+> _Well done Chris!_
 >
-> *Congratulations on your new position!*
+> _Congratulations on your new position!_
 >
-> *What is this?*
+> _What is this?_
 >
-> *Congrats on the new job! are you sure you have sufficient qualification and experience?*
+> _Congrats on the new job! are you sure you have sufficient qualification and experience?_
 
 I had quite a few of the vanilla “Congrats on the new job!” – I am guessing some people are clicking on the automatic reply button without looking too closely at the job title. Some think it’s a joke, or perhaps I have retired and this was my way of saying Sayonara to the world, others seem genuinely perplexed. I am pleasantly surprised quite a few people seem to have understood exactly what I was doing.
 

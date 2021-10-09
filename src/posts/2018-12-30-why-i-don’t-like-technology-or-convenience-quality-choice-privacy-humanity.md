@@ -10,6 +10,7 @@ tags:
   - opinion
   - technology
 ---
+
 Often people are surprised when I tell them I don’t like Technology, especially Big Tech (the FAANGs – Facebook, Apple, Amazon, Netflix, Google) and also the Gig or “sharing” economy (Uber, Airbnb etc.). I don’t subscribe to any streaming services (music or video) – no Apple Music, Spotify, Netflix or even cable TV.
 
 “But …”, people often say, I “seem to know a lot about technology, and immerse in technology” and I “always have all the tech toys.”
@@ -104,11 +105,11 @@ Besides, I prefer catching public transport and taxis. I like the anonymity, and
 
 This should be obvious by now, but let’s summarise:
 
-* **Facebook**: filter bubbles, fake news, privacy breaches … need I say more?
-* **Amazon**: killing off the retail industry and turning a pleasurable activity (shopping) into clicking buttons on a web page
-* **Apple**: people in China selling kidneys to buy an iPhone …
-* **Netflix**: already discussed above
-* **Google**: best illustrated by a few quotes from Eric Schmidt (former chairman of Google/Alphabet):
+- **Facebook**: filter bubbles, fake news, privacy breaches … need I say more?
+- **Amazon**: killing off the retail industry and turning a pleasurable activity (shopping) into clicking buttons on a web page
+- **Apple**: people in China selling kidneys to buy an iPhone …
+- **Netflix**: already discussed above
+- **Google**: best illustrated by a few quotes from Eric Schmidt (former chairman of Google/Alphabet):
 
 > Show us 14 photos of yourself and we can identify who you are.
 >

@@ -21,9 +21,9 @@ We collect several different types of information for various purposes to provid
 
 While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (“Personal Data”). Personally identifiable information may include, but is not limited to:
 
-* Email address
-* First name and last name
-* Cookies and Usage Data
+- Email address
+- First name and last name
+- Cookies and Usage Data
 
 ### Usage Data
 
@@ -39,21 +39,21 @@ You can instruct your browser to refuse all cookies or to indicate when a cookie
 
 Examples of Cookies we use:
 
-* **Session Cookies.** We use Session Cookies to operate our Service.
-* **Preference Cookies.** We use Preference Cookies to remember your preferences and various settings.
-* **Security Cookies.** We use Security Cookies for security purposes.
+- **Session Cookies.** We use Session Cookies to operate our Service.
+- **Preference Cookies.** We use Preference Cookies to remember your preferences and various settings.
+- **Security Cookies.** We use Security Cookies for security purposes.
 
 ## Use of Data
 
 Hello Tham uses the collected data for various purposes:
 
-* To provide and maintain the Service
-* To notify you about changes to our Service
-* To allow you to participate in interactive features of our Service when you choose to do so
-* To provide customer care and support
-* To provide analysis or valuable information so that we can improve the Service
-* To monitor the usage of the Service
-* To detect, prevent and address technical issues
+- To provide and maintain the Service
+- To notify you about changes to our Service
+- To allow you to participate in interactive features of our Service when you choose to do so
+- To provide customer care and support
+- To provide analysis or valuable information so that we can improve the Service
+- To monitor the usage of the Service
+- To detect, prevent and address technical issues
 
 ## Transfer Of Data
 
@@ -71,11 +71,11 @@ Hello Tham will take all steps reasonably necessary to ensure that your data is 
 
 Hello Tham may disclose your Personal Data in the good faith belief that such action is necessary to:
 
-* To comply with a legal obligation
-* To protect and defend the rights or property of Hello Tham
-* To prevent or investigate possible wrongdoing in connection with the Service
-* To protect the personal safety of users of the Service or the public
-* To protect against legal liability
+- To comply with a legal obligation
+- To protect and defend the rights or property of Hello Tham
+- To prevent or investigate possible wrongdoing in connection with the Service
+- To protect the personal safety of users of the Service or the public
+- To protect against legal liability
 
 ### Security Of Data
 
@@ -111,5 +111,5 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, please contact us:
 
-* By email: info@hellotham.com
-* By visiting this page on our website: [https://www.hellotham.com/privacy](https://www.hellotham.com/privacy)
+- By email: info@hellotham.com
+- By visiting this page on our website: [https://www.hellotham.com/privacy](https://www.hellotham.com/privacy)

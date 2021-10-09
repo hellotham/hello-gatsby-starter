@@ -11,6 +11,7 @@ tags:
   - technology
   - Hong Kong
 ---
+
 This year I attended my first conference in Hong Kong – RISE 2017, organised by the same people who do Web Summit in Europe. The conference was very focussed on the tech startup ecosystem and I really enjoyed it.
 
 I arrived in Hong Kong on Monday the night before the conference starts. By time I had checked in to the hotel, it was too late to register and consequently I missed out on the pre-conference events (including cultural and pub crawls around Hong Kong’s expat districts, and a pre conference party) but that was okay as I was quite tired anyway.

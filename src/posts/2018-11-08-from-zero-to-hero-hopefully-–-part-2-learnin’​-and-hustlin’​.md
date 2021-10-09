@@ -12,9 +12,10 @@ tags:
   - Swift
   - iOS
 ---
+
 This is the second part of my series of articles on learning to code at age 55 and creating some prototypes. For the first part, click on [From Zero to Hero (hopefully) – Part 1 (Learning ServiceNow and Xcode/Swift)](/blog/2018-11-01-from-zero-to-hero-hopefully-–-part-1-learning-servicenow-and-xcode-swift/). In today’s article I provide an update on my learning progress, hustling a team together and some observations and self-reflection on the journey.
 
-In my first article, I referenced The Hero’s Journey. Joseph Campbell, a mythologist, noticed that myths and stories frequently share a fundamental structure. In his book *The Hero with a Thousand Faces*, Campbell summarises the journey as:
+In my first article, I referenced The Hero’s Journey. Joseph Campbell, a mythologist, noticed that myths and stories frequently share a fundamental structure. In his book _The Hero with a Thousand Faces_, Campbell summarises the journey as:
 
 > A hero ventures forth from the world of common day into a region of supernatural wonder: fabulous forces are there encountered and a decisive victory is won: the hero comes back from this mysterious adventure with the power to bestow boons on his fellow man.
 
@@ -30,7 +31,7 @@ In the interests of anyone else who may be contemplating or embarking on a simil
 
 Learning ServiceNow is relatively easy (being able to effectively develop apps on it is a different story – more on this later).
 
-Just create an account on <https://developer.servicenow.com/> and create a developer instance and then follow the learning plans. There’s a variety of plans to choose from (*New to ServiceNow, ServiceNow Administrator, ServiceNow Application Developer, Technology Partner Program* etc.). I have now completed the *Technology Partner Program Quick Start* and about halfway through the *New to ServiceNow* lessons.
+Just create an account on <https://developer.servicenow.com/> and create a developer instance and then follow the learning plans. There’s a variety of plans to choose from (_New to ServiceNow, ServiceNow Administrator, ServiceNow Application Developer, Technology Partner Program_ etc.). I have now completed the _Technology Partner Program Quick Start_ and about halfway through the _New to ServiceNow_ lessons.
 
 Following the lessons were fairly easy, as all I am doing is reading and being a typing monkey replicating the lessons. The conceptual underpinnings are not so easy and will require time to master. Moving beyond tables, fields and forms into actions, triggers, business logic etc. requires knowledge of Javascript. Although ServiceNow tries to minimise the Javascript scripting required and have created no-code versions of common scenarios, coding is required for complex logic.
 

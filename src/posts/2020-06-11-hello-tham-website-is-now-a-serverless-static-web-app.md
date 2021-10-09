@@ -20,6 +20,7 @@ tags:
   - GraphQL
   - JavaScript
 ---
+
 Ever since our company was established (in 2016), our web site has been built using the industry leading content management system
 [WordPress](https://wordpress.org), currently used in over 60 million websites around the world
 (according to [Wikipedia](https://en.wikipedia.org/wiki/WordPress)).
@@ -48,12 +49,12 @@ However, in the last few years, an alternate website deployment architecture has
 
 The benefits are immediate and fairly obvious:
 
-* ***there is no server***, nothing to manage, configure, patch, upgrade, or monitor
-* web hosting costs are dramatically lower, and quite likely ***zero cost***, as you are only paying for a CDN service (which many providers including AWS offer for free up to a generous limit)
-* no server means the ***security of your website is guaranteed***, there is nothing for a hacker to access or login to (the worst that can happen is someone compromises the CDN service and corrupts your files, in which case you can just redeploy in minutes to overwrite the content)
-* the web site content is always ***up to date and refreshed,*** you never have to worry about the slight possibility that someone is accessing an older copy of your website because the CDN wasn't refreshed correctly (this happens more often than people like to admit, depending on how you have configured your website)
-* your website is ***global and always fast*** as it is a set of static web files that is served from a CDN, from potentially hundreds (or even thousands) of locations around the world (depending on your CDN provider)
-* you ***don't need to worry about SEO*** (search engine optimisation) (search engines generally like static fast content and tend to rank them high)
+- **_there is no server_**, nothing to manage, configure, patch, upgrade, or monitor
+- web hosting costs are dramatically lower, and quite likely **_zero cost_**, as you are only paying for a CDN service (which many providers including AWS offer for free up to a generous limit)
+- no server means the **_security of your website is guaranteed_**, there is nothing for a hacker to access or login to (the worst that can happen is someone compromises the CDN service and corrupts your files, in which case you can just redeploy in minutes to overwrite the content)
+- the web site content is always **_up to date and refreshed,_** you never have to worry about the slight possibility that someone is accessing an older copy of your website because the CDN wasn't refreshed correctly (this happens more often than people like to admit, depending on how you have configured your website)
+- your website is **_global and always fast_** as it is a set of static web files that is served from a CDN, from potentially hundreds (or even thousands) of locations around the world (depending on your CDN provider)
+- you **_don't need to worry about SEO_** (search engine optimisation) (search engines generally like static fast content and tend to rank them high)
 
 Our new website is fast. How fast? Our LightHouse score is 96:
 
@@ -63,28 +64,28 @@ The Hello Tham website is now a web app written (based on the
 [gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms) starter)
 using the following technologies:
 
-* JavaScript, HTML and CSS - the building blocks of the [World Wide Web](https://www.w3.org/)
-* [Markdown](https://daringfireball.net/projects/markdown/) - a simple, easy to learn and lightweight text markup language for creating web content
-* [React](https://reactjs.org/) - a JavaScript library for building interactive web applications originally created by [Facebook](https://developers.facebook.com/products/#open-source)
-* [Bulma](https://bulma.io/) - a CSS framework used for designing the responsive user experience and user interface
-* [Gatsby](https://www.gatsbyjs.org/) - a framework for developing and generating static web apps (it's creators envisioned it as "What WordPress would look like if it was designed in 2020")
-* [GraphQL](https://graphql.org/) - a query language for accessing content dynamically, also originally created by [Facebook](https://developers.facebook.com/products/#open-source)
-* [NetlifyCMS](https://www.netlifycms.org/) - a serverless content management system that allows content to be created and managed without writing code
-* [Netlify](https://www.netlify.com/) - (one of several) static web deployment platform (incorporating a CDN as well as a continuous integration/continuous deployment process)
-* [GitHub](https://github.com/) as the platform for storing our website assets and content
+- JavaScript, HTML and CSS - the building blocks of the [World Wide Web](https://www.w3.org/)
+- [Markdown](https://daringfireball.net/projects/markdown/) - a simple, easy to learn and lightweight text markup language for creating web content
+- [React](https://reactjs.org/) - a JavaScript library for building interactive web applications originally created by [Facebook](https://developers.facebook.com/products/#open-source)
+- [Bulma](https://bulma.io/) - a CSS framework used for designing the responsive user experience and user interface
+- [Gatsby](https://www.gatsbyjs.org/) - a framework for developing and generating static web apps (it's creators envisioned it as "What WordPress would look like if it was designed in 2020")
+- [GraphQL](https://graphql.org/) - a query language for accessing content dynamically, also originally created by [Facebook](https://developers.facebook.com/products/#open-source)
+- [NetlifyCMS](https://www.netlifycms.org/) - a serverless content management system that allows content to be created and managed without writing code
+- [Netlify](https://www.netlify.com/) - (one of several) static web deployment platform (incorporating a CDN as well as a continuous integration/continuous deployment process)
+- [GitHub](https://github.com/) as the platform for storing our website assets and content
 
 There are some additional benefits from using the above technology stack:
 
-* The web assets and content are accessible anywhere with a full version history.
-* Back up is easy, just clone the repository on any device or storage.
-* New content can be created without writing code or even Markdown using the NetlifyCMS editor interface
-* Images are lazy loaded and dynamically optimised for the viewing device and screen size, automatically using Gatsby image processing
+- The web assets and content are accessible anywhere with a full version history.
+- Back up is easy, just clone the repository on any device or storage.
+- New content can be created without writing code or even Markdown using the NetlifyCMS editor interface
+- Images are lazy loaded and dynamically optimised for the viewing device and screen size, automatically using Gatsby image processing
 
 ![NetlifyCMS editor interface](../images/hellotham-edit.png)
 
-* The build and deployment process is completely automated and seamless, any push to the GitHub master branch automatically triggers an update to the website
-* No need for dev or staging sites, local development is easy
-* All the above without buying or installing multiple WordPress themes or plugins
+- The build and deployment process is completely automated and seamless, any push to the GitHub master branch automatically triggers an update to the website
+- No need for dev or staging sites, local development is easy
+- All the above without buying or installing multiple WordPress themes or plugins
 
 How long did it take to rewrite the new website? Surprisingly, it took less than a week from idea to deployment. One day was spent learning Gatsby and NetlifyCMS (mainly following the tutorial and watching a few videos from Gatsby). Then 2-3 days on the user interface and templates (based on the NetlifyCMS starter pack for Gatsby). The actual migration of the content took another 2 days (mainly copying and pasting from the old Wordpress site into NetlifyCMS), followed by one day to clean up and deploy to Netlify.
 

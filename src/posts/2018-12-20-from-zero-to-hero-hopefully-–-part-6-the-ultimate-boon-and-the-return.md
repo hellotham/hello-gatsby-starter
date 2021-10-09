@@ -12,19 +12,20 @@ tags:
   - Swift
   - iOS
 ---
+
 Previous articles in the series are:
 
-* [Part 1 (Learning ServiceNow and Xcode/Swift)](/blog/2018-11-01-from-zero-to-hero-hopefully-–-part-1-learning-servicenow-and-xcode-swift/)
-* [Part 2 (Learnin’ and Hustlin’)](/blog/2018-11-08-from-zero-to-hero-hopefully-–-part-2-learnin’%E2%80%8B-and-hustlin’%E2%80%8B/)
-* [Part 3 (Approaching the Innermost Cave)](/blog/2018-11-21-from-zero-to-hero-hopefully-–-part-3-approach-to-the-inmost-cave/)
-* [Part 4 (Eating, Drinking, Sprinting)](/blog/2018-11-28-from-zero-to-hero-hopefully-–-part-4-eating-drinking-sprinting/)
-* [Part 5 (The Dark Cave)](/blog/2018-12-11-from-zero-to-hero-hopefully-–-part-5-the-dark-cave/)
+- [Part 1 (Learning ServiceNow and Xcode/Swift)](/blog/2018-11-01-from-zero-to-hero-hopefully-–-part-1-learning-servicenow-and-xcode-swift/)
+- [Part 2 (Learnin’ and Hustlin’)](/blog/2018-11-08-from-zero-to-hero-hopefully-–-part-2-learnin’%E2%80%8B-and-hustlin’%E2%80%8B/)
+- [Part 3 (Approaching the Innermost Cave)](/blog/2018-11-21-from-zero-to-hero-hopefully-–-part-3-approach-to-the-inmost-cave/)
+- [Part 4 (Eating, Drinking, Sprinting)](/blog/2018-11-28-from-zero-to-hero-hopefully-–-part-4-eating-drinking-sprinting/)
+- [Part 5 (The Dark Cave)](/blog/2018-12-11-from-zero-to-hero-hopefully-–-part-5-the-dark-cave/)
 
 If you recall, Part 5 represented the nadir (or rock bottom point) of the journey, with me struggling to use the Microsoft Graph API and the team trying to hold on to our dev environment in order to establish some Odata services. We finally reached Apotheosis and found a way forward after nearly two weeks of struggling.
 
 Well, in the last week and the last Sprint, all that is left is to complete the prototype, achieve Minimum Viable Product, and deliver to the client.
 
-I started this series of articles by referencing the archetypical Hero’s Journey by Joseph Campbell (*The Hero With a Thousand Faces*), so it seems appropriate to structure this article along the concluding stages of the journey – please note this diagram mis-spells apotheosis as “apostasis” which is a completely different word with an entirely different (and not altogether pleasant) meaning:
+I started this series of articles by referencing the archetypical Hero’s Journey by Joseph Campbell (_The Hero With a Thousand Faces_), so it seems appropriate to structure this article along the concluding stages of the journey – please note this diagram mis-spells apotheosis as “apostasis” which is a completely different word with an entirely different (and not altogether pleasant) meaning:
 
 ![The 17 stages of the Monomyth](../images/zero-6a.png "The 17 stages of the Monomyth")
 
@@ -54,23 +55,23 @@ A part of me was a bit sad and wishing we could continue. Although I have found 
 
 The list of things we achieved over four weeks on the backend:
 
-* Enabled SAP Mobile Services on our instance of SAP Cloud Platform.
-* Installed SAP Cloud Connector on a temporary server.
-* Established a connection to the dev environment from SAP Cloud Platform via SAP Cloud Connector.
-* Tested connectivity and access to existing mobile services on the dev environment via SAP Cloud Platform through a native iOS app written using the SAP SDK for iOS.
-* Identified BAPI services for use in the prototype.
-* Established Odata services via API Management layer on SAP Cloud Platform.
-* Confirmed (with the help of ServiceNow) that a dev instance of ServiceNow is able to access the Odata services.
+- Enabled SAP Mobile Services on our instance of SAP Cloud Platform.
+- Installed SAP Cloud Connector on a temporary server.
+- Established a connection to the dev environment from SAP Cloud Platform via SAP Cloud Connector.
+- Tested connectivity and access to existing mobile services on the dev environment via SAP Cloud Platform through a native iOS app written using the SAP SDK for iOS.
+- Identified BAPI services for use in the prototype.
+- Established Odata services via API Management layer on SAP Cloud Platform.
+- Confirmed (with the help of ServiceNow) that a dev instance of ServiceNow is able to access the Odata services.
 
 In addition, we wrote two native iOS apps – one conceptual (wireframe), and second with the following features:
 
-* Connectivity and authentication to development instance of Office 365 through Microsoft Graph API
-* Connectivity and authentication to Odata services residing on SAP Cloud Platform connecting to dev environment via Cloud Connector
-* Ability to update by scanning QR code on phone
-* Ability to see status of other users (user information obtained from Office 365)
-* Ability to see calendar events (from Office 365)
-* Integration to phone functionality (call person, send text message, send email)
-* Ability to view history and create new records (on SAP dev environment)
+- Connectivity and authentication to development instance of Office 365 through Microsoft Graph API
+- Connectivity and authentication to Odata services residing on SAP Cloud Platform connecting to dev environment via Cloud Connector
+- Ability to update by scanning QR code on phone
+- Ability to see status of other users (user information obtained from Office 365)
+- Ability to see calendar events (from Office 365)
+- Integration to phone functionality (call person, send text message, send email)
+- Ability to view history and create new records (on SAP dev environment)
 
 Even though we were supposed to wrap up, I found it hard to let go. Over the weekend, I implemented integration into MapKit with geocoding of addresses to display locations on the app, and also completely rewrote the SAP integration code to use Swift Generics, so that a single set of generic functions were able to consume all services in an extensible way.
 
@@ -92,7 +93,7 @@ Before I even had a chance to rest, my client has already asked me to move onto 
 
 ## The Crossing of the Return Threshold
 
-> **Campbell:** “The returning hero, to complete his adventure, must survive the impact of the world. Many failures attest to the difficulties of this life-affirmative threshold. The first problem of the returning hero is to accept as real, after an experience of the soul-satisfying vision of fulfillment, the passing joys and sorrows, banalities and noisy obscenities of life. Why re-enter such a world? Why attempt to make plausible, or even interesting, to men and women consumed with passion, the experience of transcendental bliss? As dreams that were momentous by night may seem simply silly in the light of day, so the poet and the prophet can discover themselves playing the idiot before a jury of sober eyes. The easy thing is to commit the whole community to the devil and retire again into the heavenly rock dwelling, close the door, and make it fast. But if some spiritual obstetrician has drawn the [shimenawa](https://en.wikipedia.org/wiki/Shimenawa) across the retreat, then the work of representing eternity in time, and perceiving in time eternity, cannot be avoided” *The hero returns to the world of common day and must accept it as real.*
+> **Campbell:** “The returning hero, to complete his adventure, must survive the impact of the world. Many failures attest to the difficulties of this life-affirmative threshold. The first problem of the returning hero is to accept as real, after an experience of the soul-satisfying vision of fulfillment, the passing joys and sorrows, banalities and noisy obscenities of life. Why re-enter such a world? Why attempt to make plausible, or even interesting, to men and women consumed with passion, the experience of transcendental bliss? As dreams that were momentous by night may seem simply silly in the light of day, so the poet and the prophet can discover themselves playing the idiot before a jury of sober eyes. The easy thing is to commit the whole community to the devil and retire again into the heavenly rock dwelling, close the door, and make it fast. But if some spiritual obstetrician has drawn the [shimenawa](https://en.wikipedia.org/wiki/Shimenawa) across the retreat, then the work of representing eternity in time, and perceiving in time eternity, cannot be avoided” _The hero returns to the world of common day and must accept it as real._
 
 The trick in returning is to retain the wisdom gained on the quest, to integrate that wisdom into a human life, and then maybe figure out how to share the wisdom with the rest of the world.
 

@@ -12,10 +12,11 @@ tags:
   - Swift
   - iOS
 ---
+
 Previous articles in the series are:
 
-* [Part 1 (Learning ServiceNow and Xcode/Swift)](/blog/2018-11-01-from-zero-to-hero-hopefully-–-part-1-learning-servicenow-and-xcode-swift/)
-* [Part 2 (Learnin’ and Hustlin’)](/blog/2018-11-08-from-zero-to-hero-hopefully-–-part-2-learnin’%E2%80%8B-and-hustlin’%E2%80%8B/)
+- [Part 1 (Learning ServiceNow and Xcode/Swift)](/blog/2018-11-01-from-zero-to-hero-hopefully-–-part-1-learning-servicenow-and-xcode-swift/)
+- [Part 2 (Learnin’ and Hustlin’)](/blog/2018-11-08-from-zero-to-hero-hopefully-–-part-2-learnin’%E2%80%8B-and-hustlin’%E2%80%8B/)
 
 This week I am busy writing my prototype iOS app in Xcode/Swift. The last two weeks have been hectic – I have attended a 6 day bootcamp on Human Centred Design, and 2 days in a workshop with Apple where they were teaching us how to use the SAP SDK for iOS. I also spent the last two weekends brushing up on Swift by following the exercises in a book (App Development with Swift).
 

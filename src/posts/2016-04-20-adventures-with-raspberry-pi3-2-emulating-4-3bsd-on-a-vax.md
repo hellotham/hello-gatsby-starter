@@ -12,6 +12,7 @@ tags:
   - Raspberry Pi
   - simh
 ---
+
 As a sucessor on my previous [post](/blog/2016-04-15-adventures-with-raspberry-pi3-1-running-unix-v7-on-an-emulated-pdp-11/), I also did some investigation to see if I can emulate another classic Unix hardware and software combo, 4.3BSD on a VAX, this time with networking!
 
 ### VAX
@@ -22,7 +23,7 @@ The VAX-11/780 was widely believed to be the world’s most powerful mini-comput
 
 An interesting note: the Raspberry Pi 3 (a US$35 “toy” computer) has a clock speed of 1.2GHz, and hence it is hundreds, possibly thousand times faster than the original VAX-11/780, and tens of times faster than the most powerful VAX ever built (the 9000 series, of which very few were ever produced) – even on just a single core, and the Pi 3 has 4 cores.
 
-When I was in university, I was surrounded by VAXs (or, as some prefer,*vaxen*). The maths department was using it to teach undergraduate students (we were actually using real teletype machines to do our assignments), Physics also had several which weren’t accessible to undergrads, and the Computer Science department had the luxury of 2 of them, one for staff and one for students. The one for students was running a tuned version of Unix 32V and could support hundreds of physical terminals, and the staff version had a whopping 8MB of physical memory and was upgraded to the latest version of Research Unix (8th edition).
+When I was in university, I was surrounded by VAXs (or, as some prefer,_vaxen_). The maths department was using it to teach undergraduate students (we were actually using real teletype machines to do our assignments), Physics also had several which weren’t accessible to undergrads, and the Computer Science department had the luxury of 2 of them, one for staff and one for students. The one for students was running a tuned version of Unix 32V and could support hundreds of physical terminals, and the staff version had a whopping 8MB of physical memory and was upgraded to the latest version of Research Unix (8th edition).
 
 In my last year at university, I was given access to the staff VAX, and was even experimenting with some of the new tools (such as the sam editor) on a Blit terminal (the university could only afford a handful) which evolved to be part of Plan 9 from Bell Labs.
 
@@ -68,8 +69,8 @@ Now make a coffee because the Pi 3 is not going to be a fast compiling machine c
 
 Note: some of the steps in the following guide were inspired and derived from the following two articles which I consulted:
 
-* [unixhistory Quasijarus page](http://www.tavi.co.uk/unixhistory/quasijarus.html)
-* [smh networking how to (qu1j0t3)](https://github.com/qu1j0t3/simh-networking-linux-howto)
+- [unixhistory Quasijarus page](http://www.tavi.co.uk/unixhistory/quasijarus.html)
+- [smh networking how to (qu1j0t3)](https://github.com/qu1j0t3/simh-networking-linux-howto)
 
 ### Stage 1: Restoring the mini root filesystem
 
@@ -141,7 +142,7 @@ From: tms(0,1)
 To: ra(0,1)
 ra0: unlabeled
 Copy completed: 308 records copied
-= 
+=
 ```
 
 ### Stage 2: Creating and restoring the full root filesystem
@@ -201,7 +202,7 @@ If this is a 780 or 785, update the floppy
 If this is a 730, update the cassette
 # sync
 # sync
-# 
+#
 ```
 
 At this point we kill the simulator (Control-E then q) and restart it again, simulating a power cycle.
@@ -293,7 +294,7 @@ super-block backups (for fsck -b #) at:
 syncing disks... done HALT instruction, PC: 8002F4C2 (BRB 8002F4A4)
 sim> q
 Goodbye
-NVR: writing buffer to file 
+NVR: writing buffer to file
 ```
 
 ### Stage 4: Setting up an Ethernet bridge for simh
@@ -328,10 +329,10 @@ sudo ifconfig tap0 0.0.0.0
 
 Note I did not set up a default gateway because I already have one (because my wlan0 interface is also active and connected to the same network). However, if you are using eth0 as your only interface, you may want to do this:
 
-* **`route -n`**\
-  *\[before you do the steps above and write down your current default gateway – which is usually the address of your router]*
-* **`sudo route add -net 0.0.0.0/0 gw`**\
-  *\[IP address of your gateway]*
+- **`route -n`**\
+  _\[before you do the steps above and write down your current default gateway – which is usually the address of your router]_
+- **`sudo route add -net 0.0.0.0/0 gw`**\
+  _\[IP address of your gateway]_
 
 ### Stage 5: Multi-user boot and set up networking
 
@@ -430,7 +431,7 @@ starting network daemons: routedApr 20 02:32:23 myname named[78]: /etc/named.boo
 named inetd printer.
 starting local daemons: sendmail.
 Tue Apr 20 02:32:26 PDT 2004
-4.3 BSD UNIX (myname.my.domain) (console) login: 
+4.3 BSD UNIX (myname.my.domain) (console) login:
 ```
 
 We then login as root (no password), then set the terminal to xterms (assuming that we are running the Pi under X graphical environment), allowing us to then run vi:
@@ -442,7 +443,7 @@ Apr 20 02:33:47 myname login: ROOT LOGIN console
 4.3 BSD Quasijarus UNIX #3: Sat Feb 14 20:31:03 PST 2004   Welcome to UNIX! erase ^?, kill ^U, intr ^C
 # TERM=xterms
 # export TERM
-# vi /etc/networks 
+# vi /etc/networks
 ```
 
 Or, if you prefer the old school way (I am calling my home network home-net):
@@ -476,7 +477,7 @@ hostname $hostname # ifconfig imp0 inet $hostname
 # ifconfig de0 inet $hostname netmask my-netmask
 ifconfig qe0 inet $hostname netmask home-net ifconfig lo0 inet localhost
 route add $hostname localhost 0
-hostid $hostname route add default 192.168.0.1 1 
+hostid $hostname route add default 192.168.0.1 1
 ```
 
 Finally enable remote name resolution by disabling the named server (comment out the line beginning with named in /etc/rc) and insert the router as the nameserver

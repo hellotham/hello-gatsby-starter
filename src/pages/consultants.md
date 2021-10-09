@@ -4,6 +4,7 @@ description: Showcasing Key Profiles
 author: Hello Tham
 image: ../images/consultants.jpg
 ---
+
 ## Chris Tham
 
 ![Chris Tham](../images/ChrisTham-400.jpg)
@@ -16,15 +17,15 @@ Chris has also presented at various international conferences and published pape
 
 Key Skills:
 
-* Business and IT strategies
-* Operating models
-* Strategic roadmaps
-* Enterprise architecture
-* Analytics and Data Science
-* Business process design
+- Business and IT strategies
+- Operating models
+- Strategic roadmaps
+- Enterprise architecture
+- Analytics and Data Science
+- Business process design
 
 Qualifications:
 
-* Master of Applied Finance, Macquarie University
-* Graduate Diploma in Applied Finance, finsia
-* Bachelor of Science (Hons 1stclass and University Medal), University of Sydney
+- Master of Applied Finance, Macquarie University
+- Graduate Diploma in Applied Finance, finsia
+- Bachelor of Science (Hons 1stclass and University Medal), University of Sydney

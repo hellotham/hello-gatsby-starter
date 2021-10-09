@@ -22,8 +22,8 @@
     "plugins": [
       {
         "name": "ts-graphql-plugin",
-        "schema": "schema.graphql",   /* Path to your GraphQL schema */
-        "tag": "gql"                 /* Template tag function name */
+        "schema": "schema.graphql" /* Path to your GraphQL schema */,
+        "tag": "gql" /* Template tag function name */
       }
     ]
   }

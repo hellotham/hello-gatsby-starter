@@ -10,6 +10,7 @@ tags:
   - mathematics
   - numbers
 ---
+
 Were you forced to memorise the multiplication table at school? Did you find it difficult, and wish there was an easier way to derive the multiplication table using a few simple rules rather than memorising the entire table?
 
 Recently I saw a video on Facebook about how you can easily multiply by 9 because if we write out the “times 9” column in the multiplication table, it looks something like this:
@@ -100,19 +101,19 @@ In summary, we can derive the multiplication table easily with a few simple rule
 
 The right digits have a pattern in pairs 1-9, 2-8, 3-7, 4-6 where the pattern of the latter is a reverse of the former.
 
-* The pattern for digit 1 (and 9) is and ascending set of digits (reversed for 9).
-* The pattern for digit 2 is an ascending sequence of the even digits, repeated. Reverse for 8.
-* The pattern for digit 3 is a repeating triplet pattern (3-6-9, 2-5-8, 1-4-7). Reverse for 7.
-* The pattern for digit 4 is a repeating quadruplet pattern (4-8-2-6), repeated. Reverse for 6.
-* The pattern for digit 5 is alternating 0 and 5.
-* The left digit acts as an overflow for the right digit, and increments whenever consecutive right digits decrease.
+- The pattern for digit 1 (and 9) is and ascending set of digits (reversed for 9).
+- The pattern for digit 2 is an ascending sequence of the even digits, repeated. Reverse for 8.
+- The pattern for digit 3 is a repeating triplet pattern (3-6-9, 2-5-8, 1-4-7). Reverse for 7.
+- The pattern for digit 4 is a repeating quadruplet pattern (4-8-2-6), repeated. Reverse for 6.
+- The pattern for digit 5 is alternating 0 and 5.
+- The left digit acts as an overflow for the right digit, and increments whenever consecutive right digits decrease.
 
 One observation I made after gaining the above insights is how a lot of units of time and measurement are based on these multiples. Examples:
 
-* `2x3x4 = 24`(the number of hours in a day)
-* `2x3x5 = 30`(the approximate number of days in a month)
-* `3x4 = 12`(the number of months in a year)
-* `3x4x5 = 60`(the number of seconds in a minute, or the number of minutes in an hour)
-* `2x3x3x4x5 = 360`(the number of degrees in a circle, or the approximate number of days in a year)
+- `2x3x4 = 24`(the number of hours in a day)
+- `2x3x5 = 30`(the approximate number of days in a month)
+- `3x4 = 12`(the number of months in a year)
+- `3x4x5 = 60`(the number of seconds in a minute, or the number of minutes in an hour)
+- `2x3x3x4x5 = 360`(the number of degrees in a circle, or the approximate number of days in a year)
 
 Creating units that are multiples of the various digits makes them easily divisible (by halves, thirds, quarters etc.), and helps explain why these units were chosen in the first place.

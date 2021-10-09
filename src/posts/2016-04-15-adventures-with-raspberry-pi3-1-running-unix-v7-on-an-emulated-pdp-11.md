@@ -10,6 +10,7 @@ tags:
   - Unix
   - simh
 ---
+
 I bought a [Raspberry Pi 3](https://www.raspberrypi.org/blog/page/3/?fish#raspberry-pi-3-on-sale)recently. For those of you that don’t know, the Pi is a tiny and affordable (US$35) computer (roughly the size of a credit card but thicker) created by the [Raspberry Pi Foundation](https://www.raspberrypi.org/), for the purpose of teaching children about computers and programming. Since then, the foundation has sold over 8 million of these devices and many hobbyists have used the Pi as a foundation for interesting and creative projects.
 
 Despite the tiny size, the Pi 3 is a surprisingly powerful computer and can be used as a desktop computer running Linux – in fact, I am currently typing this article on the [Iceweasel](https://wiki.debian.org/Iceweasel)browser running on [Raspbian](https://www.raspbian.org/)operating system (which is based on [Debian](https://www.debian.org/)). It has a 1.2GHz 64-bit quad-core ARMv8 CPU and 1GB of memory, and is roughly comparable to a high end Intel Pentium III in terms of integer single core performance.
@@ -28,11 +29,11 @@ Even more importants, the PDP-11 has long been associated with the Unix operatin
 
 I was introduced to Unix in my first year at university, and instantly fell in love with it. Prior to that, I had been exposed to scientific calculators and home computers. Unix was powerful and sophisticated compared to them, but also had an elegance and a simplicity that was beguiling.
 
-> *This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.*– Doug McIlroy
+> _This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface._– Doug McIlroy
 
 In these days of bloated Linux distributions, it is all too easy to forget what the “Unix philosophy” stands for. Unix Version 7 is probably the closest to a “pure” version of Unix. It was the first version of Unix that we would recognise today as Unix – it had the shell, it’s mostly written in C, all the core software tools are there, and it has none of the crazy stuff that came later. Or, to paraphrase Obi Wan Kenobi:
 
-> *“Unix Version 7. This is the weapon of a true Unix guru. Not as clumsy or random as Linux; an elegant weapon for a more civilized age. For over a zillion clock cycles, Unix gurus were the guardians of peace and justice of the Internet. Before the dark times… before Microsoft Windows.”*
+> _“Unix Version 7. This is the weapon of a true Unix guru. Not as clumsy or random as Linux; an elegant weapon for a more civilized age. For over a zillion clock cycles, Unix gurus were the guardians of peace and justice of the Internet. Before the dark times… before Microsoft Windows.”_
 
 ### Emulating Unix Version 7 on a PDP-11 on the Pi
 

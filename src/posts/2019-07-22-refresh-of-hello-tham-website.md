@@ -11,6 +11,7 @@ tags:
   - website
   - news
 ---
+
 We have recently refreshed out website with a brand new look, additional content, and a new hosting environment.
 
 Previously, the website was running on an old Ubuntu 14.04 virtual machine on Azure, using the bitnami WordPress image. This required manual operating system patching, and the instance type was fixed and non-scalable.
@@ -23,11 +24,11 @@ We have also taken the opportunity to completely redesign the website, using the
 
 Finally, we have significantly enhanced the content of our web site. Key changes include:
 
-* Website Privacy Policy in the [About Us](http://localhost/about-us/)page.
-* Company Quality Statement in the [About Us](http://localhost/about-us/)page.
-* Company Risk Statement in the [About Us](http://localhost/about-us/)page.
-* Addition of APQC process categories and NSW Government ICT SCM0020 service categories in the [Services](http://localhost/services/)page.
-* New page showcasing our [Recent Work](http://localhost/recent-work/).
-* New page showcasing [Our Consultants](http://localhost/our-consultants/).
-* New page showcasing [Our Partners](http://localhost/our-partners/).
-* New [blog](http://localhost/blog/)posts!
+- Website Privacy Policy in the [About Us](http://localhost/about-us/)page.
+- Company Quality Statement in the [About Us](http://localhost/about-us/)page.
+- Company Risk Statement in the [About Us](http://localhost/about-us/)page.
+- Addition of APQC process categories and NSW Government ICT SCM0020 service categories in the [Services](http://localhost/services/)page.
+- New page showcasing our [Recent Work](http://localhost/recent-work/).
+- New page showcasing [Our Consultants](http://localhost/our-consultants/).
+- New page showcasing [Our Partners](http://localhost/our-partners/).
+- New [blog](http://localhost/blog/)posts!

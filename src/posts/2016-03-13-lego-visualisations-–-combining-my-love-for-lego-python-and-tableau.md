@@ -10,6 +10,7 @@ tags:
   - Tableau
   - Data Science
 ---
+
 I am a lover of [LEGO](http://www.lego.com/en-us/default.aspx) (I think the official term for people like me is “Adult Fan Of LEGO”) and not ashamed to admit i have bought way too many LEGO sets and likely to buy more.
 
 Lately I have also been using [Python](https://www.python.org/) to do various data ingestion and wrangling tasks (along with [R](https://www.r-project.org/)). I recently learnt both languages by signing up to a few courses on [Coursera](https://www.coursera.org/).

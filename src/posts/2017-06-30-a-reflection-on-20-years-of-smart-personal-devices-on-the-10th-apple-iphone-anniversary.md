@@ -12,6 +12,7 @@ tags:
   - technology
   - personal
 ---
+
 Whilst the media is busy celebrating ten years of the Apple iPhone, it’s easy to forget that the concept of smart personal devices has arisen much earlier.
 
 The original Palm Pilot was launched in 1997, and Apple had a much earlier device called the Newton in the early 90s. Microsoft launched Windows CE in the mid 1990s.

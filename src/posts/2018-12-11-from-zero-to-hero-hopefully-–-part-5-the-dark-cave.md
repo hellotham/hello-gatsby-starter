@@ -12,12 +12,13 @@ tags:
   - Swift
   - iOS
 ---
+
 Previous articles in the series are:
 
-* [Part 1 (Learning ServiceNow and Xcode/Swift)](/blog/2018-11-01-from-zero-to-hero-hopefully-–-part-1-learning-servicenow-and-xcode-swift/)
-* [Part 2 (Learnin’ and Hustlin’)](/blog/2018-11-08-from-zero-to-hero-hopefully-–-part-2-learnin’%E2%80%8B-and-hustlin’%E2%80%8B/)
-* [Part 3 (Approaching the Innermost Cave)](/blog/2018-11-21-from-zero-to-hero-hopefully-–-part-3-approach-to-the-inmost-cave/)
-* [Part 4 (Eating, Drinking, Sprinting)](/blog/2018-11-28-from-zero-to-hero-hopefully-–-part-4-eating-drinking-sprinting/)
+- [Part 1 (Learning ServiceNow and Xcode/Swift)](/blog/2018-11-01-from-zero-to-hero-hopefully-–-part-1-learning-servicenow-and-xcode-swift/)
+- [Part 2 (Learnin’ and Hustlin’)](/blog/2018-11-08-from-zero-to-hero-hopefully-–-part-2-learnin’%E2%80%8B-and-hustlin’%E2%80%8B/)
+- [Part 3 (Approaching the Innermost Cave)](/blog/2018-11-21-from-zero-to-hero-hopefully-–-part-3-approach-to-the-inmost-cave/)
+- [Part 4 (Eating, Drinking, Sprinting)](/blog/2018-11-28-from-zero-to-hero-hopefully-–-part-4-eating-drinking-sprinting/)
 
 ## Code Code Code
 

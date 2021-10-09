@@ -13,6 +13,7 @@ tags:
   - iOS
   - ServiceNow
 ---
+
 I am a management consultant, which means I get involved in many things. I am 55 years old. Although I have studied computer science at university, and did some software development in my first few years after university, I haven’t really been involved in writing code, or delivering solutions, or being part of IT projects, for over 30 years.
 
 I do have some experience working in IT organisations, but on the strategy side. I have delivered multiple IT strategies, managed architecture teams, and dabbled in analytics. But my day to day work as a consultant is about governance, operating models, roadmaps, strategies and business cases.
@@ -28,10 +29,10 @@ This will be an occasional series of articles/journal entries on my progress on 
 
 So far this is what I have done:
 
-* Attended the Now Forum and did some hands on workshops. Registered as a developer on ServiceNow and created a developer instance and going through the learning paths.
-* Found some books on the iBooks store on Swift app development, and some courses on iTunes U.
-* Started reading the Swift book – wow this is heavy.
-* Figured out how to connect ServiceNow and Xcode to my github account.
+- Attended the Now Forum and did some hands on workshops. Registered as a developer on ServiceNow and created a developer instance and going through the learning paths.
+- Found some books on the iBooks store on Swift app development, and some courses on iTunes U.
+- Started reading the Swift book – wow this is heavy.
+- Figured out how to connect ServiceNow and Xcode to my github account.
 
 My current thoughts are: it’s exciting, but also daunting. So many things to learn. I may have to do some stuff on the weekend.
 
@@ -39,6 +40,6 @@ Also, I keep getting distracted – meetings, events, social. Need to find a way
 
 I am also a strong extrovert, and find that I lose motivation fast working by myself. I need to find a way to keep motivated by surrounding myself with people, but at the same time not be overly distracted.
 
-I am reminded that I am pretty much following the footsteps of the archetypical *Hero’s Journey* by Joseph Campbell, so I will also be comparing my progress against the stages of the journey.
+I am reminded that I am pretty much following the footsteps of the archetypical _Hero’s Journey_ by Joseph Campbell, so I will also be comparing my progress against the stages of the journey.
 
 Wish me luck!

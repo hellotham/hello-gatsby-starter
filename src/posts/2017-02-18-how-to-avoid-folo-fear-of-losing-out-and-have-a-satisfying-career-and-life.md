@@ -9,8 +9,9 @@ tags:
   - advice
   - career
 ---
+
 What is FOLO (Fear of Losing Out)? It is an advanced form of “Fear
-  of Missing Out” (FOMO). Singaporeans often call it the “Kiasu” syndrome.
+of Missing Out” (FOMO). Singaporeans often call it the “Kiasu” syndrome.
 
 If you have FOMO, then you have an anxiety that someone somewhere is having a great party that you are missing out on because you forgot to check your email. It could also be a regret from a perceived wrong decision in the past that has now prevented you from achieving something or getting something.
 
@@ -52,11 +53,11 @@ But let’s examine what your expectations are. And strategies for achieving tho
 
 When I graduated and found my first job, these were my expectations:
 
-* Day 1: Start new job. Settle in.
-* Day 2: Make lots of friends.
-* Day 3: Everyone suddenly realises what an amazing worker I am and how fantastic I am as a human being.
-* Day 4: I get a raise and a promotion.
-* Day 5: I become the CEO of the organisation.
+- Day 1: Start new job. Settle in.
+- Day 2: Make lots of friends.
+- Day 3: Everyone suddenly realises what an amazing worker I am and how fantastic I am as a human being.
+- Day 4: I get a raise and a promotion.
+- Day 5: I become the CEO of the organisation.
 
 Okay, maybe I didn’t think it would take a mere five days. But I actually thought that was pretty much how it will unfold.
 
@@ -66,14 +67,14 @@ In hindsight, I was incredibly naive. Sure, I was smart. But I was pretty arroga
 
 Here’s an alternate plan and timeline that I will like to suggest, if you are keen to become a CEO (or any other position):
 
-* Day 1: Start new job. Settle in.
-* Day 2: Figure out what will make you and your boss successful (ie. your objectives). Figure out what will make your team successful.
-* Day 3: Figure out what everyone else does, how they contribute to the organisation, and what will make them successful.
-* Day 4: Do whatever you can to make your boss successful, your team successful, your colleagues successful, ***in addition to doing your job.*** If you spot an opportunity where you can offer help, help them. Don’t expect anything in return, and if your boss takes credit for your help, let him/her.
-* Day 5: Don’t be afraid of asking others for help in things that you do not do well. Understand other people’s strengths and leverage them. Learn from them when they do help you. If you have truly done Day 4 successfully, people will be more than willing to help you.
-* Day 6: Everyone suddenly realises what a useful person you are. You are regarded as a team player, and everyone wants you to be part of their team.
-* Day 7: You have helped so many people everyone knows you and you know everyone. You also know how everything works. People look to you for advice because of that knowledge. You have a reputation for making things happen, and an ability to organise people to do work for you.
-* Day 8: The Board realises you are actually the person most qualified to run the organisation.
+- Day 1: Start new job. Settle in.
+- Day 2: Figure out what will make you and your boss successful (ie. your objectives). Figure out what will make your team successful.
+- Day 3: Figure out what everyone else does, how they contribute to the organisation, and what will make them successful.
+- Day 4: Do whatever you can to make your boss successful, your team successful, your colleagues successful, **_in addition to doing your job._** If you spot an opportunity where you can offer help, help them. Don’t expect anything in return, and if your boss takes credit for your help, let him/her.
+- Day 5: Don’t be afraid of asking others for help in things that you do not do well. Understand other people’s strengths and leverage them. Learn from them when they do help you. If you have truly done Day 4 successfully, people will be more than willing to help you.
+- Day 6: Everyone suddenly realises what a useful person you are. You are regarded as a team player, and everyone wants you to be part of their team.
+- Day 7: You have helped so many people everyone knows you and you know everyone. You also know how everything works. People look to you for advice because of that knowledge. You have a reputation for making things happen, and an ability to organise people to do work for you.
+- Day 8: The Board realises you are actually the person most qualified to run the organisation.
 
 That will take slightly longer than the (unrealistic) plan, but does have one advantage. You will be happy every single day whilst you are on that plan, because you will get along well with people, you will be respected, you will learn so much, and your job will be easy because of all the help you get. Even if you never become the CEO, you will have a satisfying and rewarding career.
 
