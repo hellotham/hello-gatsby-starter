@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "@/components/layout"
 import Seo from "@/components/seo"
-import { ImageDataLike } from "gatsby-plugin-image"
+// import { ImageDataLike } from "gatsby-plugin-image"
 import BlogCard from "@/components/blogcard"
 import PageHero from "@/components/PageHero"
 
@@ -17,7 +17,8 @@ type QueryType = {
         description: string
         author: string
         date: string
-        image: ImageDataLike
+        image: { publicURL: string }
+        // image: ImageDataLike
         tags: string[]
       }
       id: string
@@ -66,6 +67,8 @@ export const query = graphql`
           author
           date(formatString: "YYYY-MM-DD")
           image {
+            publicURL
+            relativePath
             childImageSharp {
               gatsbyImageData
             }
