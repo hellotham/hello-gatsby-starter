@@ -19,7 +19,7 @@ const PageHero = ({ title, description, image }: PageHeroProps) => (
     <img
       src={image ? image : defaultImage}
       alt="featured image"
-      className="absolute left-0 top-0 w-full h-full z-0 object-cover"
+      className="absolute left-0 top-0 w-full h-full z-0 object-contain"
     />
     <div className="p-4 absolute bottom-0 left-0 z-20">
       <h2 className="text-4xl font-bold text-white leading-tight">{title}</h2>

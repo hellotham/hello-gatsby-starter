@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * Implement Gatsby's Node APIs in this file.
  *
@@ -5,7 +6,6 @@
  */
 
 // const fs = require(`fs`)
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require("path")
 
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -30,3 +30,35 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 //     }
 //   `)
 // }
+
+const _ = require("lodash")
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+  const tagTemplate = path.resolve("src/templates/tag-template.tsx")
+  const result = await graphql(`
+    {
+      tagsGroup: allMdx(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
+    }
+  `)
+  // handle errors
+  if (result.errors) {
+    reporter.panicOnBuild("Error while running GraphQL query.")
+    return
+  }
+  // Extract tag data from query
+  const tags = result.data.tagsGroup.group
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
+}

@@ -7,9 +7,9 @@ import Seo from "@/components/seo"
 import BlogCard from "@/components/blogcard"
 import PageHero from "@/components/PageHero"
 
-import Image from "@/svg/undraw_design_components_9vy6-2.svg"
+import Image from "@/svg/undraw_Add_post_re_174w.svg"
 
-type QueryType = {
+interface QueryType {
   allMdx: {
     nodes: {
       frontmatter: {
