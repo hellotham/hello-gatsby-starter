@@ -1,6 +1,6 @@
 ---
-templateKey: blog-post
-title: How to Avoid FOLO (Fear of Losing Out) and have a satisfying career and life
+title: How to Avoid FOLO (Fear of Losing Out)
+author: Chris Tham
 date: 2017-02-17T22:00:00.000Z
 description: Advice on how to have a satisfying career and life
 featuredpost: false
@@ -96,5 +96,3 @@ Tokugawa Ieyasu was calculating and subtle. Careful yet bold. He could also be c
 He made many alliances. He can be intensely loyal to those he served but also to friends and those under him. He was well known for his patience, sometimes waiting years for his strategies to succeed. In the end, everyone recognised he was simply the most appropriate person to rule Japan.
 
 The novel Shogun by James Clavell is mostly inspired by his life. When I read it, it changed my life.​
-
-Filed Under:

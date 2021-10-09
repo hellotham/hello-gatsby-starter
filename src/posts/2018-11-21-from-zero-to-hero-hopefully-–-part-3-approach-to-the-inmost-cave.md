@@ -1,9 +1,9 @@
 ---
-templateKey: blog-post
-title: From Zero to Hero (hopefully) – Part 3 (Approach to the Inmost Cave)
-date: 2018-11-20T22:00:00.000Z
+title: From Zero to Hero Part 3 (Approach to the Inmost Cave)
 description: "This is the third part of my series of articles on learning to
   code at age 55 and creating some prototypes. "
+author: Chris Tham
+date: 2018-11-20T22:00:00.000Z
 featuredpost: false
 image: ../images/zero-3.png
 tags:

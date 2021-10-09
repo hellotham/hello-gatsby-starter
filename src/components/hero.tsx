@@ -16,7 +16,7 @@ const navigation = [
   { name: "People", href: "/pages/consultants" },
   { name: "Partners", href: "/pages/partners" },
   { name: "Achievements", href: "/pages/work" },
-  { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "/posts" },
 ]
 
 export default function Hero() {

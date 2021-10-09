@@ -1,9 +1,9 @@
 ---
-templateKey: blog-post
-title: From Zero to Hero (hopefully) – Part 5 (The Dark Cave)
-date: 2018-12-10T22:00:00.000Z
+title: From Zero to Hero Part 5 (The Dark Cave)
 description: "This is the fifth part of my series of articles on learning to
   code at age 55 and creating some prototypes. "
+author: Chris Tham
+date: 2018-12-10T22:00:00.000Z
 featuredpost: false
 image: ../images/zero-5.png
 tags:

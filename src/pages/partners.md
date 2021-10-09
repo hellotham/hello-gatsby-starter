@@ -1,6 +1,7 @@
 ---
 title: Our Partners
 description: AWS, DOMO, Microsoft
+author: Hello Tham
 image: ../images/partners.jpg
 ---
 We currently have partnerships with the following organisations in delivering our services.

@@ -1,10 +1,10 @@
 ---
-templateKey: blog-post
 title: Hello Tham website is now a serverless Static Web App
-date: 2020-06-11T00:28:51.973Z
 description: Welcome to the new Hello Tham website! It has been completely
   rewritten as a modern web app using Javascript, React, Gatsby, Netlify CMS and
   Markdown!
+author: Chris Tham
+date: 2020-06-11T00:28:51.973Z
 featuredpost: false
 image: ../images/hellotham-serverless.jpg
 tags:

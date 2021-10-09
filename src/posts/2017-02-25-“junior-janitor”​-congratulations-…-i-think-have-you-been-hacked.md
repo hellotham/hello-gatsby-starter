@@ -1,8 +1,8 @@
 ---
-templateKey: blog-post
-title: “Junior Janitor”​? Congratulations … I think? Have you been hacked?
-date: 2017-02-24T22:00:00.000Z
+title: “Junior Janitor”​? Congratulations … I think?
 description: What is the relevance of the job title these days?
+author: Chris Tham
+date: 2017-02-24T22:00:00.000Z
 featuredpost: false
 image: ../images/janitor.jpg
 tags:

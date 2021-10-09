@@ -1,8 +1,8 @@
 ---
-templateKey: blog-post
 title: "Adventures with Raspberry Pi3 #1: Running Unix v7 on an emulated PDP-11"
-date: 2016-04-14T23:00:00.000Z
 description: How to run Unix Version 7 in an emulated PDP-11 on a Raspberry Pi.
+author: Chris Tham
+date: 2016-04-14T23:00:00.000Z
 featuredpost: false
 image: ../images/pdp11.png
 tags:
@@ -10,9 +10,9 @@ tags:
   - Unix
   - simh
 ---
-I bought a [Raspberry Pi 3 ](https://www.raspberrypi.org/blog/page/3/?fish#raspberry-pi-3-on-sale)recently. For those of you that don’t know, the Pi is a tiny and affordable (US$35) computer (roughly the size of a credit card but thicker) created by the [Raspberry Pi Foundation](https://www.raspberrypi.org/), for the purpose of teaching children about computers and programming. Since then, the foundation has sold over 8 million of these devices and many hobbyists have used the Pi as a foundation for interesting and creative projects.
+I bought a [Raspberry Pi 3](https://www.raspberrypi.org/blog/page/3/?fish#raspberry-pi-3-on-sale)recently. For those of you that don’t know, the Pi is a tiny and affordable (US$35) computer (roughly the size of a credit card but thicker) created by the [Raspberry Pi Foundation](https://www.raspberrypi.org/), for the purpose of teaching children about computers and programming. Since then, the foundation has sold over 8 million of these devices and many hobbyists have used the Pi as a foundation for interesting and creative projects.
 
-Despite the tiny size, the Pi 3 is a surprisingly powerful computer and can be used as a desktop computer running Linux – in fact, I am currently typing this article on the [Iceweasel ](https://wiki.debian.org/Iceweasel)browser running on [Raspbian ](https://www.raspbian.org/)operating system (which is based on [Debian](https://www.debian.org/)). It has a 1.2GHz 64-bit quad-core ARMv8 CPU and 1GB of memory, and is roughly comparable to a high end Intel Pentium III in terms of integer single core performance.
+Despite the tiny size, the Pi 3 is a surprisingly powerful computer and can be used as a desktop computer running Linux – in fact, I am currently typing this article on the [Iceweasel](https://wiki.debian.org/Iceweasel)browser running on [Raspbian](https://www.raspbian.org/)operating system (which is based on [Debian](https://www.debian.org/)). It has a 1.2GHz 64-bit quad-core ARMv8 CPU and 1GB of memory, and is roughly comparable to a high end Intel Pentium III in terms of integer single core performance.
 
 One of the thoughts that occured almost as soon as I unpacked the computer was “I wonder if it will emulate a PDP-11 running Unix Version 7?”
 
@@ -36,13 +36,13 @@ In these days of bloated Linux distributions, it is all too easy to forget what 
 
 ### Emulating Unix Version 7 on a PDP-11 on the Pi
 
-Fortunately, there is an excellent PDP-11 emulator written as part of the [Computer History Simulation Project](http://simh.trailing-edge.com/). The [V7 distribution tape ](http://www.tuhs.org/Archive/PDP-11/Distributions/research/Keith_Bostic_v7/)image is also available as part of the [Unix Archive](http://wiki.tuhs.org/doku.php?id=source:unix_archive).
+Fortunately, there is an excellent PDP-11 emulator written as part of the [Computer History Simulation Project](http://simh.trailing-edge.com/). The [V7 distribution tape](http://www.tuhs.org/Archive/PDP-11/Distributions/research/Keith_Bostic_v7/)image is also available as part of the [Unix Archive](http://wiki.tuhs.org/doku.php?id=source:unix_archive).
 
 The plan is to do a full Unix 7 install from the distribution tape on a simulated PDP-11/45.
 
 The first step is to install the simulator on the Pi. Then we grab the distribution tape and uncompress it into the pdp11 directory.
 
-```
+```bash
 sudo apt-get install simh
 mkdir pdp11; cd pdp11
 wget http://www.tuhs.org/Archive/PDP-11/Distributions/research/Keith_Bostic_v7/v7.tap.gz
@@ -51,7 +51,7 @@ gunzip v7.tap.gz
 
 Now we start the simulator and emulate a PDP-11/45 with an RP06 disk drive and TU10 tape drive. Note that it’s important to say yes to the prompt for overwriting the last track (otherwise we will get an error when we initialise the /usr filesystem).
 
-```
+```text
 pdp11
 PDP-11 simulator V3.8-1
 sim> set cpu 11/45
@@ -68,7 +68,7 @@ Now we boot the PDP-11 and basically follow the instructions provided in “Sett
 
 Note: the instructions ask us to type in about 6 lines of machine code in order to create a bootstrap that will boot from the tape drive, but fortunately the simulator already has that included so all we need to do is just use the boot command, then initialise the root filesystem on the disk, followed by copying the root filesystem data from tape to disk:
 
-```
+```text
 sim> boot tm0
 Boot
 : tm(0,3)
@@ -89,7 +89,7 @@ Boot
 
 Now we boot Unix from the disk, create the /dev entries corresponding to our devices, create the /usr filesystem and restore it from tape:
 
-```
+```text
 Boot
 : hp(0,0)hptmunix
 mem = 177344
@@ -128,7 +128,7 @@ Note that by default Unix V7 assumes the lowest common denominator for the conso
 
 That’s pretty much it! Unix is now fully installed, and we can exit single user mode and start multi-user mode with the login prompt:
 
-```
+```text
 RESTRICTED RIGHTS: USE, DUPLICATION, OR DISCLOSURE
 IS SUBJECT TO RESTRICTIONS STATED IN YOUR CONTRACT WITH
 WESTERN ELECTRIC COMPANY, INC.
@@ -140,7 +140,7 @@ You have mail.
 
 Note, future startups using the simulator can be as easy as the following (this time, I am simulating a PDP-11/70 with a whopping 2 megabytes of memory):
 
-```
+```text
 boot
 Boot
 : hp(0,0)unix

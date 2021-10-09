@@ -1,8 +1,8 @@
 ---
 title: Services
 description: Focus on Business and IT strategy
+author: Hello Tham
 image: ../images/services.jpg
-
 ---
 
 

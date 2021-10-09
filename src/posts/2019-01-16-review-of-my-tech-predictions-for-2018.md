@@ -1,8 +1,8 @@
 ---
-templateKey: blog-post
 title: Review of my Tech predictions for 2018
-date: 2019-01-15T22:00:00.000Z
 description: How did my tech predictions for 2018 fared?
+author: Chris Tham
+date: 2019-01-15T22:00:00.000Z
 featuredpost: false
 image: ../images/tech-2018-review.jpg
 tags:

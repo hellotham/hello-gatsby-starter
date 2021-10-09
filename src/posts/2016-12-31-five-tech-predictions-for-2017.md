@@ -1,8 +1,8 @@
 ---
-templateKey: blog-post
 title: Five Tech Predictions for 2017
-date: 2016-12-30T22:00:00.000Z
 description: Five predictions for the technology industry for 2017
+author: Chris Tham
+date: 2016-12-30T22:00:00.000Z
 featuredpost: false
 image: ../images/tech-2017.jpeg
 tags:

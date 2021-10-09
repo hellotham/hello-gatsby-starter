@@ -1,8 +1,8 @@
 ---
-templateKey: blog-post
 title: "Trip Report: RISE 2017 in Hong Kong (11-13 July)"
-date: 2017-07-14T23:00:00.000Z
 description: A recap of a trip to Hong Kong in 2017 to attend the RISE conference.
+author: Chris Tham
+date: 2017-07-14T23:00:00.000Z
 featuredpost: false
 image: ../images/rise-1.png
 tags:

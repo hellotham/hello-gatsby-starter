@@ -1,8 +1,8 @@
 ---
-templateKey: blog-post
 title: Visualising the Multiplication Table
-date: 2018-05-16T23:00:00.000Z
 description: Insights you may not realise about the multiplication table.
+author: Chris Tham
+date: 2018-05-16T23:00:00.000Z
 featuredpost: false
 image: ../images/multiply-1.png
 tags:
@@ -14,7 +14,7 @@ Were you forced to memorise the multiplication table at school? Did you find it 
 
 Recently I saw a video on Facebook about how you can easily multiply by 9 because if we write out the “times 9” column in the multiplication table, it looks something like this:
 
-```
+```text
  1 x 9 = 09
  2 x 9 = 18
  3 x 9 = 27
@@ -41,7 +41,7 @@ I then uploaded it into Tableau, and after some fiddling, managed to replicate t
 
 What I really wanted to do was to look for patterns in the left digit and right digit of the results, so I created two calculated fields:
 
-```
+```text
 Left Digit = INT([Results]/10)
 Right Digit = [Results]%10
 ```

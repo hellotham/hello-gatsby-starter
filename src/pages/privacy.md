@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
 description: Information collection and use
+author: Hello Tham
 image: ../images/about.jpg
 ---
 

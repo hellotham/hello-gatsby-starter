@@ -1,8 +1,8 @@
 ---
-templateKey: blog-post
 title: "Adventures with Raspberry Pi3 #2: Emulating 4.3BSD on a VAX"
-date: 2016-04-19T23:00:00.000Z
 description: How to run 4.3BSD Unix in an emulated Micro VAX 3000 using a Raspberry Pi
+author: Chris Tham
+date: 2016-04-19T23:00:00.000Z
 featuredpost: false
 image: ../images/vax.png
 tags:
@@ -16,7 +16,7 @@ As a sucessor on my previous [post](/blog/2016-04-15-adventures-with-raspberry-p
 
 ### VAX
 
-[DEC ](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)introduced the VAX-11/780 in 1977 (coincidentally the year my parents bought me a home computer after strenous amounts of pleading and begging). It was intended as the 32-bit successor to the PDP-11 with virtual memory addressing.
+[DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)introduced the VAX-11/780 in 1977 (coincidentally the year my parents bought me a home computer after strenous amounts of pleading and begging). It was intended as the 32-bit successor to the PDP-11 with virtual memory addressing.
 
 The VAX-11/780 was widely believed to be the world’s most powerful mini-computer when it was first introduced, with performance comparable to the IBM System/360 which executed 1 million instructions per second (1 MIPS). Many people then subsequently referred to it as a 1 MIPS machine (even though apparently the actual number of instructions it could execute in 1 second was lower). For many years, it was a standard for system benchmarking, and other systems were reported as*x*times the speed of the original VAX 11/780 (where*x*was typically a lot less than 1 for home computers and faster than 1 for high end machines).
 
@@ -46,20 +46,20 @@ For the purposes of our trip back in time, I have chosen the Quasijarus fork of 
 
 This can be downloaded and uncompressed:
 
-```
+```bash
 wget https://sourceforge.net/projects/bsd42/files/Install%20tapes/4.3%20BSD%20Quasijarus%200c/4.3BSD-Quasijarus0c.tap.bz2/download -O quasijarus.tap.bz2
 bunzip2 quasijarus.tap.bz2
 ```
 
 The standard simh package distributed with the Raspbian operating system on the Raspberry Pi is an older version with no networking support, so we grab the latest working copy of simh:
 
-```
+```bash
 git clone https://github.com/simh/simh
 ```
 
 We also install a number of additional packages for networking support:
 
-```
+```bash
 sudo apt-get install libpcap-dev bridge-utils uml-utilities libvdeplug2-dev vde2 libsdl2-dev
 sd simh; make -j4
 ```
@@ -75,7 +75,7 @@ Note: some of the steps in the following guide were inspired and derived from th
 
 Once the binaries are built, we can start the simulator with the RA82 disk and TQK50/TK50 tape drive, but all other devices disabled (via a boot.ini configuration file for the simulator):
 
-```
+```bash
 cd ..
 cat > boot.ini
 ; Disable devices we will not be using.
@@ -148,7 +148,7 @@ Copy completed: 308 records copied
 
 Now we boot up the miniroot environment and use it to create and restore the full root filesystem:
 
-```
+```text
 =boot
 cpu: uVAX 3000Boot
 : ra(0,1)vmunix
@@ -210,7 +210,7 @@ At this point we kill the simulator (Control-E then q) and restart it again, sim
 
 We create the /usr and /home filesystems, and then restore /usr, /usr/src/sys and finally /usr/src from tape. We also take the opportunity to set the default boot device so that we can enable autoboot later.
 
-```
+```text
 simh/BIN/vax boot.iniMicroVAX 3900 simulator V4.0-0 Beta git commit id: 60439625
 NVR: buffering file in memory
 Loading boot code from internal ka655x.bin
@@ -300,7 +300,7 @@ NVR: writing buffer to file
 
 simh should work with the Raspberry Pi 3 Ethernet port (I haven’t tried it with the Wi-Fi interface). First, we need to determine the current networking parameters:
 
-```
+```text
 ifconfig eth0
 eth0 Link encap:Ethernet HWaddr b8:27:eb:b1:3d:ff
 inet addr:192.168.0.235 Bcast:192.168.0.255 Mask:255.255.255.0
@@ -314,7 +314,7 @@ RX bytes:29582652 (28.2 MiB) TX bytes:2495187 (2.3 MiB)
 
 The above are the values for my system (For the purposes of simplicity, I have assigned a static IP address to the eth0 interface by mapping the MAC address to an IP address in my router – an Apple Time Capsule). Now we configure the bridge:
 
-```
+```bash
 sudo tunctl -t tap0 -u pi
 Set 'tap0' persistent and owned by uid 1000
 sudo brctl addbr br0
@@ -337,7 +337,7 @@ Note I did not set up a default gateway because I already have one (because my w
 
 We create a default initialisation file called vax.ini (which the vax simulator will automatically execute if it finds it). This enables the DZV11 terminal multiplexor and connect it to port 8023, as well as the DEQNA Ethernet controller connected to the tap0 interface. We also enable autoboot from the default device (DUAO:)
 
-```
+```bash
 cat > vax.ini
 ; Disable devices we are not using.
 set cr disable
@@ -378,7 +378,7 @@ boot cpu
 
 Now we commence the first boot of 4.3BSD which will do a filesystem check (fsck) of all filesystems:
 
-```
+```text
 simh/BIN/vax
 MicroVAX 3900 simulator V4.0-0 Beta git commit id: 60439625
 Listening on port 8023
@@ -435,7 +435,7 @@ Tue Apr 20 02:32:26 PDT 2004
 
 We then login as root (no password), then set the terminal to xterms (assuming that we are running the Pi under X graphical environment), allowing us to then run vi:
 
-```
+```text
 4.3 BSD UNIX (myname.my.domain) (console)login: root
 Last login: Tue Apr 20 02:28:21 on console
 Apr 20 02:33:47 myname login: ROOT LOGIN console
@@ -447,14 +447,14 @@ Apr 20 02:33:47 myname login: ROOT LOGIN console
 
 Or, if you prefer the old school way (I am calling my home network home-net):
 
-```
+```bash
 cat > /etc/networks
 home-net 255.255.255 HOME network
 ```
 
 My /etc/hosts file is quite minimal, I just insert my hostname (uvaxquas) and the gateway (router):
 
-```
+```text
 cat > /etc/hosts
 127.0.0.1 localhost
 # HOME network
@@ -464,7 +464,7 @@ cat > /etc/hosts
 
 Next up is /etc/netstart, which I edited using vi (bold text indicate what I changed in that file):
 
-```
+```bash
 #!/bin/sh -
 #
 # @(#)netstart 1.1 (Berkeley) 1/10/99routedflags=-q
@@ -481,14 +481,14 @@ hostid $hostname route add default 192.168.0.1 1
 
 Finally enable remote name resolution by disabling the named server (comment out the line beginning with named in /etc/rc) and insert the router as the nameserver
 
-```
+```bash
 cat > /etc/resolv.conf
 nameserver 192.168.0.1
 ```
 
 After reboot, the system should be up and running and can connect to the Internet. This can be tested by pinging any of the IANA root servers:
 
-```
+```text
 ping a.root-servers.net
 PING a.root-servers.net (198.41.0.4): 56 data bytes
 64 bytes from 198.41.0.4: icmp_seq=0. time=170. ms
@@ -500,7 +500,7 @@ PING a.root-servers.net (198.41.0.4): 56 data bytes
 
 To play rogue, you need to set a policy for the dungeon master:
 
-```
+```bash
 cat > /usr/games/dm.config
 game default * * *
 rogue
