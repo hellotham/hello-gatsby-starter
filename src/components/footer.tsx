@@ -24,14 +24,15 @@ export default function Footer() {
   return (
     <footer className="text-gray-600">
       <div className="container fixed bottom-0 inset-x-0 bg-pink-100 px-4 py-4 mx-auto flex items-center sm:flex-row flex-col">
-        <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <Link className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" to="/">
           <img src={HelloTham} alt="Footer Logo" width="150" />
-        </a>
+          <span className="sr-only">Hello Tham</span>
+        </Link>
         <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
           © {new Date().getFullYear()} Hello Tham Pty Ltd
-          <a href={social.twitter} className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
-            @HelloThamCom
-          </a>
+          <Link to="/contactus" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
+            (Contact Us)
+          </Link>
         </p>
         <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
           <Link to="/pages/privacy" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
