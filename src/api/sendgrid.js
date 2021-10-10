@@ -14,10 +14,10 @@ const handler = (req, res) => {
     }
 
     if (req.body) {
-      message.to = "info@hellotham.com"
+      message.to = process.env.SENDGRID_AUTHORIZED_EMAIL
       message.subject = req.body.subject
-      message.text = req.body.text
-      message.html = req.body.text
+      message.text = `From: ${req.body.name} (${req.body.email}) (${req.body.phone})\n\n` + req.body.text
+      message.html = `From: ${req.body.name} (${req.body.email}) (${req.body.phone})\n\n` + req.body.text
     }
 
     return sendgrid.send(message).then(
