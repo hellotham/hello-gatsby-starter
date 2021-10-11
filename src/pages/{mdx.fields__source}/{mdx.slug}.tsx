@@ -33,6 +33,7 @@ interface BlogPostProps {
         image: ImageDataLike | ResizeType
         tags: string[]
       }
+      slug: string
       body: string
     }
   }
@@ -41,6 +42,7 @@ interface BlogPostProps {
 const BlogPost = ({ data }: BlogPostProps) => {
   const frontmatter = data.mdx.frontmatter
   const image = getImage(frontmatter.image as ImageDataLike)
+  const keywords = frontmatter.tags ? frontmatter.tags : []
 
   return (
     <Layout>
@@ -48,6 +50,8 @@ const BlogPost = ({ data }: BlogPostProps) => {
         title={frontmatter.title}
         description={frontmatter.description}
         image={(frontmatter.image as ResizeType).childImageSharp.resize}
+        keywords={keywords}
+        pathname={"/posts/" + data.mdx.slug}
       />
       <main className="mt-10">
         <article className="post">
@@ -94,6 +98,7 @@ export const query = graphql`
         }
         tags
       }
+      slug
       body
     }
   }

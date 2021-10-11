@@ -6,10 +6,18 @@ import FindOutMore from "@/components/findoutmore"
 import Footer from "@/components/footer"
 import Seo from "@/components/seo"
 
+import Image from "../images/undraw_ideas_flow_cy7b.png"
+
 export default function Home() {
+  const ogimage = {
+    src: Image,
+    width: 1342,
+    height: 1024,
+  }
+
   return (
     <div className="font-sans">
-      <Seo title="Home Page" />
+      <Seo title="Hello Tham" description="A boutique management and strategy consulting company." image={ogimage} />
       <Hero />
       <Features />
       <FindOutMore />
