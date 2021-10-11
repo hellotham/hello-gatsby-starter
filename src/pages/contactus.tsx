@@ -27,8 +27,15 @@ const contactMethods = [
   { name: "Twitter", link: "https://twitter.com/HelloThamCom", image: Twitter },
 ]
 
+import OGImage from "../images/undraw_contact_us_15o2.png"
+
 export default function ContactUs() {
   const [open, setOpen] = useState(false)
+  const ogimage = {
+    src: OGImage,
+    width: 1342,
+    height: 1024,
+  }
 
   const {
     register,
@@ -53,11 +60,19 @@ export default function ContactUs() {
   console.log({ errors })
   return (
     <Layout>
-      <Seo title="Blog Posts" />
+      <Seo
+        title="Contact Us"
+        description="Our presence is real and digital. Contact us through the following ways."
+        image={ogimage}
+      />
       <main className="mt-10">
         <article className="post">
           <header>
-            <PageHero title="Contact Us" description="Our presence is real and digital." image={Image} />
+            <PageHero
+              title="Contact Us"
+              description="Our presence is real and digital. Contact us through the following ways."
+              image={Image}
+            />
           </header>
         </article>
         <div className="mt-10 sm:mt-0 p-8 bg-pink-100">

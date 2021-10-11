@@ -6,11 +6,11 @@ import FindOutMore from "@/components/findoutmore"
 import Footer from "@/components/footer"
 import Seo from "@/components/seo"
 
-import Image from "../images/undraw_ideas_flow_cy7b.png"
+import OGImage from "../images/undraw_ideas_flow_cy7b.png"
 
 export default function Home() {
   const ogimage = {
-    src: Image,
+    src: OGImage,
     width: 1342,
     height: 1024,
   }
