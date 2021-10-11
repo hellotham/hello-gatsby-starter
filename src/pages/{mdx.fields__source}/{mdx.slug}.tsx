@@ -10,6 +10,18 @@ import PostHero from "@/components/PostHero"
 
 const components = { Link }
 
+type ResizeType = {
+  childImageSharp: {
+    resize: {
+      src: string
+      width: number
+      height: number
+      aspectRatio: number
+      originalName: string
+    }
+  }
+}
+
 interface BlogPostProps {
   data: {
     mdx: {
@@ -18,7 +30,7 @@ interface BlogPostProps {
         description: string
         author: string
         date: string
-        image: ImageDataLike
+        image: ImageDataLike | ResizeType
         tags: string[]
       }
       body: string
@@ -28,11 +40,15 @@ interface BlogPostProps {
 
 const BlogPost = ({ data }: BlogPostProps) => {
   const frontmatter = data.mdx.frontmatter
-  const image = getImage(frontmatter.image)
+  const image = getImage(frontmatter.image as ImageDataLike)
 
   return (
     <Layout>
-      <Seo title={frontmatter.title} description={frontmatter.description} />
+      <Seo
+        title={frontmatter.title}
+        description={frontmatter.description}
+        image={(frontmatter.image as ResizeType).childImageSharp.resize}
+      />
       <main className="mt-10">
         <article className="post">
           <header>
@@ -67,6 +83,13 @@ export const query = graphql`
         image {
           childImageSharp {
             gatsbyImageData(width: 2048)
+            resize(width: 1200) {
+              src
+              width
+              height
+              aspectRatio
+              originalName
+            }
           }
         }
         tags

@@ -4,7 +4,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image"
 import { CalendarIcon, UserCircleIcon } from "@heroicons/react/outline"
 
-import Tags from "@/components/Tags"
+import Tags from "@/components/tags"
 
 const query = graphql`
   query {
