@@ -1,6 +1,6 @@
 import * as React from "react"
 import { StaticImage, GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
-import Tags from "@/components/tags"
+import Tags from "@/components/Tags"
 
 interface PostHeroProps {
   title: string

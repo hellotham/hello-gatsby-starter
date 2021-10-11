@@ -46,7 +46,9 @@ const BlogPost = ({ data }: BlogPostProps) => {
             />
           </header>
           <section className="px-4 lg:px-0 mt-12 mb-24 max-w-screen-lg mx-auto prose prose-purple lg:prose-xl">
-            <MDXRenderer components={components}>{data.mdx.body}</MDXRenderer>
+            <MDXRenderer localImages={frontmatter.image} components={components}>
+              {data.mdx.body}
+            </MDXRenderer>
           </section>
         </article>
       </main>

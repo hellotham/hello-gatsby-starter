@@ -18,18 +18,18 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   })
 }
 
-// exports.createSchemaCustomization = ({ actions }) => {
-//   const { createTypes } = actions
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
 
-//   createTypes(`
-//     type Mdx implements Node {
-//       frontmatter: MdxFrontmatter!
-//     }
-//     type MdxFrontmatter {
-//       image: File @fileByRelativePath
-//     }
-//   `)
-// }
+  createTypes(`
+    type Mdx implements Node {
+      frontmatter: MdxFrontmatter!
+    }
+    type MdxFrontmatter {
+      image: File @fileByRelativePath
+    }
+  `)
+}
 
 const _ = require("lodash")
 exports.createPages = async ({ actions, graphql, reporter }) => {

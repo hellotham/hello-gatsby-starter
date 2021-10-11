@@ -12,17 +12,24 @@ This is the Hello Tham Corporate Website Static Web App built using the followin
 - [unDraw](https://undraw.co/)
 - [MDX](https://mdxjs.com/) and [Markdown](https://www.markdownguide.org/)
 - [ESLint](https://eslint.org)for type-checking
+- [SendGrid](https://sendgrid.com/) email delivery
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and is deployed on Gatsby Cloud.
 
+This website is open source (0BSD licence) - fork it and customise for your needs.
+
 ## Features
 
-- Basic setup for a full-featured blog
-- Support for an RSS feed
-- Automatic optimization of images in Markdown posts
+- Full-featured blog with frontmatter and tags pages
+- Support for an RSS feed and sitemap
+- Automatic optimization of images in Markdown/MDX posts
+- SVG support
 - Support for code syntax highlighting
-- Includes plugins for easy, beautiful typography
 - Includes React Helmet to allow editing site meta tags
-- Includes plugins for offline support out of the box
+- Manifest and offline support
+- Contact form using sendgrid email and Gatsby functions
+
+## Future reference
+
 - [TypeScript, GraphQL and Gatsby](https://djmm.me/post/typescript-graphql-and-gatsby/)
 - [MDX frontmatter in Gatsby](https://zslabs.com/articles/mdx-frontmatter-in-gatsby)
