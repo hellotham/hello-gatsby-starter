@@ -1,12 +1,13 @@
-import * as React from "react"
-import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { getImage, ImageDataLike } from "gatsby-plugin-image"
-import { Link } from "gatsby"
+import * as React from 'react'
+import { graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { getImage, ImageDataLike } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 
-import Layout from "@/components/layout"
-import Seo from "@/components/seo"
-import PostHero from "@/components/PostHero"
+import Layout from '@/components/layout'
+import Seo from '@/components/seo'
+import PostHero from '@/components/PostHero'
+import ArticleJsonLD from '@/components/json-ld'
 
 const components = { Link }
 
@@ -35,6 +36,9 @@ interface BlogPostProps {
       }
       slug: string
       body: string
+      fields: {
+        source: string
+      }
     }
   }
 }
@@ -42,7 +46,6 @@ interface BlogPostProps {
 const BlogPost = ({ data }: BlogPostProps) => {
   const frontmatter = data.mdx.frontmatter
   const image = getImage(frontmatter.image as ImageDataLike)
-  const keywords = frontmatter.tags ? frontmatter.tags : []
 
   return (
     <Layout>
@@ -50,8 +53,18 @@ const BlogPost = ({ data }: BlogPostProps) => {
         title={frontmatter.title}
         description={frontmatter.description}
         image={(frontmatter.image as ResizeType).childImageSharp.resize}
-        keywords={keywords}
-        pathname={"/posts/" + data.mdx.slug}
+        keywords={frontmatter.tags}
+        pathname={'/posts/' + data.mdx.slug}
+      />
+      <ArticleJsonLD
+        title={frontmatter.title}
+        description={frontmatter.description}
+        type={data.mdx.fields.source}
+        date={frontmatter.date}
+        lastUpdated={frontmatter.date}
+        image={(frontmatter.image as ResizeType).childImageSharp.resize.src}
+        keywords={frontmatter.tags}
+        pathname={data.mdx.slug}
       />
       <main className="mt-10">
         <article className="post">
@@ -100,6 +113,9 @@ export const query = graphql`
       }
       slug
       body
+      fields {
+        source
+      }
     }
   }
 `

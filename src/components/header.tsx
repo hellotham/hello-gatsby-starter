@@ -1,23 +1,23 @@
-import * as React from "react"
+import * as React from 'react'
 
-import { Disclosure } from "@headlessui/react"
-import { MenuIcon, XIcon } from "@heroicons/react/outline"
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-import Logo from "@/svg/logo.svg"
-import HelloTham from "@/svg/hellotham.svg"
+import Logo from '@/svg/logo/logo.svg'
+import HelloTham from '@/svg/logo/hellotham.svg'
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "/pages/about", current: false },
-  { name: "Services", href: "/pages/services", current: false },
-  { name: "Consultants", href: "/pages/consultants", current: false },
-  { name: "Partners", href: "/pages/partners", current: false },
-  { name: "Achievements", href: "/pages/work", current: false },
-  { name: "Blog", href: "/posts", current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'About', href: '/pages/about', current: false },
+  { name: 'Services', href: '/pages/services', current: false },
+  { name: 'Consultants', href: '/pages/consultants', current: false },
+  { name: 'Partners', href: '/pages/partners', current: false },
+  { name: 'Achievements', href: '/pages/work', current: false },
+  { name: 'Blog', href: '/posts', current: false },
 ]
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ")
+  return classes.filter(Boolean).join(' ')
 }
 
 export default function Header() {
@@ -51,11 +51,11 @@ export default function Header() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-pink-200 text-pink-600"
-                            : "text-purple-600 hover:bg-purple-200 hover:text-pink-600",
-                          "px-3 py-2 rounded-md text-lg font-medium"
+                            ? 'bg-pink-200 text-pink-600'
+                            : 'text-purple-600 hover:bg-purple-200 hover:text-pink-600',
+                          'px-3 py-2 rounded-md text-lg font-medium'
                         )}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
@@ -74,11 +74,11 @@ export default function Header() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-pink-200 text-pink-600"
-                      : "text-purple-600 hover:bg-purple-200 hover:text-pink-600",
-                    "block px-3 py-2 rounded-md text-base font-medium"
+                      ? 'bg-pink-200 text-pink-600'
+                      : 'text-purple-600 hover:bg-purple-200 hover:text-pink-600',
+                    'block px-3 py-2 rounded-md text-base font-medium'
                   )}
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
                 </a>

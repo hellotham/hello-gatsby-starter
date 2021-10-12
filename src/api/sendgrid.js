@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const sendgrid = require("@sendgrid/mail")
+const sendgrid = require('@sendgrid/mail')
 //Your API Key from Sendgrid
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 const message = {
@@ -9,8 +9,8 @@ const message = {
 
 const handler = (req, res) => {
   try {
-    if (req.method !== "POST") {
-      res.json({ message: "Try a POST!" })
+    if (req.method !== 'POST') {
+      res.json({ message: 'Try a POST!' })
     }
 
     if (req.body) {
@@ -23,7 +23,7 @@ const handler = (req, res) => {
     return sendgrid.send(message).then(
       () => {
         res.status(200).json({
-          message: "I will send email",
+          message: 'I will send email',
         })
       },
       error => {
@@ -37,7 +37,7 @@ const handler = (req, res) => {
     )
   } catch (err) {
     console.log(err)
-    return res.status(500).json({ message: "There was an error", error: err })
+    return res.status(500).json({ message: 'There was an error', error: err })
   }
 }
 

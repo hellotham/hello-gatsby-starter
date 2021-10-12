@@ -1,10 +1,10 @@
-import * as React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import * as React from 'react'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image"
-import { CalendarIcon, UserCircleIcon } from "@heroicons/react/outline"
+import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
+import { CalendarIcon, UserCircleIcon } from '@heroicons/react/outline'
 
-import Tags from "@/components/tags"
+import Tags from '@/components/tags'
 
 const query = graphql`
   query {
@@ -62,12 +62,12 @@ const BlogRoll = ({ tag }: BlogRollProps) => {
             <GatsbyImage
               image={getImage(node.frontmatter.image)!}
               loading="lazy"
-              alt={node.frontmatter.title + " featured image"}
+              alt={node.frontmatter.title + ' featured image'}
               className="relative w-full h-48 bg-white rounded-lg overflow-hidden group-hover:opacity-75 aspect-w-3 aspect-h-2 sm:h-40"
               imgClassName="w-full h-full object-center object-cover"
             />
             <div className="p-6">
-              {node.frontmatter.tags ? <Tags tags={node.frontmatter.tags} /> : ""}
+              {node.frontmatter.tags ? <Tags tags={node.frontmatter.tags} /> : ''}
               <Link to={`/posts/${node.slug}`}>
                 <h1 className="title-font text-xl font-bold text-purple-600 hover:text-pink-600 mt-2">
                   {node.frontmatter.title}

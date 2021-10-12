@@ -5,28 +5,16 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
+import * as React from 'react'
 
-import Header from "./header"
-import Footer from "./footer"
+import Header from './header'
+import Footer from './footer'
 
 interface LayoutProps {
   children: React.ReactNode
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  //   const data: any = useStaticQuery(graphql`
-  //     query SiteTitleQuery {
-  //       site {
-  //         siteMetadata {
-  //           title
-  //         }
-  //       }
-  //     }
-  //   `)
-
-  // const siteTitle: string = data.site.siteMetadata?.title || `Title`
-
   return (
     <>
       <Header />

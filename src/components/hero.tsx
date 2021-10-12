@@ -1,22 +1,22 @@
-import * as React from "react"
+import * as React from 'react'
 
-import { Fragment } from "react"
-import { Popover, Transition } from "@headlessui/react"
-import { MenuIcon, XIcon } from "@heroicons/react/outline"
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 // Images (SVG)
-import Logo from "@/svg/logo.svg"
-import FeaturedImage from "@/svg/undraw_ideas_flow_cy7b.svg"
-import HelloTham from "@/svg/hellotham.svg"
-import { Link } from "gatsby"
+import Logo from '@/svg/logo/logo.svg'
+import FeaturedImage from '@/svg/undraw/undraw_ideas_flow_cy7b.svg'
+import HelloTham from '@/svg/logo/hellotham.svg'
+import { Link } from 'gatsby'
 
 const navigation = [
-  { name: "About", href: "/pages/about" },
-  { name: "Services", href: "/pages/services" },
-  { name: "People", href: "/pages/consultants" },
-  { name: "Partners", href: "/pages/partners" },
-  { name: "Achievements", href: "/pages/work" },
-  { name: "Blog", href: "/posts" },
+  { name: 'About', href: '/pages/about' },
+  { name: 'Services', href: '/pages/services' },
+  { name: 'People', href: '/pages/consultants' },
+  { name: 'Partners', href: '/pages/partners' },
+  { name: 'Achievements', href: '/pages/work' },
+  { name: 'Blog', href: '/posts' },
 ]
 
 export default function Hero() {
@@ -110,7 +110,7 @@ export default function Hero() {
             <div className="text-center sm:text-left">
               <img src={HelloTham} width="350" alt="Hello Tham logo" />
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl text-left">
-                <span className="block xl:inline">Visualise Your</span>{" "}
+                <span className="block xl:inline">Visualise Your</span>{' '}
                 <span className="block text-purple-700 xl:inline">Future</span>
               </h1>
               <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">

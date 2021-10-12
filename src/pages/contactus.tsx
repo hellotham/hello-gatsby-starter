@@ -1,33 +1,26 @@
-import * as React from "react"
-import { useForm } from "react-hook-form"
-import { Fragment, useState } from "react"
-import { Dialog, Transition } from "@headlessui/react"
-import { CheckCircleIcon } from "@heroicons/react/outline"
+import * as React from 'react'
+import { useForm } from 'react-hook-form'
+import { Fragment, useState } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { CheckCircleIcon } from '@heroicons/react/outline'
 
-import Layout from "@/components/layout"
-import Seo from "@/components/seo"
+import useSiteMetadata from '@/components/metadata'
+import Layout from '@/components/layout'
+import Seo from '@/components/seo'
 
-import PageHero from "@/components/PageHero"
+import PageHero from '@/components/PageHero'
 
-import Image from "@/svg/undraw_contact_us_15o2.svg"
+import Image from '@/svg/undraw/undraw_contact_us_15o2.svg'
 
-import Email from "@/svg/email.svg"
-import Phone from "@/svg/phone.svg"
-import LinkedIn from "@/svg/linkedin.svg"
-import Facebook from "@/svg/facebook.svg"
-import Instagram from "@/svg/instagram.svg"
-import Twitter from "@/svg/twitter.svg"
+import Email from '@/svg/icons/email.svg'
+import Phone from '@/svg/icons/phone.svg'
+import LinkedIn from '@/svg/icons/linkedin.svg'
+import Facebook from '@/svg/icons/facebook.svg'
+import Instagram from '@/svg/icons/instagram.svg'
+import Twitter from '@/svg/icons/twitter.svg'
+import Github from '@/svg/icons/github.svg'
 
-const contactMethods = [
-  { name: "Email", link: "mailto:info@hellotham.com", image: Email },
-  { name: "Phone", link: "tel:+61413008577", image: Phone },
-  { name: "LinkedIn", link: "https://www.linkedin.com/company/17950469", image: LinkedIn },
-  { name: "Facebook", link: "https://www.facebook.com/HelloThamCom", image: Facebook },
-  { name: "Instagram", link: "https://www.instagram.com/HelloThamCom/", image: Instagram },
-  { name: "Twitter", link: "https://twitter.com/HelloThamCom", image: Twitter },
-]
-
-import OGImage from "../images/undraw_contact_us_15o2.png"
+import OGImage from '../images/undraw_contact_us_15o2.png'
 
 export default function ContactUs() {
   const [open, setOpen] = useState(false)
@@ -37,22 +30,33 @@ export default function ContactUs() {
     height: 1024,
   }
 
+  const metadata = useSiteMetadata()
+
+  const contactMethods = [
+    { name: 'Email', link: metadata.social.email, image: Email },
+    { name: 'Phone', link: metadata.social.phone, image: Phone },
+    { name: 'LinkedIn', link: metadata.social.linkedin, image: LinkedIn },
+    { name: 'Facebook', link: metadata.social.facebook, image: Facebook },
+    { name: 'Instagram', link: metadata.social.instagram, image: Instagram },
+    { name: 'Twitter', link: metadata.social.twitter, image: Twitter },
+    { name: 'Github', link: metadata.social.github, image: Github },
+  ]
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm()
   const onSubmit = (data: unknown) => {
-    fetch("/api/sendgrid", {
-      method: "POST",
+    fetch('/api/sendgrid', {
+      method: 'POST',
       body: JSON.stringify(data),
       headers: {
-        "content-type": "application/json",
+        'content-type': 'application/json',
       },
     })
       .then(res => res.json())
       .then(body => {
-        console.log("response from API:", body)
+        console.log('response from API:', body)
         setOpen(true)
       })
   }
@@ -86,6 +90,7 @@ export default function ContactUs() {
                 {contactMethods.map(method => (
                   <p key={method.name} className="mt-2 flex items-center text-sm text-gray-500">
                     <img src={method.image} className=" h-5 w-5" />
+                    {/* <method.image className=" h-5 w-5" /> */}
                     <span>&nbsp;{method.name}:&nbsp;</span>
                     <a href={method.link} className="text-purple-600 hover:text-pink-600">
                       {method.link}
@@ -109,7 +114,7 @@ export default function ContactUs() {
                           id="name"
                           autoComplete="name"
                           className="mt-1 focus:ring-purple-500 focus:border-purple-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                          {...register("name", { required: true, maxLength: 256 })}
+                          {...register('name', { required: true, maxLength: 256 })}
                         />
                       </div>
 
@@ -122,7 +127,7 @@ export default function ContactUs() {
                           id="email"
                           autoComplete="email"
                           className="mt-1 focus:ring-purple-500 focus:border-purple-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                          {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
+                          {...register('email', { required: true, pattern: /^\S+@\S+$/i })}
                         />
                       </div>
 
@@ -136,7 +141,7 @@ export default function ContactUs() {
                           id="phone"
                           autoComplete="tel"
                           className="mt-1 focus:ring-purple-500 focus:border-purple-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                          {...register("phone", {
+                          {...register('phone', {
                             required: true,
                             minLength: 6,
                             maxLength: 12,
@@ -153,7 +158,7 @@ export default function ContactUs() {
                           id="subject"
                           autoComplete="subject"
                           className="mt-1 focus:ring-purple-500 focus:border-purple-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                          {...register("subject", { required: true, maxLength: 256 })}
+                          {...register('subject', { required: true, maxLength: 256 })}
                         />
                       </div>
 
@@ -166,7 +171,7 @@ export default function ContactUs() {
                           rows={5}
                           id="text"
                           placeholder="Enter your message here."
-                          {...register("text", { required: true })}
+                          {...register('text', { required: true })}
                         />
                       </div>
                     </div>

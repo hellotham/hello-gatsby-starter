@@ -1,14 +1,14 @@
-import * as React from "react"
+import * as React from 'react'
 
-import Layout from "@/components/layout"
-import Seo from "@/components/seo"
-import PageHero from "@/components/PageHero"
-import BlogRoll from "@/components/blogroll"
+import Layout from '@/components/layout'
+import Seo from '@/components/seo'
+import PageHero from '@/components/PageHero'
+import BlogRoll from '@/components/blogroll'
 
-import Image from "@/svg/undraw_Add_post_re_174w.svg"
-import { Link } from "gatsby"
+import Image from '@/svg/undraw/undraw_Add_post_re_174w.svg'
+import { Link } from 'gatsby'
 
-import OGImage from "../images/undraw_Add_post_re_174w.png"
+import OGImage from '../images/undraw_Add_post_re_174w.png'
 
 interface TagProps {
   pageContext: {
@@ -27,7 +27,7 @@ const TagPage = ({ pageContext }: TagProps) => {
   const title = `Tag: ${tag}`
   return (
     <Layout>
-      <Seo title={title} description={`Posts with tag [${tag}]`} image={ogimage} />
+      <Seo title={title} description={`Posts with tag [${tag}]`} keywords={[tag]} image={ogimage} />
       <main className="mt-10">
         <article className="post">
           <header>

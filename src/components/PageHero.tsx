@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react'
 
 interface PageHeroProps {
   title: string
@@ -6,14 +6,14 @@ interface PageHeroProps {
   image?: string
 }
 
-import defaultImage from "@/svg/undraw_design_components_9vy6-2.svg"
+import defaultImage from '@/svg/undraw/undraw_design_components_9vy6-2.svg'
 
 const PageHero = ({ title, description, image }: PageHeroProps) => (
-  <div className="mb-4 md:mb-0 w-full max-w-screen-xl mx-auto relative" style={{ height: "24em" }}>
+  <div className="mb-4 md:mb-0 w-full max-w-screen-xl mx-auto relative" style={{ height: '24em' }}>
     <div
       className="absolute left-0 bottom-0 w-full h-full z-10"
       style={{
-        backgroundImage: "linear-gradient(180deg,transparent,rgba(0,0,0,.7))",
+        backgroundImage: 'linear-gradient(180deg,transparent,rgba(0,0,0,.7))',
       }}
     ></div>
     <img

@@ -1,26 +1,26 @@
-import * as React from "react"
-import { MapIcon, SparklesIcon, PuzzleIcon, PresentationChartBarIcon } from "@heroicons/react/outline"
+import * as React from 'react'
+import { MapIcon, SparklesIcon, PuzzleIcon, PresentationChartBarIcon } from '@heroicons/react/outline'
 
 const features = [
   {
-    name: "Business and IT Strategies",
-    description: "Business and IT strategy and plans, operating models, business process design and standardisation",
+    name: 'Business and IT Strategies',
+    description: 'Business and IT strategy and plans, operating models, business process design and standardisation',
     icon: SparklesIcon,
   },
   {
-    name: "Enterprise Architecture",
+    name: 'Enterprise Architecture',
     description:
-      "Enterprise analysis, design, planning, and implementation for the successful development and execution of a strategy",
+      'Enterprise analysis, design, planning, and implementation for the successful development and execution of a strategy',
     icon: PuzzleIcon,
   },
   {
-    name: "Analytics and Data Science",
-    description: "Data discovery, analysis, deep and reinforced learning, insights and recommendations",
+    name: 'Analytics and Data Science',
+    description: 'Data discovery, analysis, deep and reinforced learning, insights and recommendations',
     icon: PresentationChartBarIcon,
   },
   {
-    name: "Strategic Roadmaps",
-    description: "Aligning portfolio to strategy, business cases, project planning and initiation",
+    name: 'Strategic Roadmaps',
+    description: 'Aligning portfolio to strategy, business cases, project planning and initiation',
     icon: MapIcon,
   },
 ]

@@ -1,6 +1,6 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import kebabCase from "lodash/kebabCase"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
 
 const Tags = ({ tags }: { tags: string[] }) => (
   <div className="flex flex-row flex-wrap items-start gap-2">

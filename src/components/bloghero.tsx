@@ -1,8 +1,8 @@
-import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
+import * as React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import { getImage } from 'gatsby-plugin-image'
 
-import PostHero from "@/components/PostHero"
+import PostHero from '@/components/PostHero'
 
 export default function BlogHero() {
   const imagequery = useStaticQuery(graphql`

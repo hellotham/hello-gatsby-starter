@@ -9,10 +9,13 @@ This is the Hello Tham Corporate Website Static Web App built using the followin
 - [TailwindCSS](https://tailwindcss.com) and [TailwindUI](https://tailwindui.com)
 - [HeroIcons](https://heroicons.com/)
 - [HeadlessUI](https://headlessui.dev/)
-- [unDraw](https://undraw.co/)
+- [unDraw](https://undraw.co/) for illustrations
 - [MDX](https://mdxjs.com/) and [Markdown](https://www.markdownguide.org/)
 - [ESLint](https://eslint.org)for type-checking
 - [SendGrid](https://sendgrid.com/) email delivery
+- [Schema.org](https://schema.org/) and [JSON for Linking Data](https://json-ld.org/)
+- [Open Graph](https://ogp.me/) used by [Facebook](https://developers.facebook.com/docs/sharing/webmasters/#markup)
+- [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and is deployed on Gatsby Cloud.
 

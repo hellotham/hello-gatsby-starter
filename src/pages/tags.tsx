@@ -1,19 +1,19 @@
-import React from "react"
+import React from 'react'
 
 // Utilities
-import kebabCase from "lodash/kebabCase"
+import kebabCase from 'lodash/kebabCase'
 
 // Components
-import Layout from "@/components/layout"
-import Seo from "@/components/seo"
+import Layout from '@/components/layout'
+import Seo from '@/components/seo'
 // import { ImageDataLike } from "gatsby-plugin-image"
 // import BlogCard from "@/components/blogcard"
-import PageHero from "@/components/PageHero"
+import PageHero from '@/components/PageHero'
 
-import Image from "@/svg/undraw_Windows_re_uo4w.svg"
-import { Link, graphql } from "gatsby"
+import Image from '@/svg/undraw/undraw_Windows_re_uo4w.svg'
+import { Link, graphql } from 'gatsby'
 
-import OGImage from "../images/undraw_Windows_re_uo4w.png"
+import OGImage from '../images/undraw_Windows_re_uo4w.png'
 
 interface TagsProps {
   data: {
@@ -54,7 +54,7 @@ const Tags = ({ data }: TagsProps) => {
                 <div className="w-full aspect-w-2 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden">
                   <img
                     src={Image}
-                    alt={tag.fieldValue + " tag"}
+                    alt={tag.fieldValue + ' tag'}
                     className="w-full h-full object-center object-contain group-hover:opacity-75"
                   />
                 </div>

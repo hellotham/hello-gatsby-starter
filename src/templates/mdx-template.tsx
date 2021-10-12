@@ -1,12 +1,12 @@
-import * as React from "react"
-import { MDXProvider } from "@mdx-js/react"
-import { getImage, ImageDataLike } from "gatsby-plugin-image"
+import * as React from 'react'
+import { MDXProvider } from '@mdx-js/react'
+import { getImage, ImageDataLike } from 'gatsby-plugin-image'
 
-import Layout from "@/components/layout"
-import Seo from "@/components/seo"
-import PostHero from "@/components/PostHero"
+import Layout from '@/components/layout'
+import Seo from '@/components/seo'
+import PostHero from '@/components/PostHero'
 
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 interface LayoutProps {
   pageContext: {

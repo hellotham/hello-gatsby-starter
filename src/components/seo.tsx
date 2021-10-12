@@ -1,7 +1,7 @@
 /* eslint-disable indent */
-import React from "react"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
 interface SEOProps {
   description?: string
@@ -19,7 +19,7 @@ interface SEOProps {
   title: string
   pathname?: string
 }
-function SEO({ description = "", lang = "en", image, meta = [], keywords = [], title, pathname = "" }: SEOProps) {
+function SEO({ description = '', lang = 'en', image, meta = [], keywords, title, pathname = '' }: SEOProps) {
   const data = useStaticQuery(detailsQuery)
   const metaDescription = description || data.site.siteMetadata.description
   const metaImage = image && image.src ? `${data.site.siteMetadata.siteUrl}${image.src}` : null
@@ -33,38 +33,38 @@ function SEO({ description = "", lang = "en", image, meta = [], keywords = [], t
       }}
       title={title}
       titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-      link={canonical ? [{ rel: "canonical", href: canonical }] : []}
+      link={canonical ? [{ rel: 'canonical', href: canonical }] : []}
       meta={[
         {
-          name: "description",
+          name: 'description',
           content: metaDescription,
         },
         {
-          property: "og:title",
+          property: 'og:title',
           content: title,
         },
         {
-          property: "og:url",
+          property: 'og:url',
           content: metaUrl,
         },
         {
-          property: "og:description",
+          property: 'og:description',
           content: metaDescription,
         },
         {
-          property: "og:type",
-          content: "website",
+          property: 'og:type',
+          content: 'website',
         },
         {
-          name: "twitter:creator",
+          name: 'twitter:creator',
           content: `@${data.site.siteMetadata.social.twitter}`,
         },
         {
-          name: "twitter:title",
+          name: 'twitter:title',
           content: title,
         },
         {
-          name: "twitter:description",
+          name: 'twitter:description',
           content: metaDescription,
         },
         // {
@@ -75,15 +75,15 @@ function SEO({ description = "", lang = "en", image, meta = [], keywords = [], t
         .concat(
           metaImage
             ? [
-                { property: "og:image", content: metaImage },
-                { property: "og:image:alt", content: title },
-                { property: "og:image:width", content: image!.width },
-                { property: "og:image:height", content: image!.height },
-                { name: "twitter:card", content: "summary_large_image" },
+                { property: 'og:image', content: metaImage },
+                { property: 'og:image:alt', content: title },
+                { property: 'og:image:width', content: image!.width },
+                { property: 'og:image:height', content: image!.height },
+                { name: 'twitter:card', content: 'summary_large_image' },
               ]
-            : [{ name: "twitter:card", content: "summary" }]
+            : [{ name: 'twitter:card', content: 'summary' }]
         )
-        .concat(keywords.length > 0 ? { name: "keywords", content: keywords.join(", ") } : [])
+        .concat(keywords && keywords.length > 0 ? { name: 'keywords', content: keywords.join(', ') } : [])
         .concat(meta)}
     />
   )

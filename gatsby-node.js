@@ -6,13 +6,13 @@
  */
 
 // const fs = require(`fs`)
-const path = require("path")
+const path = require('path')
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        "@": path.resolve(__dirname, "src"),
+        '@': path.resolve(__dirname, 'src'),
       },
     },
   })
@@ -31,10 +31,10 @@ exports.createSchemaCustomization = ({ actions }) => {
   `)
 }
 
-const _ = require("lodash")
+const _ = require('lodash')
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
-  const tagTemplate = path.resolve("src/templates/tag-template.tsx")
+  const tagTemplate = path.resolve('src/templates/tag-template.tsx')
   const result = await graphql(`
     {
       tagsGroup: allMdx(limit: 2000) {
@@ -46,7 +46,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `)
   // handle errors
   if (result.errors) {
-    reporter.panicOnBuild("Error while running GraphQL query.")
+    reporter.panicOnBuild('Error while running GraphQL query.')
     return
   }
   // Extract tag data from query

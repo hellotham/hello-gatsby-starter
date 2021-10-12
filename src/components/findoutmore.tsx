@@ -1,30 +1,30 @@
-import * as React from "react"
+import * as React from 'react'
 
-import Partners from "@/svg/undraw_features_overview_jg7a.svg"
-import Work from "@/svg/undraw_All_the_data_re_hh4w.svg"
-import People from "@/svg/undraw_Team_page_re_cffb.svg"
+import Partners from '@/svg/undraw/undraw_features_overview_jg7a.svg'
+import Work from '@/svg/undraw/undraw_All_the_data_re_hh4w.svg'
+import People from '@/svg/undraw/undraw_Team_page_re_cffb.svg'
 
 const callouts = [
   {
-    name: "People",
-    description: "Find out more about our consultants",
+    name: 'People',
+    description: 'Find out more about our consultants',
     imageSrc: People,
-    imageAlt: "People drawing",
-    href: "/pages/consultants",
+    imageAlt: 'People drawing',
+    href: '/pages/consultants',
   },
   {
-    name: "Partners",
-    description: "Find out more about our partners",
+    name: 'Partners',
+    description: 'Find out more about our partners',
     imageSrc: Partners,
-    imageAlt: "Partners drawing",
-    href: "/pages/partners",
+    imageAlt: 'Partners drawing',
+    href: '/pages/partners',
   },
   {
-    name: "Achievements",
-    description: "Recent work we have performed for our clients",
+    name: 'Achievements',
+    description: 'Recent work we have performed for our clients',
     imageSrc: Work,
-    imageAlt: "Recent work drawing",
-    href: "/pages/work",
+    imageAlt: 'Recent work drawing',
+    href: '/pages/work',
   },
 ]
 
