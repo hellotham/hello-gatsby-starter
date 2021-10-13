@@ -40,7 +40,7 @@ const PostHero = ({ title, description, author, date, image, tags }: PostHeroPro
           />
           <div>
             <p className="font-semibold text-pink-200 text-sm">{author}</p>
-            <p className="font-semibold text-pink-400 text-xs">{date}</p>
+            <p className="font-semibold text-pink-400 text-xs">{date?.slice(0, 10)}</p>
           </div>
         </div>
       ) : (
