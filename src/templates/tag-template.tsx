@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import Layout from '@/components/layout'
-import Seo from '@/components/seo'
+import SEO from '@/components/seo'
 import PageHero from '@/components/PageHero'
 import BlogRoll from '@/components/blogroll'
 
@@ -27,7 +27,14 @@ const TagPage = ({ pageContext }: TagProps) => {
   const title = `Tag: ${tag}`
   return (
     <Layout>
-      <Seo type="tags" title={title} description={`Posts with tag [${tag}]`} keywords={[tag]} image={ogimage} />
+      <SEO
+        type="tags"
+        title={title}
+        description={`Posts with tag [${tag}]`}
+        keywords={[tag]}
+        image={ogimage}
+        pathname={'/tags/' + tag}
+      />
       <main className="mt-10">
         <article className="post">
           <header>

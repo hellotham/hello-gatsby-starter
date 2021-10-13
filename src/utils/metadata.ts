@@ -1,24 +1,27 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
 export type SiteMetadataType = {
-  title: string
-  author: {
-    name: string
-    url: string
-    summary: string
+  siteMetadata: {
+    title: string
+    author: {
+      name: string
+      url: string
+      summary: string
+    }
+    description: string
+    siteUrl: string
+    location: string
+    social: {
+      email: string
+      phone: string
+      facebook: string
+      instagram: string
+      twitter: string
+      linkedin: string
+      github: string
+    }
   }
-  description: string
-  siteUrl: string
-  location: string
-  social: {
-    email: string
-    phone: string
-    facebook: string
-    instagram: string
-    twitter: string
-    linkedin: string
-    github: string
-  }
+  buildTime: string
 }
 
 const useSiteMetadata = (): SiteMetadataType => {
@@ -46,11 +49,12 @@ const useSiteMetadata = (): SiteMetadataType => {
               github
             }
           }
+          buildTime
         }
       }
     `
   )
-  return site.siteMetadata
+  return site
 }
 
 export default useSiteMetadata

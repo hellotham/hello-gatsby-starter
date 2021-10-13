@@ -5,7 +5,7 @@ import kebabCase from 'lodash/kebabCase'
 
 // Components
 import Layout from '@/components/layout'
-import Seo from '@/components/seo'
+import SEO from '@/components/seo'
 // import { ImageDataLike } from "gatsby-plugin-image"
 // import BlogCard from "@/components/blogcard"
 import PageHero from '@/components/PageHero'
@@ -35,11 +35,12 @@ const Tags = ({ data }: TagsProps) => {
 
   return (
     <Layout>
-      <Seo
+      <SEO
         type="page"
         title="Blog Tags"
         description="Click on each tag to view blog posts containing tag."
         image={ogimage}
+        pathname="/tags"
       />
       <main className="mt-10">
         <article className="post">

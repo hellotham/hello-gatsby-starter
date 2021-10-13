@@ -6,7 +6,7 @@ import { CheckCircleIcon } from '@heroicons/react/outline'
 
 import useSiteMetadata from '@/utils/metadata'
 import Layout from '@/components/layout'
-import Seo from '@/components/seo'
+import SEO from '@/components/seo'
 
 import PageHero from '@/components/PageHero'
 
@@ -30,7 +30,7 @@ export default function ContactUs() {
     height: 1024,
   }
 
-  const metadata = useSiteMetadata()
+  const metadata = useSiteMetadata().siteMetadata
 
   const contactMethods = [
     { name: 'Email', link: metadata.social.email, image: Email },
@@ -64,11 +64,12 @@ export default function ContactUs() {
   console.log({ errors })
   return (
     <Layout>
-      <Seo
+      <SEO
         type="page"
         title="Contact Us"
         description="Our presence is real and digital. Contact us through the following ways."
         image={ogimage}
+        pathname="/contactus"
       />
       <main className="mt-10">
         <article className="post">

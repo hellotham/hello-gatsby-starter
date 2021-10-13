@@ -5,7 +5,7 @@ import { getImage, ImageDataLike } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 
 import Layout from '@/components/layout'
-import Seo from '@/components/seo'
+import SEO from '@/components/seo'
 import PostHero from '@/components/PostHero'
 
 const components = { Link }
@@ -33,11 +33,14 @@ interface BlogPostProps {
         image: ImageDataLike | ResizeType
         tags: string[]
       }
-      slug: string
-      body: string
       fields: {
         source: string
       }
+      slug: string
+      parent: {
+        modifiedTime: string
+      }
+      body: string
     }
   }
 }
@@ -48,15 +51,15 @@ const BlogPost = ({ data }: BlogPostProps) => {
 
   return (
     <Layout>
-      <Seo
+      <SEO
         type={data.mdx.fields.source}
         title={frontmatter.title}
         description={frontmatter.description}
         date={frontmatter.date}
-        lastUpdated={frontmatter.date}
+        lastUpdated={data.mdx.parent.modifiedTime}
         image={(frontmatter.image as ResizeType).childImageSharp.resize}
         keywords={frontmatter.tags}
-        pathname={'/posts/' + data.mdx.slug}
+        pathname={'/' + data.mdx.fields.source + '/' + data.mdx.slug}
       />
       <main className="mt-10">
         <article className="post">
@@ -103,11 +106,16 @@ export const query = graphql`
         }
         tags
       }
-      slug
-      body
       fields {
         source
       }
+      slug
+      parent {
+        ... on File {
+          modifiedTime
+        }
+      }
+      body
     }
   }
 `

@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 import useSiteMetadata from '@/utils/metadata'
 import JsonLD from '@/utils/jsonld'
 
+import defaultImage from '@/svg/undraw/undraw_ideas_flow_cy7b.svg'
+
 interface SEOProps {
   type: string
   title: string
@@ -23,23 +25,31 @@ interface SEOProps {
   pathname?: string
   lang?: string
 }
-function SEO({
+
+const SEO = ({
   type,
   title,
-  description = '',
+  description,
   date,
   lastUpdated,
   image,
   meta = [],
   keywords,
-  pathname = '',
+  pathname,
   lang = 'en',
-}: SEOProps) {
-  const metadata = useSiteMetadata()
-  const metaDescription = description || metadata.description
-  const metaImage = image && image.src ? `${metadata.siteUrl}${image.src}` : null
-  const metaUrl = `${metadata.siteUrl}${pathname}`
-  const canonical = pathname ? `${metadata.siteUrl}${pathname}` : null
+}: SEOProps) => {
+  const { siteMetadata, buildTime } = useSiteMetadata()
+  const metaTitle = type == 'homepage' ? title : title + ' | ' + siteMetadata.title
+  const metaDescription = description || siteMetadata.description
+  const metaDate = date ? date : buildTime
+  const metaLastUpdated = lastUpdated ? lastUpdated : buildTime
+  const metaImage = {
+    src: image ? `${siteMetadata.siteUrl}${image.src}` : defaultImage,
+    width: (image ? image.width : 1342).toString(),
+    height: (image ? image.height : 1024).toString(),
+  }
+  const metaUrl = `${siteMetadata.siteUrl}${pathname}`
+  const canonical = pathname ? `${siteMetadata.siteUrl}${pathname}` : siteMetadata.siteUrl
 
   return (
     <Helmet
@@ -47,7 +57,7 @@ function SEO({
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${metadata.title}`}
+      titleTemplate={`%s | ${siteMetadata.title}`}
       link={canonical ? [{ rel: 'canonical', href: canonical }] : []}
       meta={[
         {
@@ -56,7 +66,7 @@ function SEO({
         },
         {
           property: 'og:title',
-          content: title,
+          content: metaTitle,
         },
         {
           property: 'og:url',
@@ -72,11 +82,11 @@ function SEO({
         },
         {
           name: 'twitter:creator',
-          content: `@${metadata.social.twitter}`,
+          content: `@${siteMetadata.social.twitter}`,
         },
         {
           name: 'twitter:title',
-          content: title,
+          content: metaTitle,
         },
         {
           name: 'twitter:description',
@@ -90,10 +100,10 @@ function SEO({
         .concat(
           metaImage
             ? [
-                { property: 'og:image', content: metaImage },
+                { property: 'og:image', content: metaImage.src },
                 { property: 'og:image:alt', content: title },
-                { property: 'og:image:width', content: image!.width.toString() },
-                { property: 'og:image:height', content: image!.height.toString() },
+                { property: 'og:image:width', content: metaImage.width },
+                { property: 'og:image:height', content: metaImage.height },
                 { name: 'twitter:card', content: 'summary_large_image' },
               ]
             : [{ name: 'twitter:card', content: 'summary' }]
@@ -104,11 +114,11 @@ function SEO({
         title: title,
         description: metaDescription,
         type: type,
-        date: date,
-        lastUpdated: lastUpdated,
-        image: image,
-        keywords: keywords,
-        pathname: pathname,
+        date: metaDate,
+        lastUpdated: metaLastUpdated,
+        image: metaImage,
+        keywords: keywords ? keywords : [type],
+        pathname: canonical,
       })}
     />
   )

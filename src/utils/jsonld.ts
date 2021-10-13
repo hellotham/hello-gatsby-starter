@@ -1,23 +1,22 @@
-import { Article, BreadcrumbList, ListItem, Organization, Person, WebSite } from 'schema-dts'
+import { Article, BreadcrumbList, Organization, Person, WebSite } from 'schema-dts'
 import { helmetJsonLdProp } from 'react-schemaorg'
 import useSiteMetadata from '@/utils/metadata'
 
 import Logo from '@/images/logo.png'
-import defaultImage from '@/images/home.jpg'
 
 interface JsonLDProps {
   type: string
   title: string
   description: string
-  date?: string
-  lastUpdated?: string
-  keywords?: string[]
-  image?: {
+  date: string
+  lastUpdated: string
+  keywords: string[]
+  image: {
     src: string
-    height: number
-    width: number
+    height: string
+    width: string
   }
-  pathname?: string
+  pathname: string
   lang?: string
 }
 
@@ -32,41 +31,10 @@ export default function JsonLD({
   pathname,
   lang = 'en',
 }: JsonLDProps) {
-  const metadata = useSiteMetadata()
-  const canonical = metadata.siteUrl + '/' + type + '/' + pathname
+  const metadata = useSiteMetadata().siteMetadata
   const email = metadata.social.email.replace('mailto:', '')
-  const year = lastUpdated ? parseInt(lastUpdated.slice(0, 4)) : 2021
-  const metaImage = image ? image.src : defaultImage
-  let itemList: ListItem[] = [
-    {
-      '@type': 'ListItem',
-      item: {
-        '@id': metadata.siteUrl,
-        name: 'Homepage',
-      },
-      position: 1,
-    },
-    {
-      '@type': 'ListItem',
-      item: {
-        '@id': metadata.siteUrl + '/' + type,
-        name: type,
-      },
-      position: 2,
-    },
-  ]
-  if (type === 'posts' || type === 'pages') {
-    itemList = itemList.concat([
-      {
-        '@type': 'ListItem',
-        item: {
-          '@id': canonical,
-          name: title,
-        },
-        position: 3,
-      },
-    ])
-  }
+  const year = parseInt(lastUpdated.slice(0, 4))
+
   let jsonld = [
     helmetJsonLdProp<WebSite>({
       '@context': 'https://schema.org',
@@ -89,7 +57,9 @@ export default function JsonLD({
       description: metadata.description,
       image: {
         '@type': 'ImageObject',
-        url: metaImage,
+        url: image.src,
+        width: image.width,
+        height: image.height,
       },
       inLanguage: 'en',
       name: metadata.title,
@@ -116,7 +86,9 @@ export default function JsonLD({
       location: metadata.location,
       image: {
         '@type': 'ImageObject',
-        url: metaImage,
+        url: image.src,
+        width: image.width,
+        height: image.height,
       },
       logo: {
         '@type': 'ImageObject',
@@ -130,8 +102,25 @@ export default function JsonLD({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       description: 'Breadcrumbs list',
-      itemListElement: itemList,
-      numberOfItems: type === 'posts' || type === 'pages' ? 3 : 2,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          item: {
+            '@id': metadata.siteUrl,
+            name: metadata.title,
+          },
+          position: 1,
+        },
+        {
+          '@type': 'ListItem',
+          item: {
+            '@id': pathname,
+            name: title,
+          },
+          position: 2,
+        },
+      ],
+      numberOfItems: 2,
       name: 'Breadcrumbs',
     }),
     helmetJsonLdProp<Person>({
@@ -144,7 +133,7 @@ export default function JsonLD({
       },
     }),
   ]
-  if (type == 'posts' || type == 'pages') {
+  if (type == 'posts') {
     jsonld = [
       helmetJsonLdProp<Article>({
         '@context': 'https://schema.org',
@@ -166,18 +155,20 @@ export default function JsonLD({
         datePublished: lastUpdated,
         description: description,
         headline: title,
-        keywords: keywords ? keywords.join(', ') : type,
+        keywords: keywords.join(', '),
         image: {
           '@type': 'ImageObject',
-          url: metaImage,
+          url: image.src,
+          width: image.width,
+          height: image.height,
         },
         inLanguage: lang,
-        mainEntityOfPage: canonical,
+        mainEntityOfPage: pathname,
         name: title,
         publisher: {
           '@id': metadata.siteUrl,
         },
-        url: canonical,
+        url: pathname,
       }),
     ].concat(jsonld)
   }

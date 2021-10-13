@@ -1,7 +1,6 @@
 ---
 title: Our Consultants
 description: Showcasing Key Profiles
-author: Hello Tham
 image: ../images/consultants.jpg
 ---
 

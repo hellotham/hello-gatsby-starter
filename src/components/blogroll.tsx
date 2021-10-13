@@ -39,9 +39,7 @@ type NodeType = {
         image: ImageDataLike
         tags: string[]
       }
-      id: string
       slug: string
-      fields: { source: string }
     }[]
   }
 }

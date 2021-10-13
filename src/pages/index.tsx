@@ -4,7 +4,7 @@ import Hero from '@/components/hero'
 import Features from '@/components/features'
 import FindOutMore from '@/components/findoutmore'
 import Footer from '@/components/footer'
-import Seo from '@/components/seo'
+import SEO from '@/components/seo'
 
 import OGImage from '../images/undraw_ideas_flow_cy7b.png'
 
@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="font-sans">
-      <Seo
+      <SEO
         type="homepage"
         title="Hello Tham"
         description="A boutique management and strategy consulting company."

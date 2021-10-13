@@ -1,7 +1,6 @@
 ---
 title: Recent Work
 description: Recent deliverables to our clients
-author: Hello Tham
 image: ../images/work.jpg
 ---
 

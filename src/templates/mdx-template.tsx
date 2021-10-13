@@ -3,7 +3,7 @@ import { MDXProvider } from '@mdx-js/react'
 import { getImage, ImageDataLike } from 'gatsby-plugin-image'
 
 import Layout from '@/components/layout'
-import Seo from '@/components/seo'
+import SEO from '@/components/seo'
 import PostHero from '@/components/PostHero'
 
 import { Link } from 'gatsby'
@@ -30,7 +30,7 @@ const MDXTemplate = ({ pageContext, children }: LayoutProps) => {
 
   return (
     <Layout>
-      <Seo type="page" title={frontmatter.title} description={frontmatter.description} />
+      <SEO type="page" title={frontmatter.title} description={frontmatter.description} />
       <main className="mt-10">
         <article className="post">
           <header>

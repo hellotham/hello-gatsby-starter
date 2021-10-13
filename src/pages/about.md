@@ -1,7 +1,6 @@
 ---
 title: About Us
 description: Company Profile, Quality, Risk
-author: Hello Tham
 image: ../images/home.jpg
 ---
 

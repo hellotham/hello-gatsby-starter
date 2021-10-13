@@ -1,7 +1,6 @@
 ---
 title: Our Partners
 description: AWS, DOMO, Microsoft
-author: Hello Tham
 image: ../images/partners.jpg
 ---
 
