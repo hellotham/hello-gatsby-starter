@@ -173,7 +173,7 @@ export default function JsonLD({
       }),
     ].concat(jsonld)
   }
-  if (type == 'page') {
+  if (type == 'pages') {
     jsonld = [
       helmetJsonLdProp<Article>({
         '@context': 'https://schema.org',

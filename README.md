@@ -23,14 +23,16 @@ This website is open source (0BSD licence) - fork it and customise for your need
 
 ## Features
 
-- Full-featured blog with frontmatter and tags pages
+- Full-featured blog with frontmatter (title, description, author, date, image, tags)
+- Tags index page and individual tag pages
+- Pagination in posts and tag pages
 - Support for an RSS feed and sitemap
 - Automatic optimization of images in Markdown/MDX posts
 - SVG support
 - Support for code syntax highlighting
-- Includes React Helmet to allow editing site meta tags
 - Manifest and offline support
 - Contact form using sendgrid email and Gatsby functions
+- Full SEO support (via React Helmet) including Open Graph, Twitter Cards and Schema.org via JSON-LD
 
 ## Future reference
 
