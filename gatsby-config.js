@@ -8,7 +8,7 @@ module.exports = {
     },
     description:
       'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.',
-    siteUrl: 'https://hellotham.com/',
+    siteUrl: 'https://hellotham.gatsbyjs.io/',
     location: 'Sydney, NSW, Australia',
     social: {
       email: 'mailto:info@hellotham.com',
