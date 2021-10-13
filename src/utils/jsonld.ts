@@ -128,6 +128,7 @@ export default function JsonLD({
       '@type': 'Person',
       '@id': metadata.author.url,
       name: metadata.author.name,
+      url: metadata.author.url,
       worksFor: {
         '@id': metadata.siteUrl,
       },

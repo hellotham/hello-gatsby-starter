@@ -81,6 +81,10 @@ const SEO = ({
           content: 'website',
         },
         {
+          property: 'og:updated_time',
+          content: metaLastUpdated,
+        },
+        {
           name: 'twitter:creator',
           content: `@${siteMetadata.social.twitter}`,
         },
@@ -104,6 +108,8 @@ const SEO = ({
                 { property: 'og:image:alt', content: title },
                 { property: 'og:image:width', content: metaImage.width },
                 { property: 'og:image:height', content: metaImage.height },
+                { name: 'twitter:image', content: metaImage.src },
+                { name: 'twitter:imagealt', content: title },
                 { name: 'twitter:card', content: 'summary_large_image' },
               ]
             : [{ name: 'twitter:card', content: 'summary' }]
