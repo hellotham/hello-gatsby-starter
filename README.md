@@ -8,6 +8,7 @@ This is the Hello Tham Corporate Website Static Web App built using the followin
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com) and [TailwindUI](https://tailwindui.com)
 - [HeroIcons](https://heroicons.com/)
+- [Hero Patterns](https://heropatterns.com/)
 - [HeadlessUI](https://headlessui.dev/)
 - [unDraw](https://undraw.co/) for illustrations
 - [MDX](https://mdxjs.com/) and [Markdown](https://www.markdownguide.org/)
@@ -28,7 +29,7 @@ This website is open source (0BSD licence) - fork it and customise for your need
 - Pagination in posts and tag pages
 - Support for an RSS feed and sitemap
 - Automatic optimization of images in Markdown/MDX posts
-- SVG support
+- SVG design (unDraw, Hero Patterns, HeroIcons)
 - Support for code syntax highlighting
 - Manifest and offline support
 - Contact form using sendgrid email and Gatsby functions
