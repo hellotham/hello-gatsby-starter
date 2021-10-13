@@ -24,7 +24,7 @@ export type SiteMetadataType = {
   buildTime: string
 }
 
-const useSiteMetadata = (): SiteMetadataType => {
+const SiteMetadata = (): SiteMetadataType => {
   const { site } = useStaticQuery(
     graphql`
       query SITE_METADATA_QUERY {
@@ -57,4 +57,4 @@ const useSiteMetadata = (): SiteMetadataType => {
   return site
 }
 
-export default useSiteMetadata
+export default SiteMetadata

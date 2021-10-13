@@ -1,6 +1,6 @@
 import { Article, BreadcrumbList, Organization, Person, WebSite } from 'schema-dts'
 import { helmetJsonLdProp } from 'react-schemaorg'
-import useSiteMetadata from '@/utils/metadata'
+import SiteMetadata from '@/utils/sitemetadata'
 
 import Logo from '@/images/logo.png'
 
@@ -31,7 +31,7 @@ export default function JsonLD({
   pathname,
   lang = 'en',
 }: JsonLDProps) {
-  const metadata = useSiteMetadata().siteMetadata
+  const metadata = SiteMetadata().siteMetadata
   const email = metadata.social.email.replace('mailto:', '')
   const year = parseInt(lastUpdated.slice(0, 4))
 
@@ -157,6 +157,44 @@ export default function JsonLD({
         description: description,
         headline: title,
         keywords: keywords.join(', '),
+        image: {
+          '@type': 'ImageObject',
+          url: image.src,
+          width: image.width,
+          height: image.height,
+        },
+        inLanguage: lang,
+        mainEntityOfPage: pathname,
+        name: title,
+        publisher: {
+          '@id': metadata.siteUrl,
+        },
+        url: pathname,
+      }),
+    ].concat(jsonld)
+  }
+  if (type == 'page') {
+    jsonld = [
+      helmetJsonLdProp<Article>({
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        articleSection: type,
+        author: {
+          '@id': metadata.siteUrl,
+        },
+        copyrightHolder: {
+          '@id': metadata.siteUrl,
+        },
+        copyrightYear: year,
+        creativeWorkStatus: 'Published',
+        creator: {
+          '@id': metadata.siteUrl,
+        },
+        dateCreated: lastUpdated,
+        dateModified: lastUpdated,
+        datePublished: lastUpdated,
+        description: description,
+        headline: title,
         image: {
           '@type': 'ImageObject',
           url: image.src,

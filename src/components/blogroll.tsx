@@ -1,56 +1,18 @@
 import * as React from 'react'
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
 
-import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { CalendarIcon, UserCircleIcon } from '@heroicons/react/outline'
+import GetPosts from '@/utils/getposts'
 
 import Tags from '@/components/tags'
-
-const query = graphql`
-  query {
-    allMdx(filter: { fields: { source: { eq: "posts" } } }, sort: { fields: frontmatter___date, order: DESC }) {
-      nodes {
-        frontmatter {
-          title
-          description
-          author
-          date(formatString: "YYYY-MM-DD")
-          image {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          tags
-        }
-        slug
-      }
-    }
-  }
-`
-
-type NodeType = {
-  allMdx: {
-    nodes: {
-      frontmatter: {
-        title: string
-        description: string
-        author: string
-        date: string
-        image: ImageDataLike
-        tags: string[]
-      }
-      slug: string
-    }[]
-  }
-}
 
 interface BlogRollProps {
   tag?: string
 }
 
 const BlogRoll = ({ tag }: BlogRollProps) => {
-  const data: NodeType = useStaticQuery(query)
-  const posts = tag ? data.allMdx.nodes.filter(node => node.frontmatter.tags.includes(tag)) : data.allMdx.nodes
+  const posts = GetPosts(tag)
 
   return (
     <div className="mt-6 space-y-12 lg:space-y-0 flex flex-wrap mb-24">

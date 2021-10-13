@@ -4,7 +4,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/outline'
 
-import useSiteMetadata from '@/utils/metadata'
+import SiteMetadata from '@/utils/sitemetadata'
 import Layout from '@/components/layout'
 import SEO from '@/components/seo'
 
@@ -30,7 +30,7 @@ export default function ContactUs() {
     height: 1024,
   }
 
-  const metadata = useSiteMetadata().siteMetadata
+  const metadata = SiteMetadata().siteMetadata
 
   const contactMethods = [
     { name: 'Email', link: metadata.social.email, image: Email },
@@ -65,7 +65,7 @@ export default function ContactUs() {
   return (
     <Layout>
       <SEO
-        type="page"
+        type="pages"
         title="Contact Us"
         description="Our presence is real and digital. Contact us through the following ways."
         image={ogimage}

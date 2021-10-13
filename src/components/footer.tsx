@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-import useSiteMetadata from '@/utils/metadata'
+import SiteMetadata from '@/utils/sitemetadata'
 import HelloTham from '@/svg/logo/hellotham.svg'
 
 export default function Footer() {
-  const metadata = useSiteMetadata().siteMetadata
+  const metadata = SiteMetadata().siteMetadata
   const social = metadata.social
 
   return (

@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 import React from 'react'
 import Helmet from 'react-helmet'
-import useSiteMetadata from '@/utils/metadata'
+import SiteMetadata from '@/utils/sitemetadata'
 import JsonLD from '@/utils/jsonld'
 
 import defaultImage from '@/svg/undraw/undraw_ideas_flow_cy7b.svg'
@@ -38,7 +38,7 @@ const SEO = ({
   pathname,
   lang = 'en',
 }: SEOProps) => {
-  const { siteMetadata, buildTime } = useSiteMetadata()
+  const { siteMetadata, buildTime } = SiteMetadata()
   const metaTitle = type == 'homepage' ? title : title + ' | ' + siteMetadata.title
   const metaDescription = description || siteMetadata.description
   const metaDate = date ? date : buildTime

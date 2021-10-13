@@ -18,7 +18,7 @@ const BlogPage = () => {
   return (
     <Layout>
       <SEO
-        type="page"
+        type="pages"
         title="Blog Posts"
         description="Articles published from time to time"
         image={ogimage}
