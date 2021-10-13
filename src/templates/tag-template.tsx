@@ -27,7 +27,7 @@ const TagPage = ({ pageContext }: TagProps) => {
   const title = `Tag: ${tag}`
   return (
     <Layout>
-      <Seo title={title} description={`Posts with tag [${tag}]`} keywords={[tag]} image={ogimage} />
+      <Seo type="tags" title={title} description={`Posts with tag [${tag}]`} keywords={[tag]} image={ogimage} />
       <main className="mt-10">
         <article className="post">
           <header>

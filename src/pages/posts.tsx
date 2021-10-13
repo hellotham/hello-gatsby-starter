@@ -17,7 +17,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Seo title="Blog Posts" description="Articles published from time to time" image={ogimage} />
+      <Seo type="page" title="Blog Posts" description="Articles published from time to time" image={ogimage} />
       <main className="mt-10">
         <article className="post">
           <header>

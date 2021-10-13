@@ -17,7 +17,12 @@ export default function Home() {
 
   return (
     <div className="font-sans">
-      <Seo title="Hello Tham" description="A boutique management and strategy consulting company." image={ogimage} />
+      <Seo
+        type="homepage"
+        title="Hello Tham"
+        description="A boutique management and strategy consulting company."
+        image={ogimage}
+      />
       <Hero />
       <Features />
       <FindOutMore />

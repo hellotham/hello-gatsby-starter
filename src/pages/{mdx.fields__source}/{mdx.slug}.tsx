@@ -7,7 +7,6 @@ import { Link } from 'gatsby'
 import Layout from '@/components/layout'
 import Seo from '@/components/seo'
 import PostHero from '@/components/PostHero'
-import ArticleJsonLD from '@/components/json-ld'
 
 const components = { Link }
 
@@ -50,21 +49,14 @@ const BlogPost = ({ data }: BlogPostProps) => {
   return (
     <Layout>
       <Seo
+        type={data.mdx.fields.source}
         title={frontmatter.title}
         description={frontmatter.description}
+        date={frontmatter.date}
+        lastUpdated={frontmatter.date}
         image={(frontmatter.image as ResizeType).childImageSharp.resize}
         keywords={frontmatter.tags}
         pathname={'/posts/' + data.mdx.slug}
-      />
-      <ArticleJsonLD
-        title={frontmatter.title}
-        description={frontmatter.description}
-        type={data.mdx.fields.source}
-        date={frontmatter.date}
-        lastUpdated={frontmatter.date}
-        image={(frontmatter.image as ResizeType).childImageSharp.resize.src}
-        keywords={frontmatter.tags}
-        pathname={data.mdx.slug}
       />
       <main className="mt-10">
         <article className="post">

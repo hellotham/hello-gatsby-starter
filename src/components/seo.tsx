@@ -1,11 +1,15 @@
 /* eslint-disable indent */
 import React from 'react'
 import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import useSiteMetadata from '@/utils/metadata'
+import JsonLD from '@/utils/jsonld'
 
 interface SEOProps {
+  type: string
+  title: string
   description?: string
-  lang?: string
+  date?: string
+  lastUpdated?: string
   image?: {
     src: string
     height: number
@@ -16,15 +20,26 @@ interface SEOProps {
     content: string
   }[]
   keywords?: string[]
-  title: string
   pathname?: string
+  lang?: string
 }
-function SEO({ description = '', lang = 'en', image, meta = [], keywords, title, pathname = '' }: SEOProps) {
-  const data = useStaticQuery(detailsQuery)
-  const metaDescription = description || data.site.siteMetadata.description
-  const metaImage = image && image.src ? `${data.site.siteMetadata.siteUrl}${image.src}` : null
-  const metaUrl = `${data.site.siteMetadata.siteUrl}${pathname}`
-  const canonical = pathname ? `${data.site.siteMetadata.siteUrl}${pathname}` : null
+function SEO({
+  type,
+  title,
+  description = '',
+  date,
+  lastUpdated,
+  image,
+  meta = [],
+  keywords,
+  pathname = '',
+  lang = 'en',
+}: SEOProps) {
+  const metadata = useSiteMetadata()
+  const metaDescription = description || metadata.description
+  const metaImage = image && image.src ? `${metadata.siteUrl}${image.src}` : null
+  const metaUrl = `${metadata.siteUrl}${pathname}`
+  const canonical = pathname ? `${metadata.siteUrl}${pathname}` : null
 
   return (
     <Helmet
@@ -32,7 +47,7 @@ function SEO({ description = '', lang = 'en', image, meta = [], keywords, title,
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+      titleTemplate={`%s | ${metadata.title}`}
       link={canonical ? [{ rel: 'canonical', href: canonical }] : []}
       meta={[
         {
@@ -57,7 +72,7 @@ function SEO({ description = '', lang = 'en', image, meta = [], keywords, title,
         },
         {
           name: 'twitter:creator',
-          content: `@${data.site.siteMetadata.social.twitter}`,
+          content: `@${metadata.social.twitter}`,
         },
         {
           name: 'twitter:title',
@@ -77,35 +92,26 @@ function SEO({ description = '', lang = 'en', image, meta = [], keywords, title,
             ? [
                 { property: 'og:image', content: metaImage },
                 { property: 'og:image:alt', content: title },
-                { property: 'og:image:width', content: image!.width },
-                { property: 'og:image:height', content: image!.height },
+                { property: 'og:image:width', content: image!.width.toString() },
+                { property: 'og:image:height', content: image!.height.toString() },
                 { name: 'twitter:card', content: 'summary_large_image' },
               ]
             : [{ name: 'twitter:card', content: 'summary' }]
         )
         .concat(keywords && keywords.length > 0 ? { name: 'keywords', content: keywords.join(', ') } : [])
         .concat(meta)}
+      script={JsonLD({
+        title: title,
+        description: metaDescription,
+        type: type,
+        date: date,
+        lastUpdated: lastUpdated,
+        image: image,
+        keywords: keywords,
+        pathname: pathname,
+      })}
     />
   )
 }
 
 export default SEO
-
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
-    site {
-      siteMetadata {
-        title
-        siteUrl
-        description
-        author {
-          name
-          summary
-        }
-        social {
-          twitter
-        }
-      }
-    }
-  }
-`

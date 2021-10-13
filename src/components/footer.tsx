@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-import useSiteMetadata from './metadata'
+import useSiteMetadata from '../utils/metadata'
 import HelloTham from '@/svg/logo/hellotham.svg'
 
 export default function Footer() {

@@ -30,7 +30,7 @@ const MDXTemplate = ({ pageContext, children }: LayoutProps) => {
 
   return (
     <Layout>
-      <Seo title={frontmatter.title} description={frontmatter.description} />
+      <Seo type="page" title={frontmatter.title} description={frontmatter.description} />
       <main className="mt-10">
         <article className="post">
           <header>

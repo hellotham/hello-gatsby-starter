@@ -35,7 +35,12 @@ const Tags = ({ data }: TagsProps) => {
 
   return (
     <Layout>
-      <Seo title="Blog Tags" description="Click on each tag to view blog posts containing tag." image={ogimage} />
+      <Seo
+        type="page"
+        title="Blog Tags"
+        description="Click on each tag to view blog posts containing tag."
+        image={ogimage}
+      />
       <main className="mt-10">
         <article className="post">
           <header>

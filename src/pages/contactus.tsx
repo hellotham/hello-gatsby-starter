@@ -4,7 +4,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/outline'
 
-import useSiteMetadata from '@/components/metadata'
+import useSiteMetadata from '@/utils/metadata'
 import Layout from '@/components/layout'
 import Seo from '@/components/seo'
 
@@ -65,6 +65,7 @@ export default function ContactUs() {
   return (
     <Layout>
       <Seo
+        type="page"
         title="Contact Us"
         description="Our presence is real and digital. Contact us through the following ways."
         image={ogimage}
