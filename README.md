@@ -27,7 +27,7 @@ This website is open source (0BSD licence) - fork it and customise for your need
 - Full-featured blog with frontmatter (title, description, author, date, image, tags)
 - Tags index page and individual tag pages
 - Pagination in posts and tag pages
-- Support for an RSS feed and sitemap
+- Support for RSS feed, sitemap and robots.txt
 - Automatic optimization of images in Markdown/MDX posts
 - SVG design (unDraw, Hero Patterns, HeroIcons)
 - Support for code syntax highlighting

@@ -8,7 +8,7 @@ module.exports = {
     },
     description:
       'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.',
-    siteUrl: 'https://hellotham.gatsbyjs.io/',
+    siteUrl: 'https://hellotham.gatsbyjs.io',
     location: 'Sydney, NSW, Australia',
     social: {
       email: 'mailto:info@hellotham.com',
@@ -107,20 +107,53 @@ module.exports = {
               siteMetadata {
                 title
                 description
+                author {
+                  name
+                }
                 siteUrl
+                site_url: siteUrl
+              }
+              buildTime
+            }
+            allFile(filter: {relativePath: {eq: "hellotham_logo.png"}}) {
+              nodes {
+                childImageSharp {
+                  resize(width: 1200) {
+                    src
+                  }
+                }
               }
             }
           }
         `,
+        setup(options) {
+          return Object.assign({}, options.query, {
+            title: options.query.site.siteMetadata.title,
+            feed_url: options.query.site.siteMetadata.siteUrl + '/rss.xml',
+            image_url:
+              options.query.site.siteMetadata.siteUrl + options.query.allFile.nodes[0].childImageSharp.resize.src,
+            author: options.query.site.siteMetadata.author.name,
+            managingEditor: options.query.site.siteMetadata.author.name,
+            webMaster: options.query.site.siteMetadata.author.name,
+            copyright: options.query.site.buildTime.slice(0, 4) + ' ' + options.query.site.siteMetadata.title,
+            language: 'en',
+            pubDate: options.query.site.buildTime,
+          })
+        },
         feeds: [
           {
             serialize: ({ query: { site, allMdx } }) => {
               return allMdx.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.frontmatter.description,
+                  author: edge.node.frontmatter.author,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + '/post' + edge.node.slug,
-                  guid: site.siteMetadata.siteUrl + '/post' + edge.node.slug,
+                  url: site.siteMetadata.siteUrl + '/posts/' + edge.node.slug,
+                  guid: site.siteMetadata.siteUrl + '/posts/' + edge.node.slug,
+                  enclosure: {
+                    url: site.siteMetadata.siteUrl + edge.node.frontmatter.image.childImageSharp.resize.src,
+                  },
+                  categories: edge.node.frontmatter.tags,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               })
@@ -133,25 +166,33 @@ module.exports = {
                 ) {
                   edges {
                     node {
-                      html
-                      slug
                       frontmatter {
                         title
                         description
+                        author
                         date
+                        image {
+                          childImageSharp {
+                            resize(width: 1200) {
+                              src
+                            }
+                          }
+                        }
+                        tags
                       }
+                      html
+                      slug
                     }
                   }
                 }
               }
             `,
             output: '/rss.xml',
-            title: 'Hello Tham',
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
-            // match: "^/post/",
+            // match: '^/posts/',
           },
         ],
       },

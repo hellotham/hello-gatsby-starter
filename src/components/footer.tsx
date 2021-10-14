@@ -26,6 +26,21 @@ export default function Footer() {
             Privacy Policy
           </Link>
         </p>
+        <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
+          <Link to="/rss.xml" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
+            RSS
+          </Link>
+        </p>
+        <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
+          <Link
+            to="/sitemap/sitemap-index.xml"
+            className="text-purple-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Sitemap
+          </Link>
+        </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a
             className="text-purple-600 hover:text-pink-600"
