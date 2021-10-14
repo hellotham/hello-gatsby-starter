@@ -1,10 +1,11 @@
 import * as React from 'react'
 
+import SEO from '@/components/seo'
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import FindOutMore from '@/components/findoutmore'
+import LatestArticles from '../components/latestarticles'
 import Footer from '@/components/footer'
-import SEO from '@/components/seo'
 
 import OGImage from '../images/undraw_ideas_flow_cy7b.png'
 
@@ -26,7 +27,8 @@ export default function Home() {
       <Hero />
       <Features />
       <FindOutMore />
-      <div className="p-12 bg-white" />
+      <LatestArticles />
+      <div className="p-24 md:p-12 bg-white" />
       <Footer />
     </div>
   )
