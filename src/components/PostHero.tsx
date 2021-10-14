@@ -1,8 +1,10 @@
 import * as React from 'react'
 import { StaticImage, GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import Tags from '@/components/tags'
+import ShareButtons from '@/components/sharebuttons'
 
 interface PostHeroProps {
+  url: string
   title: string
   description?: string
   author?: string
@@ -11,7 +13,7 @@ interface PostHeroProps {
   tags?: string[]
 }
 
-const PostHero = ({ title, description, author, date, image, tags }: PostHeroProps) => (
+const PostHero = ({ url, title, description, author, date, image, tags }: PostHeroProps) => (
   <div className="mb-4 md:mb-0 w-full max-w-screen-xl mx-auto relative" style={{ height: '24em' }}>
     <div
       className="absolute left-0 bottom-0 w-full h-full z-10"
@@ -46,6 +48,13 @@ const PostHero = ({ title, description, author, date, image, tags }: PostHeroPro
       ) : (
         ''
       )}
+      <p className="mt-4 font-semibold text-pink-200 text-sm">Share this post on:</p>
+      <ShareButtons
+        url={url}
+        title={title}
+        description={description ? description : 'Check out my new post!'}
+        tags={tags ? tags : ['Post']}
+      />
     </div>
   </div>
 )

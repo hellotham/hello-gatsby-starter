@@ -8,8 +8,8 @@ export type TagType = {
 type TagQueryType = {
   allMdx: {
     group: {
-      fieldValue: string
-      totalCount: number
+      tag: string
+      count: number
     }[]
   }
 }

@@ -48,6 +48,7 @@ interface BlogPostProps {
 const BlogPost = ({ data }: BlogPostProps) => {
   const frontmatter = data.mdx.frontmatter
   const image = getImage(frontmatter.image as ImageDataLike)
+  const pathname = '/' + data.mdx.fields.source + '/' + data.mdx.slug
 
   return (
     <Layout>
@@ -59,12 +60,13 @@ const BlogPost = ({ data }: BlogPostProps) => {
         lastUpdated={data.mdx.parent.modifiedTime}
         image={(frontmatter.image as ResizeType).childImageSharp.resize}
         keywords={frontmatter.tags}
-        pathname={'/' + data.mdx.fields.source + '/' + data.mdx.slug}
+        pathname={pathname}
       />
       <main className="mt-10">
         <article className="post">
           <header>
             <PostHero
+              url={pathname}
               title={frontmatter.title}
               description={frontmatter.description}
               author={frontmatter.author}

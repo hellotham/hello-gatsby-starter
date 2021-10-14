@@ -17,5 +17,5 @@ export default function BlogHero() {
     }
   `)
 
-  return <PostHero title="Blog Posts" image={getImage(imagequery.allFile.nodes[0])!} />
+  return <PostHero url="/posts" title="Blog Posts" image={getImage(imagequery.allFile.nodes[0])!} />
 }
