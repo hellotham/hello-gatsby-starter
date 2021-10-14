@@ -97,7 +97,42 @@ module.exports = {
       },
     },
     'gatsby-plugin-robots-txt',
-    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        output: '/sitemap',
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage(
+            filter: {
+              path: {regex: "/^(?!/404/|/404.html|/dev-404-page/)/"}
+              componentChunkName: {regex: "/^component---src-.*tsx$/"}
+            }) {
+            nodes {
+              path
+            }
+          }
+        }
+        `,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
+          return allPages.map(page => {
+            return { ...page }
+          })
+        },
+        serialize: ({ path }) => {
+          return {
+            url: path,
+            changefreq: 'weekly',
+            priority: 0.7,
+          }
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-feed-mdx',
       options: {

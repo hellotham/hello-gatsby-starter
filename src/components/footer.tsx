@@ -10,28 +10,28 @@ export default function Footer() {
 
   return (
     <footer className="text-gray-600">
-      <div className="container fixed bottom-0 inset-x-0 bg-pink-100 px-4 py-4 mx-auto flex items-center sm:flex-row flex-col">
-        <Link className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" to="/">
+      <div className="container fixed bottom-0 inset-x-0 bg-pink-100 px-4 py-4 mx-auto flex items-center md:flex-row flex-col">
+        <Link className="flex title-font font-medium items-center lg:justify-start justify-center text-gray-900" to="/">
           <img src={HelloTham} alt="Footer Logo" width="150" />
           <span className="sr-only">Hello Tham</span>
         </Link>
-        <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
+        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
           © {new Date().getFullYear()} Hello Tham Pty Ltd
           <Link to="/contactus" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             (Contact Us)
           </Link>
         </p>
-        <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
+        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
           <Link to="/pages/privacy" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             Privacy Policy
           </Link>
         </p>
-        <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
+        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
           <Link to="/rss.xml" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             RSS
           </Link>
         </p>
-        <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-300 sm:py-2 sm:mt-0 mt-4">
+        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
           <Link
             to="/sitemap/sitemap-index.xml"
             className="text-purple-600 ml-1"
@@ -41,7 +41,7 @@ export default function Footer() {
             Sitemap
           </Link>
         </p>
-        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span className="inline-flex md:ml-auto md:mt-0 mt-4 justify-center md:justify-start">
           <a
             className="text-purple-600 hover:text-pink-600"
             href={social.facebook}
