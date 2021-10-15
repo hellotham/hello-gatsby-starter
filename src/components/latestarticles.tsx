@@ -33,6 +33,7 @@ export default function LatestArticles() {
           <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-6">
             <div className="mb-4 lg:mb-0  p-4 lg:p-0 relative rounded block xl:col-span-2">
               <Link to={`/posts/${post.slug}`}>
+                <span className="sr-only">{post.frontmatter.title}</span>
                 <GatsbyImage
                   image={getImage(post.frontmatter.image)!}
                   loading="lazy"

@@ -27,19 +27,19 @@ export default function Footer() {
           </Link>
         </p>
         <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
-          <Link to="/rss.xml" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
+          <a href="/rss.xml" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             RSS
-          </Link>
+          </a>
         </p>
         <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
-          <Link
-            to="/sitemap/sitemap-index.xml"
+          <a
+            href="/sitemap/sitemap-index.xml"
             className="text-purple-600 ml-1"
             rel="noopener noreferrer"
             target="_blank"
           >
             Sitemap
-          </Link>
+          </a>
         </p>
         <span className="inline-flex md:ml-auto md:mt-0 mt-4 justify-center md:justify-start">
           <a
