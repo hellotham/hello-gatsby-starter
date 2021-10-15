@@ -55,6 +55,7 @@ export default function LatestArticles() {
                 className="inline-block px-6 py-3 mt-2 rounded-md bg-purple-600 hover:bg-pink-600 text-white"
               >
                 Read more
+                <span className="sr-only">{post.frontmatter.title}</span>
               </Link>
             </div>
             <div className="w-full">
