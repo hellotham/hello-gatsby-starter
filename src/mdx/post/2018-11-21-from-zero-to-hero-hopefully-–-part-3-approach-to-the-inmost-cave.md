@@ -5,7 +5,7 @@ description: "This is the third part of my series of articles on learning to
 author: Chris Tham
 date: 2018-11-20T22:00:00.000Z
 featuredpost: false
-image: ../images/zero-3.png
+image: ../../images/zero-3.png
 tags:
   - Proof of Concept
   - technology

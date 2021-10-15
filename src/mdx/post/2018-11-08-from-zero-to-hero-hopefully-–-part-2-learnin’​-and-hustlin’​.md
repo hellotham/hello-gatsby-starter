@@ -5,7 +5,7 @@ description: This is the second part of my series of articles on learning to
 author: Chris Tham
 date: 2018-11-07T22:00:00.000Z
 featuredpost: false
-image: ../images/zero-2.png
+image: ../../images/zero-2.png
 tags:
   - Proof of Concept
   - technology
@@ -21,7 +21,7 @@ In my first article, I referenced The Hero’s Journey. Joseph Campbell, a mytho
 
 For more information, refer to the Wikipedia article [The Hero’s Journey](https://en.wikipedia.org/wiki/Hero%27s_journey). In the context of my own adventure, I have now crossed the threshold from the ordinary world into the special world and will be encountering **Tests**, **Allies** and **Enemies**:
 
-![Hero's Journey](../images/zero-2a.png)
+![Hero's Journey](../../images/zero-2a.png)
 
 ## Tests (my learning progress)
 

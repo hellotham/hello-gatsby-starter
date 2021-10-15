@@ -1,6 +1,6 @@
 ---
-title: Recent Work
-description: Recent deliverables to our clients
+title: Achievements
+description: Recent work we have performed for our clients
 image: ../images/work.jpg
 ---
 

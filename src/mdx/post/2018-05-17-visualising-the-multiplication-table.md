@@ -4,7 +4,7 @@ description: Insights you may not realise about the multiplication table.
 author: Chris Tham
 date: 2018-05-16T23:00:00.000Z
 featuredpost: false
-image: ../images/multiply-1.png
+image: ../../images/multiply-1.png
 tags:
   - Tableau
   - mathematics
@@ -34,11 +34,11 @@ This led me to wondering whether there are any similar patterns for the other di
 
 What about the other digits? I decided to visualise the multiplication table in Tableau. First of all I constructed a multiplication table in Excel, looking like this:
 
-![Multiplication Table in Excel](../images/multiply-2.png)
+![Multiplication Table in Excel](../../images/multiply-2.png)
 
 I then uploaded it into Tableau, and after some fiddling, managed to replicate the table:
 
-![Multiplication Table in Tableau](../images/multiply-3.png)
+![Multiplication Table in Tableau](../../images/multiply-3.png)
 
 What I really wanted to do was to look for patterns in the left digit and right digit of the results, so I created two calculated fields:
 
@@ -49,53 +49,53 @@ Right Digit = [Results]%10
 
 I initially started focusing on the Right Digit. Creating a scatter diagram between the Multiplicand and the Right Digit generated this pattern:
 
-![Right Digit Scatter Diagram](../images/multiply-4.png)
+![Right Digit Scatter Diagram](../../images/multiply-4.png)
 
 Now there seems to be some sort of pattern, for example all the odd multipliers (except for 5) generated all possible digits, and the even multipliers only generated even digits (as you would expect). Multiplying by 5 will always result in a number ending with either 5 or 0.
 
 What if we were to colour code by the multiplier?
 
-![Right Digit Scatter Diagram with colour](../images/multiply-5.png)
+![Right Digit Scatter Diagram with colour](../../images/multiply-5.png)
 
 Now we seem to have lost some of the symmetry. However, I think this is because some of the circles are actually multiple different coloured circles all on top of each other.
 
 Next, I drew lines (by multiplier) connecting the circles:
 
-![Right Digit Scatter Diagram with colour and lines](../images/multiply-6.png)
+![Right Digit Scatter Diagram with colour and lines](../../images/multiply-6.png)
 
 Now we can definitely see that pairs of multipliers that appear to be opposites of each other. If this is not clear from the above diagram, let’s look at each pair. The first is the multipliers 1 and 9:
 
-![Multipliers 1 and 9](../images/multiply-7.png)
+![Multipliers 1 and 9](../../images/multiply-7.png)
 
 Clearly, the pattern of right digits for multipliers 1 and 9 are mirror images of each other. From this, a hypothesis can be generated that the same is true for the other pairs (2 and 8, 3 and 7, 4 and 6).
 
 This is certainly true of 2 and 8:
 
-![Multipliers 2 and 8](../images/multiply-8.png)
+![Multipliers 2 and 8](../../images/multiply-8.png)
 
 Multipler 3 creates a beautiful zig zag pattern of 3-6-9 followed by triplets with digits 1 less than the previous (2-5-8 and 1-4-7) – notice how the result is also a permutation of the original digits (1-9):
 
-![Multiplier 3](../images/multiply-9.png)
+![Multiplier 3](../../images/multiply-9.png)
 
 I can’t help wondering if the Christian reverence for the number 3 (The Holy Trinity) is augmented by this beautiful symmetrical pattern. And of course, the pattern for 7 is reversed but just as beautiful (and we all know there is 7 days in the week, and God created the Universe in 6 days and rested on the 7th):
 
-![Multiplier 7](../images/multiply-10.png)
+![Multiplier 7](../../images/multiply-10.png)
 
 The multipliers 4 and 8 create a pattern 4-8-2-6 that is reminiscent of the pattern for 3 and 7:
 
-![Multiplier 4 and 8](../images/multiply-11.png)
+![Multiplier 4 and 8](../../images/multiply-11.png)
 
 And finally the multiplier 5 stands on its own as it is symmetrical:
 
-![Multiplier 5](../images/multiply-12.png)
+![Multiplier 5](../../images/multiply-12.png)
 
 The pattern for the left digit looks deceptively simple but not as symmetrical:
 
-![Left Digit Pattern](../images/multiply-13.png)
+![Left Digit Pattern](../../images/multiply-13.png)
 
 To see how the left digit is derived, we have observe that it acts as an “overflow” for the right digit – it increases whenever the right digit is smaller than the previous right digit. This is clearly illustrated for multiplier 2 but is true for all the other digits as well:
 
-![Relationship between Left and Right Digits](../images/multiply-14.png)
+![Relationship between Left and Right Digits](../../images/multiply-14.png)
 
 In summary, we can derive the multiplication table easily with a few simple rules:
 

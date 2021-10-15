@@ -5,7 +5,7 @@ description: A personal history of the use of smartphones over 20 years.
 author: Chris Tham
 date: 2017-06-29T23:00:00.000Z
 featuredpost: false
-image: ../images/tech-2017-6.png
+image: ../../images/tech-2017-6.png
 tags:
   - phone
   - history

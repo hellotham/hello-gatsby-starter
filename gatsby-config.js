@@ -24,7 +24,6 @@ module.exports = {
     'gatsby-plugin-svgr-svgo',
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-mdx-source-name',
     'gatsby-plugin-image',
     {
       resolve: 'gatsby-source-filesystem',
@@ -38,37 +37,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts/`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-page-creator',
-      options: {
-        path: `${__dirname}/src/pages/`,
-        ignore: ['__generated__/*'],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-page-creator',
-      options: {
-        path: `${__dirname}/src/posts`,
+        name: 'mdx',
+        path: `${__dirname}/src/mdx/`,
       },
     },
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
-        // defaultLayouts: {
-        //   posts: require.resolve("./src/templates/mdx-template.tsx"),
-        //   default: require.resolve("./src/templates/mdx-template.tsx"),
-        // },
         extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           {
@@ -108,11 +83,7 @@ module.exports = {
               siteUrl
             }
           }
-          allSitePage(
-            filter: {
-              path: {regex: "/^(?!/404/|/404.html|/dev-404-page/)/"}
-              componentChunkName: {regex: "/^component---src-.*tsx$/"}
-            }) {
+          allSitePage(filter: { path: {regex: "/^(?!/404/|/404.html|/dev-404-page/)/"} }) {
             nodes {
               path
             }
@@ -183,8 +154,8 @@ module.exports = {
                   description: edge.node.frontmatter.description,
                   author: edge.node.frontmatter.author,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + '/posts/' + edge.node.slug,
-                  guid: site.siteMetadata.siteUrl + '/posts/' + edge.node.slug,
+                  url: site.siteMetadata.siteUrl + '/' + edge.node.slug,
+                  guid: site.siteMetadata.siteUrl + '/' + edge.node.slug,
                   enclosure: {
                     url: site.siteMetadata.siteUrl + edge.node.frontmatter.image.childImageSharp.resize.src,
                   },
@@ -196,7 +167,7 @@ module.exports = {
             query: `
               {
                 allMdx(
-                  filter: { fields: { source: { eq: "posts" } } }
+                  filter: { slug: { regex: "/^post/" } }
                   sort: { order: DESC, fields: [frontmatter___date] }
                 ) {
                   edges {
@@ -227,7 +198,7 @@ module.exports = {
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
-            // match: '^/posts/',
+            // match: '^/post/',
           },
         ],
       },

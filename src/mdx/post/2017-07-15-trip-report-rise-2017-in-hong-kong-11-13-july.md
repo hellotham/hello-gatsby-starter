@@ -4,7 +4,7 @@ description: A recap of a trip to Hong Kong in 2017 to attend the RISE conferenc
 author: Chris Tham
 date: 2017-07-14T23:00:00.000Z
 featuredpost: false
-image: ../images/rise-1.png
+image: ../../images/rise-1.png
 tags:
   - event
   - conference
@@ -34,21 +34,21 @@ I was starving when I reached the hotel. The breakfast buffet had an amazing sel
 
 After breakfast, we headed to the HKCE again to register for the RISE conference. Because we bought Women in Tech tickets, we had to queue up in the Women in Tech line and I felt this was a bit unnecessary – why cant we just check in through the normal registration booths where the line was moving faster?
 
-![Women In Tech](../images/rise-2.png)
+![Women In Tech](../../images/rise-2.png)
 
 Security was very tight. Not only did we have to show our QR code ticket to even get to the registration booth, we had to show a photo id to register, and were then issued both an attendee badge as well as a wristband. Apparently the penalty for losing the wristband is over HK12,000! Then they scanned our attendee badge as well as checked out wristbands before we were allowed into the main hall.
 
-![Photo Op](../images/rise-3.png)
+![Photo Op](../../images/rise-3.png)
 
 The conference is held in a very large hall partitioned into various curtained off stages where the presentations are, and a middle section full of booths with startups promoting their companies. There were a few sponsors such as AWS, KPMG and others but by and large the booths are small and allocated to startups. There was also an area where a startup pitch competition was underway. Each startup had only a few minutes to provide an overview of their offering judged by a panel. We saw a few of these – the quality was quite variable and I can see some startups can benefit from presentation coaching.
 
-![Conference floor](../images/rise-4.png)
+![Conference floor](../../images/rise-4.png)
 
 There were not enough seats to accomodate all attendees for the keynote session and we had to wait in a line outside. I can tell some attendees were disappointed by this.
 
 There seemed to be about three parallel sessions of presentations, and it’s a mixture of solo speakers and panel sessions. I liked the brevity of the sessions – each lasted between 15-30 minutes. Two memorable sessions for me prior to lunch was one around open source design and another about data quality vs quantity.
 
-![Panel discussion](../images/rise-5.png)
+![Panel discussion](../../images/rise-5.png)
 
 At lunch time I was a bit disappointed to discover we had to buy lunch (at rather exorbitant prices) – I am used to all meals being catered in conferences. We decided to head out rather than eat in the convention centre and discovered a great place called Tasty HK that had not only great food, good prices but also accepted VISA cards. I had an interesting fried rice sprinkled with pork floss on top and it was very nice.
 
@@ -58,7 +58,7 @@ By the end of the conference I was really tired. We decided to skip an after con
 
 I had to rush away to catch another post conference event – a “Startup Ferry” cruise around the harbour sponsored by one of the conference partners. I walked a long distance to get to Wan Chai MTR station, then walked quite a fair bit to get to Central Pier 7, and by the time I arrived I was very tired and sleepy and in no mood to party, so I ended up keeping my own company during the cruise and mainly took photos of the harbour. The crowd was very young and full of what I assume to be members of startup companies. It wasn’t really a good event for networking.
 
-![StartUpFerry](../images/rise-6.png)
+![StartUpFerry](../../images/rise-6.png)
 
 After the cruise, I headed back to the hotel and pretty much crashed into bed.
 
@@ -74,7 +74,7 @@ After that we had a panel session about whether China was “closing the gap” 
 
 I think the startup bubble is highly reminiscent of the Internet bubble of the 90s – everyone is madly creating yet another mobile app, the “Uber of X” or some sort of payment service, just like in the 90s when everyone was busy adding “i” or “e” in front things and creating websites.
 
-![Yi Ying Lu](../images/rise-7.png)
+![Yi Ying Lu](../../images/rise-7.png)
 
 I particularly enjoyed the talk about “fake news” – a panel session consisting of various media representatives. Predictably the theme was about how the Internet with its focus on rewarding clicks or ad impressions have favoured quantity over quality and it has become difficult to determine what is true and what is fake. I do agree that newspapers have a structure that allows the reader to distinguish reporting from opinion pieces from advertising, but on the Internet all those have become blurred. I personally have reached the point where I try to rely less and less on random Internet articles and prefer to read the original source for any information, and even traditional news outlets have become less and less credible and trustworthy.
 
@@ -82,7 +82,7 @@ I was still quite full at lunchtime so we ended up just buying coffee from Pacif
 
 After lunch we had a Q&A session with Gary Vaynerchuk, who was also the endnote speaker on Day 1. I must admit – I didn’t know who Gary was prior to the conference – but it seems I must be one of the very few who have never heard of him, and he is some sort of Internet marketing / online selling genius plus angel investor. He is an extremely good speaker, and I do agree with a lot of what he has to say. His main message is that now is the moment of startups and digital marketing, with low barriers to entry and an opportunity to capitalise on undervalued digital channels, but you have to give it your all and work really hard to get there.
 
-![Gary Vaynerchuk](../images/rise-8.png)
+![Gary Vaynerchuk](../../images/rise-8.png)
 
 The endnote is delivered by Min Liang Tan, the exceedingly handsome Singaporean CEO of Razer – a company “for gamers by gamers.” I must admit, I am not a gamer and therefore wasn’t really aware of the products Razer sold – they started selling gaming mice and keyboards but are now into making laptops, services and even own THX. Min Liang now lives in San Francisco and initially spoke with an American accent but his tone become more and more Singaporean as he talked.
 
@@ -96,13 +96,13 @@ Today I decided to do my morning walk to the west along Hennessy Road. I passed 
 
 I reached the intersection with Queen’s Road East and headed back along it. The Road ascended and eventually I reached Wan Chai park. I climbed back down and went through the park. Despite the name, Wan Chai park did not have a lot of greenery but was heavily concretised. I passed a quaint shallow pool intended for Model Boats and immediately had a fantasy about building my own model boat and floating it in the pool.
 
-![Wan Chai Park](../images/rise-9.png)
+![Wan Chai Park](../../images/rise-9.png)
 
 Back in the hotel I had another huge breakfast and headed to the conference. Today is the last day, and we have registered for the Women in Tech Roundtable. We were seated in groups of around ten people with a facilitator. Our facilitator was a pretty young Indian girl who had started her own Interior Design firm. The rest of the group was a mixture of women in different industries and professions and nationalities. One of the members of our group was also the invited speaker (Jaclyn Koh of the Busy Woman Project) who gave a nice talk about the challenges facing women today.
 
 The topic of the Roundtable was about the challenges and key learnings for Female Founders. I really enjoyed the conversation and it was interesting how many shared experiences we have and how much we can learn from each other despite our different backgrounds. It was easily the highlight of the conference for me.
 
-![Women in Tech roundtable](../images/rise-10.png)
+![Women in Tech roundtable](../../images/rise-10.png)
 
 After that, we heard the top three finalists of the Pitch contest. From memory, one was Postco (providing a service to enable someone to order online and have the parcel delivered to a local cafe or similar rather than miss a collection), the second was Booqed (an Uber of temporary office space and meeting rooms) and the third was ZapZapMath (providing math education via a game like app).
 
@@ -110,10 +110,10 @@ I had a nice fried rice for lunch, but it made me feel really full and I think I
 
 Soon it was time to enter the main stage for the closing sessions. There was a session introducing the capabilities of TenCent’s enormously popular WeChat service/platform/lifestyle – part Facebook, part SnapChat and part payment service. The winner of the Pitch contest was announced- it was ZapZapMath. The final session was an interview with Paul Eremenko – the current CTO of Airbus Industry and the talk around across a number of topics including the Vahana single passenger personal flight “vehicle” (or, as Airbus calls it -“Urban Air Mobility”).
 
-![co-working space](../images/rise-11.png)
+![co-working space](../../images/rise-11.png)
 
 And suddenly it was all over – three days of conferencing. In the evening we attended a “fireside chat” about AI and Future Tech. I found this boring despite the calibre of the speakers so we left early and decided to walk back to the hotel. Although Apple maps said it should take about 30 minutes it ended up taking almost an hour due partly to us not knowing exactly where to go (Apple Maps isn’t public transport or walking optimised for Hong Kong so it doesn’t know about the elevated pedestrian walkways for example.
 
-![fireside chat](../images/rise-12.png)
+![fireside chat](../../images/rise-12.png)
 
 On the way we passed through Chater Park and a huge lantern installation celebrating the 20th anniversary of the handover of Hong Kong back to China. This was quite interesting and colourful. I was very very tired when we finally reached the hotel and pretty much crashed into bed.

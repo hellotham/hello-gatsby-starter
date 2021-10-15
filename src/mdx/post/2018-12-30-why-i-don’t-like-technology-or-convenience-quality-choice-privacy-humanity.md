@@ -5,7 +5,7 @@ description: Technology isn't always positive, or a benefit.
 author: Chris Tham
 date: 2018-12-29T22:00:00.000Z
 featuredpost: false
-image: ../images/hate-tech.png
+image: ../../images/hate-tech.png
 tags:
   - opinion
   - technology

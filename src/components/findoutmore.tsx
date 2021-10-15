@@ -10,21 +10,21 @@ const callouts = [
     description: 'Find out more about our consultants',
     imageSrc: People,
     imageAlt: 'People drawing',
-    href: '/pages/consultants',
+    href: '/consultants',
   },
   {
     name: 'Partners',
     description: 'Find out more about our partners',
     imageSrc: Partners,
     imageAlt: 'Partners drawing',
-    href: '/pages/partners',
+    href: '/partners',
   },
   {
     name: 'Achievements',
     description: 'Recent work we have performed for our clients',
     imageSrc: Work,
     imageAlt: 'Recent work drawing',
-    href: '/pages/work',
+    href: '/work',
   },
 ]
 

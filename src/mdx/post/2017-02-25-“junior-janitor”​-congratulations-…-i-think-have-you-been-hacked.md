@@ -4,7 +4,7 @@ description: What is the relevance of the job title these days?
 author: Chris Tham
 date: 2017-02-24T22:00:00.000Z
 featuredpost: false
-image: ../images/janitor.jpg
+image: ../../images/janitor.jpg
 tags:
   - advice
   - Hello Tham
@@ -42,11 +42,11 @@ As I am only just starting out, it is only appropriate that I prefix the title w
 
 So … “Junior Janitor” it is. I updated my profile to include the following:
 
-![Profile excerpt](../images/janitor-1.jpeg)
+![Profile excerpt](../../images/janitor-1.jpeg)
 
 This caused LinkedIn to post an update to my connections:
 
-![LinkedIn Update](../images/janitor-2.png)
+![LinkedIn Update](../../images/janitor-2.png)
 
 The responses I received from my connections over the next few days were interesting.
 

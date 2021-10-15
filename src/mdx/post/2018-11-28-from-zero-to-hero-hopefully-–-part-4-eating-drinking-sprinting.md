@@ -5,7 +5,7 @@ description: "This is the fourth part of my series of articles on learning to
 author: Chris Tham
 date: 2018-11-27T22:00:00.000Z
 featuredpost: false
-image: ../images/zero-4.png
+image: ../../images/zero-4.png
 tags:
   - Proof of Concept
   - technology
@@ -43,11 +43,11 @@ It was great to enter the weekend knowing we had a successful Sprint 1, and I ca
 
 On Saturday we visited Camden, a historical town on the outskirts of Sydney as they were having their annual Jacaranda Festival.
 
-![Camden Post Office](../images/zero-4a.png "Camden Post Office")
+![Camden Post Office](../../images/zero-4a.png "Camden Post Office")
 
 We had a great lunch at a vegetarian restaurant in Canley Heights and spent the afternoon looking the sculptures at Sydney Olympic Park:
 
-![Parko Technic](../images/zero-4b.png "Parko Technic")
+![Parko Technic](../../images/zero-4b.png "Parko Technic")
 
 On Sunday a friend of mine hosted a Gin and High Tea ladies afternoon. A group of us sampled some really interesting gin concoctions and a variety of sweet and savoury dishes. We each had to contribute a dish and after some soul searching I decided to make some smoked salmon and avocado sandwiches on rye crisp bread. I added some goats cheese and truffle, and garnished with cucumber, mint and sprinkled some fried onions on top. I also sprinkled a bit of olive oil and raspberry balsamic vinegar.
 

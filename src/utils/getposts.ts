@@ -3,7 +3,7 @@ import { ImageDataLike } from 'gatsby-plugin-image'
 
 const postQuery = graphql`
   query {
-    allMdx(filter: { fields: { source: { eq: "posts" } } }, sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }, filter: { slug: { regex: "/^post/" } }) {
       nodes {
         frontmatter {
           title

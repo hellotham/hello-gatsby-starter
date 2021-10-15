@@ -4,7 +4,7 @@ description: Five predictions for the technology industry for 2018
 author: Chris Tham
 date: 2017-12-30T22:00:00.000Z
 featuredpost: false
-image: ../images/tech-2018.png
+image: ../../images/tech-2018.png
 tags:
   - management consulting
   - strategy
@@ -46,7 +46,7 @@ So, without further ado, here are the predictions for 2018. As before, all photo
 
 ## **1. Google pivoting**
 
-![Google pivoting](../images/tech-2018-1.png)
+![Google pivoting](../../images/tech-2018-1.png)
 
 Okay, this is not much of a prediction, more like stating the bleedin’ obvious. Google have a world domination strategy that is very similar to Microsoft in the 1990s, and unfortunately are copying Microsoft’s playbook so closely they are making the same mistakes, and risk facing the same issues Microsoft encountered.
 
@@ -60,7 +60,7 @@ If any of this seems familiar, Microsoft tried doing all this in the 1990s – t
 
 ## 2. Apple stumble
 
-![Apple stumble](../images/tech-2018-2.png)
+![Apple stumble](../../images/tech-2018-2.png)
 
 I wasn’t quite ready to call this out in 2017, and in hindsight I am glad I didn’t. But I think Apple will encounter a difficult period soon. There is no denying Apple have had a great run in the last decade, fuelled primarily by the iPhone but augmented by many other success stories (iPads, to a lesser extent macOS) but also slightly less-successful but still notable areas (the Apple Watch has been both more successful than the industry expected, but at the same time not quite as successful as Apple may have hoped).
 
@@ -72,7 +72,7 @@ We haven’t reached the point of Peak Apple yet, but that day will come. Apple�
 
 ## 3. Dumb human
 
-![Dumb human](../images/tech-2018-3.png)
+![Dumb human](../../images/tech-2018-3.png)
 
 Don’t worry about machine intelligence, worry more about what we are becoming. 2017 has proven just how easily we can be manipulated through social media, and how narcissistic and psychopathic we have become. On the “plus” side, soon we will be replaced by automation and our lives will be owned and ruled by major corporations acting as Big Brother.
 
@@ -82,13 +82,13 @@ I predict there will be some unfortunate consequences, not all will happen in 20
 
 ## 4. The cryptocurrency bubble bursts
 
-![The cryptocurrency bubble bursts](../images/tech-2018-4.png)
+![The cryptocurrency bubble bursts](../../images/tech-2018-4.png)
 
 Again, this is not really a prediction, merely stating the inevitable. But it will be a very “fun” ride.
 
 ## 5. The post-technology world
 
-![The post-technology world](../images/tech-2018-5.png)
+![The post-technology world](../../images/tech-2018-5.png)
 
 All the above may seem like doom and gloom, and I may seem anti-technology, but really it is all about finding a new equilibrium. Some of us remember a world pre-computers, pre-Internet, pre-mobile phones, pre-social media, pre-streaming, pre-Cloud, pre-digital.
 

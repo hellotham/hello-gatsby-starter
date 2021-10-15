@@ -5,7 +5,7 @@ description: "This is the fifth part of my series of articles on learning to
 author: Chris Tham
 date: 2018-12-10T22:00:00.000Z
 featuredpost: false
-image: ../images/zero-5.png
+image: ../../images/zero-5.png
 tags:
   - Proof of Concept
   - technology
@@ -70,7 +70,7 @@ On Thursday, I also attended a ServiceNow networking event and met with our Tech
 
 On Friday evening, I attended a Christmas function – this was a cruise around Sydney Harbour on a very nice boat, and on the weekend we attended a Japanese festival at Darling Harbour and also had a great Malaysian buffet lunch on Sunday.
 
-![Sydney Harbour cruise](../images/zero-5a.png "Sydney Harbour cruise")
+![Sydney Harbour cruise](../../images/zero-5a.png "Sydney Harbour cruise")
 
 This week is the last week and we are focused on pulling everything together and achieving end to end integration between the prototype and SAP via our Odata services. Hopefully we will have something to demo!
 

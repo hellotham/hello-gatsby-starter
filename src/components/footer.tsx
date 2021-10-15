@@ -22,7 +22,7 @@ export default function Footer() {
           </Link>
         </p>
         <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
-          <Link to="/pages/privacy" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
+          <Link to="/privacy" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             Privacy Policy
           </Link>
         </p>

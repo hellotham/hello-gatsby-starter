@@ -5,7 +5,7 @@ description: Welcome to the new website!
 author: Chris Tham
 date: 2019-07-21T22:00:00.000Z
 featuredpost: false
-image: ../images/refresh.jpg
+image: ../../images/refresh.jpg
 tags:
   - Hello Tham
   - website

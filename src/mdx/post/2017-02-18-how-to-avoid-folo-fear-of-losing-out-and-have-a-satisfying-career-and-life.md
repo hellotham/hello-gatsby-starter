@@ -4,7 +4,7 @@ author: Chris Tham
 date: 2017-02-17T22:00:00.000Z
 description: Advice on how to have a satisfying career and life
 featuredpost: false
-image: ../images/folo.jpg
+image: ../../images/folo.jpg
 tags:
   - advice
   - career

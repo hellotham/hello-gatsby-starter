@@ -83,7 +83,7 @@ const BlogRoll = ({ tag }: BlogRollProps) => {
         {posts.slice(offset, offset + POSTS_PER_PAGE).map(post => (
           <section className="p-4 md:w-1/2 lg:w-1/3">
             <div className="h-full border-1 border-pink-200 bg-white rounded-lg shadow-xl overflow-hidden p-2">
-              <Link to={`/posts/${post.slug}`}>
+              <Link to={`/${post.slug}`}>
                 <GatsbyImage
                   image={getImage(post.frontmatter.image)!}
                   loading="lazy"
@@ -95,7 +95,7 @@ const BlogRoll = ({ tag }: BlogRollProps) => {
               </Link>
               <div className="p-6">
                 {post.frontmatter.tags ? <Tags tags={post.frontmatter.tags} /> : ''}
-                <Link to={`/posts/${post.slug}`}>
+                <Link to={`/${post.slug}`}>
                   <h1 className="title-font text-xl font-bold text-purple-600 hover:text-pink-600 mt-2">
                     {post.frontmatter.title}
                   </h1>

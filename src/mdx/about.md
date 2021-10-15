@@ -21,7 +21,7 @@ We also assist our clients in implementing our recommendations, models and strat
 
 ## ​About our logo​​​​​
 
-![Logo](../images/hellotham-logo-250x250.png)
+![Logo](../../images/hellotham-logo-250x250.png)
 
 Our logo reflects who we are and our values.
 

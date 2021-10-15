@@ -65,7 +65,7 @@ export default function ContactUs() {
   return (
     <Layout>
       <SEO
-        type="pages"
+        type="page"
         title="Contact Us"
         description="Our presence is real and digital. Contact us through the following ways."
         image={ogimage}

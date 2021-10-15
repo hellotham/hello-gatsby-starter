@@ -4,7 +4,7 @@ description: How to run Unix Version 7 in an emulated PDP-11 on a Raspberry Pi.
 author: Chris Tham
 date: 2016-04-14T23:00:00.000Z
 featuredpost: false
-image: ../images/pdp11.png
+image: ../../images/pdp11.png
 tags:
   - Raspberry Pi
   - Unix

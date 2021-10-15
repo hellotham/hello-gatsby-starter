@@ -8,12 +8,12 @@ import HelloTham from '@/svg/logo/hellotham.svg'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '/pages/about', current: false },
-  { name: 'Services', href: '/pages/services', current: false },
-  { name: 'Consultants', href: '/pages/consultants', current: false },
-  { name: 'Partners', href: '/pages/partners', current: false },
-  { name: 'Achievements', href: '/pages/work', current: false },
-  { name: 'Blog', href: '/posts', current: false },
+  { name: 'About', href: '/about', current: false },
+  { name: 'Services', href: '/services', current: false },
+  { name: 'Consultants', href: '/consultants', current: false },
+  { name: 'Partners', href: '/partners', current: false },
+  { name: 'Achievements', href: '/work', current: false },
+  { name: 'Blog', href: '/blog', current: false },
 ]
 
 function classNames(...classes: string[]) {

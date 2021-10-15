@@ -5,7 +5,7 @@ description: Part 1 of a series of articles about me learning how to code and
 author: Chris Tham
 date: 2018-10-31T22:00:00.000Z
 featuredpost: false
-image: ../images/zero-1.png
+image: ../../images/zero-1.png
 tags:
   - Proof of Concept
   - technology

@@ -33,9 +33,6 @@ interface BlogPostProps {
         image: ImageDataLike | ResizeType
         tags: string[]
       }
-      fields: {
-        source: string
-      }
       slug: string
       parent: {
         modifiedTime: string
@@ -48,12 +45,12 @@ interface BlogPostProps {
 const BlogPost = ({ data }: BlogPostProps) => {
   const frontmatter = data.mdx.frontmatter
   const image = getImage(frontmatter.image as ImageDataLike)
-  const pathname = '/' + data.mdx.fields.source + '/' + data.mdx.slug
+  const pathname = '/' + data.mdx.slug
 
   return (
     <Layout>
       <SEO
-        type={data.mdx.fields.source}
+        type={data.mdx.slug.slice(0, 5) === 'post/' ? 'post' : 'page'}
         title={frontmatter.title}
         description={frontmatter.description}
         date={frontmatter.date}
@@ -107,9 +104,6 @@ export const query = graphql`
           }
         }
         tags
-      }
-      fields {
-        source
       }
       slug
       parent {

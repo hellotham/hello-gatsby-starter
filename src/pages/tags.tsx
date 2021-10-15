@@ -109,7 +109,7 @@ const Tags = () => {
   return (
     <Layout>
       <SEO
-        type="pages"
+        type="page"
         title="Blog Tags"
         description="Click on each tag to view blog posts containing tag."
         image={ogimage}
@@ -147,17 +147,6 @@ const Tags = () => {
                     <p className="text-center text-gray-200 text-sm font-medium">&nbsp;({tag.count})</p>
                   </div>
                 </section>
-                {/* <div className="w-full aspect-w-2 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden">
-                  <img
-                    src={Image}
-                    alt={tag.tag + ' tag'}
-                    className="w-full h-full object-center object-contain group-hover:opacity-75"
-                  />
-                </div>
-                <h3 className="mt-1 text-lg font-medium text-purple-600 hover:text-pink-600">
-                  {tag.tag}
-                  <span className="mt-4 text-sm font-base text-gray-500"> ({tag.count})</span>
-                </h3> */}
               </Link>
             ))}
         </div>

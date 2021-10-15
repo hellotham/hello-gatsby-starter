@@ -18,7 +18,7 @@ export default function LatestArticles() {
           <div className="flex flex-row items-center">
             <h2 className="text-2xl md:text-4xl font-extrabold text-purple-800">Our Latest Articles</h2>
             <Link
-              to={'/posts'}
+              to={'/blog'}
               className="inline-block px-2 py-2 md:px-6 md:py-3 mt-2 ml-4 rounded-md bg-purple-600 hover:bg-pink-600 text-white font-bold text-base md:text-lg"
             >
               All Articles
@@ -32,7 +32,7 @@ export default function LatestArticles() {
           </div>
           <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-6">
             <div className="mb-4 lg:mb-0  p-4 lg:p-0 relative rounded block xl:col-span-2">
-              <Link to={`/posts/${post.slug}`}>
+              <Link to={`/${post.slug}`}>
                 <span className="sr-only">{post.frontmatter.title}</span>
                 <GatsbyImage
                   image={getImage(post.frontmatter.image)!}
@@ -44,14 +44,14 @@ export default function LatestArticles() {
               <div className="mt-4">
                 <Tags tags={post.frontmatter.tags} />
               </div>
-              <Link to={`/posts/${post.slug}`}>
+              <Link to={`/${post.slug}`}>
                 <h1 className="text-purple-600 hover:text-pink-600 text-4xl font-bold mt-2 mb-2 leading-tight">
                   {post.frontmatter.title}
                 </h1>
               </Link>
               <p className="text-gray-600 mb-4">{post.frontmatter.description}</p>
               <Link
-                to={`/posts/${post.slug}`}
+                to={`/${post.slug}`}
                 className="inline-block px-6 py-3 mt-2 rounded-md bg-purple-600 hover:bg-pink-600 text-white"
               >
                 Read more
@@ -60,7 +60,7 @@ export default function LatestArticles() {
             </div>
             <div className="w-full">
               {otherPosts.map(post => (
-                <Link to={`/posts/${post.slug}`}>
+                <Link to={`/${post.slug}`}>
                   <div className="rounded w-full md:grid md:grid-cols-3 mb-10">
                     <GatsbyImage
                       image={getImage(post.frontmatter.image)!}

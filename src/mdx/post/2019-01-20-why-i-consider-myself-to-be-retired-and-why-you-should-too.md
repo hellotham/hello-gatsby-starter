@@ -4,7 +4,7 @@ description: There is no shame in retiring early, and potentially many benefits.
 author: Chris Tham
 date: 2019-01-19T22:00:00.000Z
 featuredpost: false
-image: ../images/retired.jpg
+image: ../../images/retired.jpg
 tags:
   - advice
   - opinion
