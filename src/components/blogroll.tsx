@@ -91,6 +91,7 @@ const BlogRoll = ({ tag }: BlogRollProps) => {
                   className="relative w-full h-48 bg-white rounded-lg overflow-hidden group-hover:opacity-75 aspect-w-3 aspect-h-2 sm:h-40"
                   imgClassName="w-full h-full object-center object-cover"
                 />
+                <p className="sr-only">{post.frontmatter.title}</p>
               </Link>
               <div className="p-6">
                 {post.frontmatter.tags ? <Tags tags={post.frontmatter.tags} /> : ''}
