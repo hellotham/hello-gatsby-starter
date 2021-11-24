@@ -1,4 +1,5 @@
 ---
+published: true
 title: From Zero to Hero Part 2 (Learnin’​ and Hustlin’​)
 description: This is the second part of my series of articles on learning to
   code at age 55 and creating some prototypes.

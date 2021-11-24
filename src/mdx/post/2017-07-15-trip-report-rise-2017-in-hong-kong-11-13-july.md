@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Trip Report: RISE 2017 in Hong Kong (11-13 July)"
 description: A recap of a trip to Hong Kong in 2017 to attend the RISE conference.
 author: Chris Tham

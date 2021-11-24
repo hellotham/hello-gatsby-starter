@@ -1,4 +1,5 @@
 ---
+published: true
 title: From Zero to Hero Part 6 (The Ultimate Boon and The Return)
 description: This is the sixth part (and probably the last, for now) of my
   series of articles on learning to code at age 55 and creating some prototypes.

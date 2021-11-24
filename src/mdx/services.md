@@ -1,4 +1,5 @@
 ---
+published: true
 title: Services
 description: Focus on Business and IT strategy
 image: ../images/services.jpg

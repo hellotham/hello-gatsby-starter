@@ -1,6 +1,6 @@
-# Hello Tham Website (Gatsby)
+# Hello Gatsby Starter
 
-This is the Hello Tham Corporate Website Static Web App built using the following technologies:
+This is starter template for a full featured marketing and blog website based on the following:
 
 - [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-default)
 - [How To Set Up a Gatsby Project with TypeScript](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-gatsby-project-with-typescript)
@@ -35,7 +35,9 @@ This website is open source (0BSD licence) - fork it and customise for your need
 - Contact form using sendgrid email and Gatsby functions
 - Full SEO support (via React Helmet) including Open Graph, Twitter Cards and Schema.org via JSON-LD
 
-## Future reference
+## SendGrid configuration (for contact form)
 
-- [TypeScript, GraphQL and Gatsby](https://djmm.me/post/typescript-graphql-and-gatsby/)
-- [MDX frontmatter in Gatsby](https://zslabs.com/articles/mdx-frontmatter-in-gatsby)
+Insert the following environment variables (either in .env or on deployment host):
+
+- `SENDGRID_API_KEY`
+- `SENDGRID_AUTHORIZED_EMAIL`

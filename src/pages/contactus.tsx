@@ -10,16 +10,15 @@ import SEO from '@/components/seo'
 
 import PageHero from '@/components/PageHero'
 
+import Email from '@/svg/icons/email.inline.svg'
+import Phone from '@/svg/icons/phone.inline.svg'
+import LinkedIn from '@/svg/icons/linkedin.inline.svg'
+import Facebook from '@/svg/icons/facebook.inline.svg'
+import Instagram from '@/svg/icons/instagram.inline.svg'
+import Twitter from '@/svg/icons/twitter.inline.svg'
+import Github from '@/svg/icons/github.inline.svg'
+
 import Image from '@/svg/undraw/undraw_contact_us_15o2.svg'
-
-import Email from '@/svg/icons/email.svg'
-import Phone from '@/svg/icons/phone.svg'
-import LinkedIn from '@/svg/icons/linkedin.svg'
-import Facebook from '@/svg/icons/facebook.svg'
-import Instagram from '@/svg/icons/instagram.svg'
-import Twitter from '@/svg/icons/twitter.svg'
-import Github from '@/svg/icons/github.svg'
-
 import OGImage from '../images/undraw_contact_us_15o2.png'
 
 export default function ContactUs() {
@@ -91,7 +90,7 @@ export default function ContactUs() {
                 </p>
                 {contactMethods.map(method => (
                   <p key={method.name} className="mt-2 flex items-center text-sm text-gray-500">
-                    <img src={method.image} className=" h-5 w-5" />
+                    <method.image className=" h-5 w-5" />
                     {/* <method.image className=" h-5 w-5" /> */}
                     <span>&nbsp;{method.name}:&nbsp;</span>
                     <a href={method.link} className="text-purple-600 hover:text-pink-600">

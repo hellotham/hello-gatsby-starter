@@ -1,4 +1,5 @@
 ---
+published: true
 title: Our Consultants
 description: Showcasing Key Profiles
 image: ../images/consultants.jpg
@@ -6,7 +7,7 @@ image: ../images/consultants.jpg
 
 ## Chris Tham
 
-![Chris Tham](../../images/ChrisTham-400.jpg)
+![Chris Tham](../images/ChrisTham-400.jpg)
 
 Chris is an experienced management and strategy consultant specialising in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design. Chris can also assist in implementing recommendations, models and strategies.
 

@@ -1,26 +1,14 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { getImage, ImageDataLike } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 
 import Layout from '@/components/layout'
 import SEO from '@/components/seo'
 import PostHero from '@/components/PostHero'
+import { ImgType } from '@/components/img'
 
 const components = { Link }
-
-type ResizeType = {
-  childImageSharp: {
-    resize: {
-      src: string
-      width: number
-      height: number
-      aspectRatio: number
-      originalName: string
-    }
-  }
-}
 
 interface BlogPostProps {
   data: {
@@ -30,7 +18,7 @@ interface BlogPostProps {
         description: string
         author: string
         date: string
-        image: ImageDataLike | ResizeType
+        image: ImgType
         tags: string[]
       }
       slug: string
@@ -44,7 +32,6 @@ interface BlogPostProps {
 
 const BlogPost = ({ data }: BlogPostProps) => {
   const frontmatter = data.mdx.frontmatter
-  const image = getImage(frontmatter.image as ImageDataLike)
   const pathname = '/' + data.mdx.slug
 
   return (
@@ -55,7 +42,7 @@ const BlogPost = ({ data }: BlogPostProps) => {
         description={frontmatter.description}
         date={frontmatter.date}
         lastUpdated={data.mdx.parent.modifiedTime}
-        image={(frontmatter.image as ResizeType).childImageSharp.resize}
+        image={frontmatter.image.childImageSharp.resize}
         keywords={frontmatter.tags}
         pathname={pathname}
       />
@@ -68,7 +55,7 @@ const BlogPost = ({ data }: BlogPostProps) => {
               description={frontmatter.description}
               author={frontmatter.author}
               date={frontmatter.date}
-              image={image}
+              image={frontmatter.image}
               tags={frontmatter.tags}
             />
           </header>

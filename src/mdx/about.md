@@ -1,4 +1,5 @@
 ---
+published: true
 title: About Us
 description: Company Profile, Quality, Risk
 image: ../images/home.jpg
@@ -21,7 +22,7 @@ We also assist our clients in implementing our recommendations, models and strat
 
 ## ​About our logo​​​​​
 
-![Logo](../../images/hellotham-logo-250x250.png)
+![Logo](../images/hellotham-logo-250x250.png)
 
 Our logo reflects who we are and our values.
 
@@ -62,3 +63,21 @@ We respect and adhere to client confidentiality in the work we perform on behalf
 
 Our privacy policy for the website can be viewed in a separate page on our website:
 [Privacy Policy](/privacy)
+
+## About this website
+
+This website was built using the following technology stack:
+
+- [Gatsby](https://gatsbyjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com) and [TailwindUI](https://tailwindui.com)
+- [HeroIcons](https://heroicons.com/)
+- [Hero Patterns](https://heropatterns.com/)
+- [HeadlessUI](https://headlessui.dev/)
+- [unDraw](https://undraw.co/) for illustrations
+- [MDX](https://mdxjs.com/) and [Markdown](https://www.markdownguide.org/)
+- [ESLint](https://eslint.org) for error-checking
+- [SendGrid](https://sendgrid.com/) for email delivery
+- [Schema.org](https://schema.org/) and [JSON for Linking Data](https://json-ld.org/)
+- [Open Graph](https://ogp.me/) used by [Facebook](https://developers.facebook.com/docs/sharing/webmasters/#markup)
+- [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)

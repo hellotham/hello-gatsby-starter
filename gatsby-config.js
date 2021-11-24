@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Hello Tham',
+    title: 'Hello Gatsby Starter',
     author: {
-      name: 'Chris Tham',
-      url: 'https://christham.net',
-      summary: 'Founder of Hello Tham',
+      name: 'Hello Tham',
+      url: 'https://hellotham.com',
+      summary:
+        'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.',
     },
     description:
       'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.',
-    siteUrl: 'https://hellotham.gatsbyjs.io',
+    siteUrl: 'https://hello-gatsby-starter.gatsbyjs.io',
     location: 'Sydney, NSW, Australia',
     social: {
       email: 'mailto:info@hellotham.com',
@@ -21,7 +22,14 @@ module.exports = {
     },
   },
   plugins: [
-    'gatsby-plugin-svgr-svgo',
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',

@@ -1,4 +1,5 @@
 ---
+published: true
 title: LEGO Visualisations – Combining my love for LEGO, Python and Tableau
 description: Using Tableau to visualise the diversity of LEGO sets.
 author: Chris Tham

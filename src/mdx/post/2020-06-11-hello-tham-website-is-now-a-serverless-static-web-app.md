@@ -1,4 +1,5 @@
 ---
+published: true
 title: Hello Tham website is now a serverless Static Web App
 description: Welcome to the new Hello Tham website! It has been completely
   rewritten as a modern web app using Javascript, React, Gatsby, Netlify CMS and

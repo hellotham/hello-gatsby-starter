@@ -1,4 +1,5 @@
 ---
+published: true
 title: From Zero to Hero Part 5 (The Dark Cave)
 description: "This is the fifth part of my series of articles on learning to
   code at age 55 and creating some prototypes. "

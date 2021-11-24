@@ -1,4 +1,5 @@
 ---
+published: true
 title: Visualising the Multiplication Table
 description: Insights you may not realise about the multiplication table.
 author: Chris Tham

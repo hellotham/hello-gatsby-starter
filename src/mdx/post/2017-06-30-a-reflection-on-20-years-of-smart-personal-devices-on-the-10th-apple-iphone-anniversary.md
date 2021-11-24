@@ -1,4 +1,5 @@
 ---
+published: true
 title: A reflection on 20 years of smart personal devices, on the 10th Apple
   iPhone anniversary
 description: A personal history of the use of smartphones over 20 years.

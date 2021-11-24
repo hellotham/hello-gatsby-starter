@@ -1,4 +1,5 @@
 ---
+published: true
 title: Privacy Policy
 description: Information collection and use
 image: ../images/about.jpg

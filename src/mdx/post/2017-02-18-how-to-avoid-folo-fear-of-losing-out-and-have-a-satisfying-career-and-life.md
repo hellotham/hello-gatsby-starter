@@ -1,4 +1,5 @@
 ---
+published: true
 title: How to Avoid FOLO (Fear of Losing Out)
 author: Chris Tham
 date: 2017-02-17T22:00:00.000Z

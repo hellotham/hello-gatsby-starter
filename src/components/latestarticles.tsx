@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import Tags from '@/components/tags'
+import Img from '@/components/img'
 
 import GetPosts from '@/utils/getposts'
 
@@ -34,11 +34,11 @@ export default function LatestArticles() {
             <div className="mb-4 lg:mb-0  p-4 lg:p-0 relative rounded block xl:col-span-2">
               <Link to={`/${post.slug}`}>
                 <span className="sr-only">{post.frontmatter.title}</span>
-                <GatsbyImage
-                  image={getImage(post.frontmatter.image)!}
-                  loading="lazy"
+                <Img
+                  image={post.frontmatter.image}
                   alt={post.frontmatter.title + ' featured image'}
-                  className="rounded-md w-full h-64 md:h-80"
+                  className="rounded-md"
+                  imgClassName="w-full h-64 md:h-80"
                 />
               </Link>
               <div className="mt-4">
@@ -62,11 +62,11 @@ export default function LatestArticles() {
               {otherPosts.map(post => (
                 <Link to={`/${post.slug}`}>
                   <div className="rounded w-full md:grid md:grid-cols-3 mb-10">
-                    <GatsbyImage
-                      image={getImage(post.frontmatter.image)!}
-                      loading="lazy"
+                    <Img
+                      image={post.frontmatter.image}
                       alt={post.frontmatter.title + ' featured image'}
                       className="block lg:block rounded-md h-64 md:h-32 m-4 md:m-0"
+                      imgClassName="object-fit"
                     />
                     <div className="bg-white rounded px-4 md:col-span-2">
                       <Tags tags={post.frontmatter.tags} />

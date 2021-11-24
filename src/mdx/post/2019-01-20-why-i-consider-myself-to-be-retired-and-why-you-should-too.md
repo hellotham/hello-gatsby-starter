@@ -1,4 +1,5 @@
 ---
+published: true
 title: Why I consider myself to be Retired, and why you should too
 description: There is no shame in retiring early, and potentially many benefits.
 author: Chris Tham

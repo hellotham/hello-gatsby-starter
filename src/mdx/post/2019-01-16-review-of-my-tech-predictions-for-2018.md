@@ -1,4 +1,5 @@
 ---
+published: true
 title: Review of my Tech predictions for 2018
 description: How did my tech predictions for 2018 fared?
 author: Chris Tham

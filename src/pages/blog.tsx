@@ -6,7 +6,7 @@ import PageHero from '@/components/PageHero'
 import BlogRoll from '@/components/blogroll'
 
 import Image from '@/svg/undraw/undraw_Add_post_re_174w.svg'
-import OGImage from '../images/undraw_ideas_flow_cy7b.png'
+import OGImage from '../images/undraw_Add_post_re_174w.png'
 
 const BlogPage = () => {
   const ogimage = {

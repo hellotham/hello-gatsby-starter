@@ -1,4 +1,5 @@
 ---
+published: true
 title: Five Tech Predictions for 2017
 description: Five predictions for the technology industry for 2017
 author: Chris Tham

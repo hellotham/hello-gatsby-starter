@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Adventures with Raspberry Pi3 #2: Emulating 4.3BSD on a VAX"
 description: How to run 4.3BSD Unix in an emulated Micro VAX 3000 using a Raspberry Pi
 author: Chris Tham

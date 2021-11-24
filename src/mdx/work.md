@@ -1,4 +1,5 @@
 ---
+published: true
 title: Achievements
 description: Recent work we have performed for our clients
 image: ../images/work.jpg

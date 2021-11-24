@@ -1,4 +1,5 @@
 ---
+published: true
 title: Why I don’t like Technology, or, (convenience) = -(quality) -(choice)
   -(privacy) -(humanity)
 description: Technology isn't always positive, or a benefit.

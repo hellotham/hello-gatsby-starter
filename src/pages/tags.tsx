@@ -51,9 +51,10 @@ import {
   wallpaper,
 } from 'hero-patterns'
 
+import GetTags from '@/utils/gettags'
+
 import Image from '@/svg/undraw/undraw_Windows_re_uo4w.svg'
 import OGImage from '@/images/undraw_Windows_re_uo4w.png'
-import GetTags from '@/utils/gettags'
 
 const patterns = [
   steelBeams('#9c92ac', 0.5),

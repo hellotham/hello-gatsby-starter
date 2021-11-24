@@ -3,11 +3,12 @@ import { Link } from 'gatsby'
 import ReactPaginate from 'react-paginate'
 import { useState } from 'react'
 
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+// import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
 import { CalendarIcon, UserCircleIcon } from '@heroicons/react/outline'
 import GetPosts from '@/utils/getposts'
 
 import Tags from '@/components/tags'
+import Img from '@/components/img'
 
 interface BlogRollProps {
   tag?: string
@@ -84,9 +85,8 @@ const BlogRoll = ({ tag }: BlogRollProps) => {
           <section className="p-4 md:w-1/2 lg:w-1/3">
             <div className="h-full border-1 border-pink-200 bg-white rounded-lg shadow-xl overflow-hidden p-2">
               <Link to={`/${post.slug}`}>
-                <GatsbyImage
-                  image={getImage(post.frontmatter.image)!}
-                  loading="lazy"
+                <Img
+                  image={post.frontmatter.image}
                   alt={post.frontmatter.title + ' featured image'}
                   className="relative w-full h-48 bg-white rounded-lg overflow-hidden group-hover:opacity-75 aspect-w-3 aspect-h-2 sm:h-40"
                   imgClassName="w-full h-full object-center object-cover"
