@@ -8,7 +8,7 @@ module.exports = {
         'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.',
     },
     description: 'A Gatsby v4 starter for corporate/marketing/blog websites.',
-    siteUrl: 'https://hello-gatsby-starter.gatsbyjs.io',
+    siteUrl: 'https://hellogatsbystarter.gatsbyjs.io',
     location: 'Rivendell, Middle Earth',
     social: {
       email: 'mailto:info@contact.me',
