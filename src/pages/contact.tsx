@@ -7,8 +7,8 @@ import { CheckCircleIcon } from '@heroicons/react/outline'
 import SiteMetadata from '@/utils/sitemetadata'
 import Layout from '@/components/layout'
 import SEO from '@/components/seo'
-
 import PageHero from '@/components/PageHero'
+import Map from '@/components/map'
 
 import Email from '@/svg/icons/email.inline.svg'
 import Phone from '@/svg/icons/phone.inline.svg'
@@ -22,6 +22,9 @@ import Image from '@/svg/undraw/undraw_contact_us_-15-o2.svg'
 import OGImage from '@/images/undraw/undraw_contact_us_15o2.png'
 
 export default function ContactUs() {
+  // Default coordinates are that of Sydney, NSW, Australia
+  const position: [number, number] = [-33.86785, 151.20732]
+
   const [open, setOpen] = useState(false)
   const ogimage = {
     src: OGImage,
@@ -80,7 +83,10 @@ export default function ContactUs() {
             />
           </header>
         </article>
-        <div className="mt-10 sm:mt-0 p-8 bg-pink-100">
+
+        <Map lat={-33.86785} lng={151.20732} />
+
+        <div className="mt-10 sm:mt-0 p-8 bg-purple-100">
           <div className="lg:grid lg:grid-cols-3 lg:gap-6">
             <div className="lg:col-span-1">
               <div className="px-4 sm:px-0">

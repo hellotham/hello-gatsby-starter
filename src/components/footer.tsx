@@ -17,24 +17,39 @@ export default function Footer() {
         </Link>
         <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-purple-300 md:py-2 md:mt-0 mt-4">
           © {new Date().getFullYear()} 0BSD licence
-          <a href="https://hellotham.com" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
+          <a
+            href="https://hellotham.com"
+            className="text-purple-600 hover:text-pink-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Hello Tham Pty Ltd
           </a>
         </p>
         <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-purple-300 md:py-2 md:mt-0 mt-4">
-          <Link to="/privacy" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
+          <Link
+            to="/privacy"
+            className="text-purple-600 hover:text-pink-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Privacy Policy
           </Link>
         </p>
         <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-purple-300 md:py-2 md:mt-0 mt-4">
-          <a href="/rss.xml" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
+          <a
+            href="/rss.xml"
+            className="text-purple-600 hover:text-pink-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             RSS
           </a>
         </p>
         <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-purple-300 md:py-2 md:mt-0 mt-4">
           <a
             href="/sitemap/sitemap-index.xml"
-            className="text-purple-600 ml-1"
+            className="text-purple-600 hover:text-pink-600 ml-1"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -43,7 +58,7 @@ export default function Footer() {
         </p>
         <span className="inline-flex md:ml-auto md:mt-0 mt-4 justify-center md:justify-start">
           <a
-            className="text-purple-600 hover:text-purple-600"
+            className="text-purple-600 hover:text-pink-600"
             href={social.facebook}
             rel="noopener noreferrer"
             target="_blank"
@@ -61,7 +76,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="ml-3 text-purple-600 hover:text-purple-600"
+            className="ml-3 text-purple-600 hover:text-pink-600"
             href={social.twitter}
             rel="noopener noreferrer"
             target="_blank"
@@ -79,7 +94,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="ml-3 text-purple-600 hover:text-purple-600"
+            className="ml-3 text-purple-600 hover:text-pink-600"
             href={social.instagram}
             rel="noopener noreferrer"
             target="_blank"
@@ -99,7 +114,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="ml-3 text-purple-600 hover:text-purple-600"
+            className="ml-3 text-purple-600 hover:text-pink-600"
             href={social.linkedin}
             rel="noopener noreferrer"
             target="_blank"
@@ -122,7 +137,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="ml-3 text-purple-600 hover:text-purple-600"
+            className="ml-3 text-purple-600 hover:text-pink-600"
             href={social.github}
             rel="noopener noreferrer"
             target="_blank"

@@ -1909,6 +1909,11 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
+"@react-leaflet/core@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@react-leaflet/core/-/core-1.1.1.tgz#827fd05bb542cf874116176d8ef48d5b12163f81"
+  integrity sha512-7PGLWa9MZ5x/cWy8EH2VzI4T8q5WpuHbixzCDXqixP/WyqwIrg5NDUPgYuFnB4IEIZF+6nA265mYzswFo/h1Pw==
+
 "@sendgrid/client@^7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-7.6.0.tgz#f90cb8759c96e1d90224f29ad98f8fdc2be287f3"
@@ -2231,6 +2236,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.50.tgz#1e0caa9364d3fccd2931c3ed96fdbeaa5d4cca83"
   integrity sha512-C6N5s2ZFtuZRj54k2/zyRhNDjJwwcViAM3Nbm8zjBpbqAdZ00mr0CFxvSKeO8Y/e03WVFLpQMdHYVfUd6SB+Hw==
 
+"@types/geojson@*":
+  version "7946.0.8"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.8.tgz#30744afdb385e2945e22f3b033f897f76b1f12ca"
+  integrity sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA==
+
 "@types/get-port@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@types/get-port/-/get-port-3.2.0.tgz#f9e0a11443cc21336470185eae3dfba4495d29bc"
@@ -2312,6 +2322,13 @@
   integrity sha512-FXCJgyyN3ivVgRoml4h94G/p3kY+u/B86La+QptcqJaWtBWtmc6TtkNfS40n9bIvyLteHh7zXOtgbobORKPbDg==
   dependencies:
     "@types/node" "*"
+
+"@types/leaflet@^1.7.6":
+  version "1.7.6"
+  resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.7.6.tgz#6580f4babb648972c5af3abc3d66866753fa9311"
+  integrity sha512-Emkz3V08QnlelSbpT46OEAx+TBZYTOX2r1yM7W+hWg5+djHtQ1GbEXBDRLaqQDOYcDI51Ss0ayoqoKD4CtLUDA==
+  dependencies:
+    "@types/geojson" "*"
 
 "@types/lodash@^4.14.92":
   version "4.14.177"
@@ -6727,6 +6744,11 @@ gatsby-plugin-react-helmet@^5.0.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
+gatsby-plugin-react-leaflet@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-leaflet/-/gatsby-plugin-react-leaflet-3.0.2.tgz#e2827949c3ca0e6b91b4c1d46cf9c5775e2cdb69"
+  integrity sha512-k8gIQso1RJa4KAWMo07/nAsJRv+YMPNX18Y9WriT/cs1wjqo8jBSBcPAMF/XHs+u835q5jLRwry8EU6ax6aajw==
+
 gatsby-plugin-react-svg@^3.0.1:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-svg/-/gatsby-plugin-react-svg-3.1.0.tgz#00269f182793f1f624bbfb9817608f6ee26f7b70"
@@ -9101,6 +9123,11 @@ latest-version@^3.0.0:
   integrity sha1-ogU4P+oyKzO1rjsYq+4NwvNW7hU=
   dependencies:
     package-json "^4.0.0"
+
+leaflet@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.7.1.tgz#10d684916edfe1bf41d688a3b97127c0322a2a19"
+  integrity sha512-/xwPEBidtg69Q3HlqPdU3DnrXQOvQU/CCHA1tcDQVzOwm91YMYaILjNp7L4Eaw5Z4sOYdbBz6koWyibppd8Zqw==
 
 levn@^0.4.1:
   version "0.4.1"
@@ -12062,6 +12089,13 @@ react-is@^16.12.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-leaflet@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-3.2.2.tgz#3d779662c32a1d8729e73d24e8ad96ee5b38beef"
+  integrity sha512-5W7iWjI9+CdTGVAICe8RUyK0n+uLshr+eLQa8eBCbmstPNpCHZJTUSbju4Ws5dkS/PUCr9t5VmoIE9CXuSBEhw==
+  dependencies:
+    "@react-leaflet/core" "^1.1.1"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
