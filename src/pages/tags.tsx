@@ -53,7 +53,7 @@ import {
 
 import GetTags from '@/utils/gettags'
 
-import Image from '@/svg/undraw/undraw_windows_re_uo4w.svg'
+import Image from '@/svg/undraw/undraw_Windows_re_uo4w.svg'
 import OGImage from '@/images/undraw/undraw_Windows_re_uo4w.png'
 
 const patterns = [
