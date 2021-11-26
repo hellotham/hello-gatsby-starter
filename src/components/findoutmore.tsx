@@ -1,36 +1,36 @@
 import * as React from 'react'
 
-import Partners from '@/svg/undraw/undraw_features_overview_jg7a.svg'
-import Work from '@/svg/undraw/undraw_All_the_data_re_hh4w.svg'
-import People from '@/svg/undraw/undraw_Team_page_re_cffb.svg'
+import GatsbyImage from '@/svg/undraw/undraw_gatsbyjs_st4g(1).svg'
+import TailwindImage from '@/svg/undraw/undraw_tailwind_css_1egw.svg'
+import ReactImage from '@/svg/undraw/undraw_react_y-7-wq.svg'
 
 const callouts = [
   {
-    name: 'People',
-    description: 'Find out more about our consultants',
-    imageSrc: People,
-    imageAlt: 'People drawing',
-    href: '/consultants',
+    name: 'Gatsby',
+    description: 'Gatsby is a React-based open-source framework for creating websites and apps.',
+    imageSrc: GatsbyImage,
+    imageAlt: 'Gatsby drawing',
+    href: 'https://gatsbyjs.com',
   },
   {
-    name: 'Partners',
-    description: 'Find out more about our partners',
-    imageSrc: Partners,
-    imageAlt: 'Partners drawing',
-    href: '/partners',
+    name: 'TailwindCSS',
+    description: 'A utility-first CSS framework that can be composed to build any design, directly in your markup.',
+    imageSrc: TailwindImage,
+    imageAlt: 'TailwindCSS drawing',
+    href: 'https://tailwindcss.com',
   },
   {
-    name: 'Achievements',
-    description: 'Recent work we have performed for our clients',
-    imageSrc: Work,
-    imageAlt: 'Recent work drawing',
-    href: '/work',
+    name: 'React',
+    description: 'A JavaScript library for building user interfaces.',
+    imageSrc: ReactImage,
+    imageAlt: 'React drawing',
+    href: 'https://reactjs.org',
   },
 ]
 
 export default function FindOutMore() {
   return (
-    <div className="bg-pink-100">
+    <div className="bg-purple-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
           <h2 className="text-4xl font-extrabold text-purple-800">Find Out More</h2>

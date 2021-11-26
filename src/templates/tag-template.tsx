@@ -5,10 +5,10 @@ import SEO from '@/components/seo'
 import PageHero from '@/components/PageHero'
 import BlogRoll from '@/components/blogroll'
 
-import Image from '@/svg/undraw/undraw_Add_post_re_174w.svg'
+import Image from '@/svg/undraw/undraw_building_websites_i78t.svg'
 import { Link } from 'gatsby'
 
-import OGImage from '../images/undraw_Add_post_re_174w.png'
+import OGImage from '@/images/undraw/undraw_building_websites_i78t.png'
 
 interface TagProps {
   pageContext: {

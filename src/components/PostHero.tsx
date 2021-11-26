@@ -15,13 +15,8 @@ interface PostHeroProps {
 }
 
 const PostHero = ({ url, title, description, author, date, image, tags }: PostHeroProps) => (
-  <div className="mb-4 md:mb-0 w-full max-w-screen-xl mx-auto relative" style={{ height: '24em' }}>
-    <div
-      className="absolute left-0 bottom-0 w-full h-full z-10"
-      style={{
-        backgroundImage: 'linear-gradient(180deg,transparent,rgba(0,0,0,.7))',
-      }}
-    ></div>
+  <div className="mb-4 md:mb-0 w-full max-w-screen-xl mx-auto relative h-96">
+    <div className="absolute left-0 bottom-0 w-full h-full z-10 bg-gradient-to-t from-gray-700"></div>
     <Img
       image={image}
       alt="featured image"
@@ -31,25 +26,25 @@ const PostHero = ({ url, title, description, author, date, image, tags }: PostHe
     <div className="p-4 absolute bottom-0 left-0 z-20">
       {tags ? <Tags tags={tags} /> : ''}
       <h2 className="text-4xl font-bold text-white leading-tight">{title}</h2>
-      <h2 className="text-xl font-medium italic text-pink-200">{description}</h2>
+      <h2 className="text-xl font-medium italic text-purple-200">{description}</h2>
       {author ? (
         <div className="flex mt-3">
           <StaticImage
-            src="../images/profile-pic.jpg"
+            src="../images/gatsby/Gatsby_Monogram.png"
             alt="Author profile"
             width={40}
             height={40}
             className="h-10 w-10 rounded-full mr-2 object-cover"
           />
           <div>
-            <p className="font-semibold text-pink-200 text-sm">{author}</p>
-            <p className="font-semibold text-pink-400 text-xs">{date?.slice(0, 10)}</p>
+            <p className="font-semibold text-purple-200 text-sm">{author}</p>
+            <p className="font-semibold text-purple-400 text-xs">{date?.slice(0, 10)}</p>
           </div>
         </div>
       ) : (
         ''
       )}
-      <p className="mt-4 font-semibold text-pink-200 text-sm">Share this post on:</p>
+      <p className="mt-4 font-semibold text-purple-200 text-sm">Share this post on:</p>
       <ShareButtons
         url={url}
         title={title}

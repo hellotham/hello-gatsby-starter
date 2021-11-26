@@ -5,7 +5,7 @@ description: Another year has passed, and we have refreshed our website, using t
 author: Chris Tham
 date: 2021-10-17T00:00:00.000Z
 featuredpost: false
-image: ../../images/site-image.jpg
+image: ../../images/undraw/undraw_building_websites_i78t.png
 tags:
   - Hello Tham
   - website

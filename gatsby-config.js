@@ -7,18 +7,17 @@ module.exports = {
       summary:
         'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.',
     },
-    description:
-      'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.',
+    description: 'A Gatsby v4 starter for corporate/marketing/blog websites.',
     siteUrl: 'https://hello-gatsby-starter.gatsbyjs.io',
-    location: 'Sydney, NSW, Australia',
+    location: 'Rivendell, Middle Earth',
     social: {
-      email: 'mailto:info@hellotham.com',
-      phone: 'tel:+61413008577',
-      facebook: 'https://www.facebook.com/HelloThamCom',
-      instagram: 'https://www.instagram.com/HelloThamCom/',
-      twitter: 'https://twitter.com/HelloThamCom',
-      linkedin: 'https://www.linkedin.com/company/17950469',
-      github: 'https://github.com/hellotham',
+      email: 'mailto:info@contact.me',
+      phone: 'tel:+61234567890',
+      facebook: 'https://www.facebook.com',
+      instagram: 'https://www.instagram.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://www.linkedin.com',
+      github: 'https://github.com',
     },
   },
   plugins: [
@@ -70,13 +69,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Hello Tham',
-        short_name: 'HelloTham',
+        name: 'Hello Gatsby Starter',
+        short_name: 'hello-gatsby-starter',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#660099',
         display: 'minimal-ui',
-        icon: 'src/images/logo.png', // This path is relative to the root of the site.
+        icon: 'src/images/gatsby/Gatsby_Monogram.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-robots-txt',
@@ -129,7 +128,7 @@ module.exports = {
               }
               buildTime
             }
-            allFile(filter: {relativePath: {eq: "hellotham_logo.png"}}) {
+            allFile(filter: {relativePath: {eq: "gatsby/Gatsby_Monogram.png"}}) {
               nodes {
                 childImageSharp {
                   resize(width: 1200) {

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 
 import SiteMetadata from '@/utils/sitemetadata'
-import HelloTham from '@/svg/logo/hellotham.svg'
+import Logo from '@/svg/gatsby/Gatsby_Logo.svg'
 
 export default function Footer() {
   const metadata = SiteMetadata().siteMetadata
@@ -10,28 +10,28 @@ export default function Footer() {
 
   return (
     <footer className="text-gray-600">
-      <div className="container fixed bottom-0 inset-x-0 bg-pink-100 px-4 py-4 mx-auto flex items-center md:flex-row flex-col">
+      <div className="container fixed bottom-0 inset-x-0 bg-gray-100 px-4 py-4 mx-auto flex items-center md:flex-row flex-col">
         <Link className="flex title-font font-medium items-center lg:justify-start justify-center text-gray-900" to="/">
-          <img src={HelloTham} alt="Footer Logo" width="150" />
-          <span className="sr-only">Hello Tham</span>
+          <img src={Logo} alt="Footer Logo" width="150" />
+          <span className="sr-only">Logo</span>
         </Link>
-        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
-          © {new Date().getFullYear()} Hello Tham Pty Ltd
-          <Link to="/contactus" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
-            (Contact Us)
-          </Link>
+        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-purple-300 md:py-2 md:mt-0 mt-4">
+          © {new Date().getFullYear()} 0BSD licence
+          <a href="https://hellotham.com" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
+            Hello Tham Pty Ltd
+          </a>
         </p>
-        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
+        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-purple-300 md:py-2 md:mt-0 mt-4">
           <Link to="/privacy" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             Privacy Policy
           </Link>
         </p>
-        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
+        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-purple-300 md:py-2 md:mt-0 mt-4">
           <a href="/rss.xml" className="text-purple-600 ml-1" rel="noopener noreferrer" target="_blank">
             RSS
           </a>
         </p>
-        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-pink-300 md:py-2 md:mt-0 mt-4">
+        <p className="text-sm text-gray-600 md:ml-4 md:pl-4 md:border-l-2 md:border-purple-300 md:py-2 md:mt-0 mt-4">
           <a
             href="/sitemap/sitemap-index.xml"
             className="text-purple-600 ml-1"
@@ -43,7 +43,7 @@ export default function Footer() {
         </p>
         <span className="inline-flex md:ml-auto md:mt-0 mt-4 justify-center md:justify-start">
           <a
-            className="text-purple-600 hover:text-pink-600"
+            className="text-purple-600 hover:text-purple-600"
             href={social.facebook}
             rel="noopener noreferrer"
             target="_blank"
@@ -61,7 +61,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="ml-3 text-purple-600 hover:text-pink-600"
+            className="ml-3 text-purple-600 hover:text-purple-600"
             href={social.twitter}
             rel="noopener noreferrer"
             target="_blank"
@@ -79,7 +79,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="ml-3 text-purple-600 hover:text-pink-600"
+            className="ml-3 text-purple-600 hover:text-purple-600"
             href={social.instagram}
             rel="noopener noreferrer"
             target="_blank"
@@ -99,7 +99,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="ml-3 text-purple-600 hover:text-pink-600"
+            className="ml-3 text-purple-600 hover:text-purple-600"
             href={social.linkedin}
             rel="noopener noreferrer"
             target="_blank"
@@ -122,7 +122,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            className="ml-3 text-purple-600 hover:text-pink-600"
+            className="ml-3 text-purple-600 hover:text-purple-600"
             href={social.github}
             rel="noopener noreferrer"
             target="_blank"

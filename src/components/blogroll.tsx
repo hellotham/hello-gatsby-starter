@@ -13,7 +13,7 @@ import Img from '@/components/img'
 interface BlogRollProps {
   tag?: string
 }
-const POSTS_PER_PAGE = 6
+const POSTS_PER_PAGE = 12
 
 const BlogRoll = ({ tag }: BlogRollProps) => {
   const posts = GetPosts(tag)
@@ -83,7 +83,7 @@ const BlogRoll = ({ tag }: BlogRollProps) => {
       <div className="space-y-12 lg:space-y-0 flex flex-wrap mb-24">
         {posts.slice(offset, offset + POSTS_PER_PAGE).map(post => (
           <section className="p-4 md:w-1/2 lg:w-1/3">
-            <div className="h-full border-1 border-pink-200 bg-white rounded-lg shadow-xl overflow-hidden p-2">
+            <div className="h-full border-1 border-gray-200 bg-white rounded-lg shadow-xl overflow-hidden p-2">
               <Link to={`/${post.slug}`}>
                 <Img
                   image={post.frontmatter.image}

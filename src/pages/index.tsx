@@ -1,13 +1,14 @@
 import * as React from 'react'
 
 import SEO from '@/components/seo'
+import Header from '@/components/header'
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import FindOutMore from '@/components/findoutmore'
 import LatestArticles from '../components/latestarticles'
 import Footer from '@/components/footer'
 
-import OGImage from '../images/undraw_ideas_flow_cy7b.png'
+import OGImage from '@/images/undraw/undraw_design_inspiration_fmjm.png'
 
 export default function Home() {
   const ogimage = {
@@ -20,10 +21,11 @@ export default function Home() {
     <div className="font-sans">
       <SEO
         type="homepage"
-        title="Hello Tham"
-        description="A boutique management and strategy consulting company."
+        title="Home"
+        description="A Gatsby v4 starter for corporate/marketing/blog websites."
         image={ogimage}
       />
+      <Header />
       <Hero />
       <Features />
       <FindOutMore />

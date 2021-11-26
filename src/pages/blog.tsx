@@ -5,8 +5,8 @@ import SEO from '@/components/seo'
 import PageHero from '@/components/PageHero'
 import BlogRoll from '@/components/blogroll'
 
-import Image from '@/svg/undraw/undraw_Add_post_re_174w.svg'
-import OGImage from '../images/undraw_Add_post_re_174w.png'
+import Image from '@/svg/undraw/undraw_my_feed_inj0.svg'
+import OGImage from '@/images/undraw/undraw_my_feed_inj0.png'
 
 const BlogPage = () => {
   const ogimage = {

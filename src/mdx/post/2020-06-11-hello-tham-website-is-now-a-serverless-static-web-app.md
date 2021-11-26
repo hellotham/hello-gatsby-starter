@@ -7,7 +7,7 @@ description: Welcome to the new Hello Tham website! It has been completely
 author: Chris Tham
 date: 2020-06-11T00:28:51.973Z
 featuredpost: false
-image: ../../images/hellotham-serverless.jpg
+image: ../../images/undraw/undraw_building_websites_i78t.png
 tags:
   - Hello Tham
   - website

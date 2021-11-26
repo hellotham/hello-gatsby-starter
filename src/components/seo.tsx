@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import SiteMetadata from '@/utils/sitemetadata'
 import JsonLD from '@/utils/jsonld'
 
-import defaultImage from '@/svg/undraw/undraw_ideas_flow_cy7b.svg'
+import defaultImage from '@/images/undraw/undraw_design_components_9vy6.png'
 
 interface SEOProps {
   type: string
