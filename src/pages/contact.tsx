@@ -35,13 +35,13 @@ export default function ContactUs() {
   const metadata = SiteMetadata().siteMetadata
 
   const contactMethods = [
-    { name: 'Email', link: metadata.social.email, image: Email },
-    { name: 'Phone', link: metadata.social.phone, image: Phone },
-    { name: 'LinkedIn', link: metadata.social.linkedin, image: LinkedIn },
-    { name: 'Facebook', link: metadata.social.facebook, image: Facebook },
-    { name: 'Instagram', link: metadata.social.instagram, image: Instagram },
-    { name: 'Twitter', link: metadata.social.twitter, image: Twitter },
-    { name: 'Github', link: metadata.social.github, image: Github },
+    { name: 'Email', link: 'email' in metadata.social ? metadata.social.email : null, image: Email },
+    { name: 'Phone', link: 'phone' in metadata.social ? metadata.social.phone : null, image: Phone },
+    { name: 'LinkedIn', link: 'linkedin' in metadata.social ? metadata.social.linkedin : null, image: LinkedIn },
+    { name: 'Facebook', link: 'facebook' in metadata.social ? metadata.social.facebook : null, image: Facebook },
+    { name: 'Instagram', link: 'instagram' in metadata.social ? metadata.social.instagram : null, image: Instagram },
+    { name: 'Twitter', link: 'twitter' in metadata.social ? metadata.social.twitter : null, image: Twitter },
+    { name: 'Github', link: 'github' in metadata.social ? metadata.social.github : null, image: Github },
   ]
   const {
     register,
@@ -90,15 +90,19 @@ export default function ContactUs() {
           <div className="lg:grid lg:grid-cols-3 lg:gap-6">
             <div className="lg:col-span-1">
               <div className="px-4 sm:px-0">
-                {contactMethods.map(method => (
-                  <p key={method.name} className="mt-2 flex items-center text-sm text-gray-500">
-                    <method.image className=" h-5 w-5" />
-                    <span>&nbsp;{method.name}:&nbsp;</span>
-                    <a href={method.link} className="text-purple-600 hover:text-pink-600">
-                      {method.link}
-                    </a>
-                  </p>
-                ))}
+                {contactMethods.map(method =>
+                  method.link ? (
+                    <p key={method.name} className="mt-2 flex items-center text-sm text-gray-500">
+                      <method.image className=" h-5 w-5" />
+                      <span>&nbsp;{method.name}:&nbsp;</span>
+                      <a href={method.link} className="text-purple-600 hover:text-pink-600">
+                        {method.link}
+                      </a>
+                    </p>
+                  ) : (
+                    ''
+                  )
+                )}
               </div>
             </div>
 
