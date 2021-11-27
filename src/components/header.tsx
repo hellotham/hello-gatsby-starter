@@ -8,7 +8,7 @@ import Logo from '@/svg/gatsby/Gatsby_Monogram.svg'
 import PrimaryLogo from '@/svg/gatsby/Gatsby_Logo.svg'
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
   { name: 'Privacy', href: '/privacy', current: false },

@@ -35,6 +35,19 @@ This website is open source (0BSD licence) - fork it and customise for your need
 - Contact form using sendgrid email and Gatsby functions
 - Full SEO support (via React Helmet) including Open Graph, Twitter Cards and Schema.org via JSON-LD
 
+## How to use the starter
+
+1. Clone your own version of the starter template or fork the repository. Run `yarn` then `yarn build` or `yarn develop`.
+2. The default colour scheme is purple to match the Gatsby logo. Change to your preferred hue by doing a global search and replace of '-purple-' to your favourite colour.
+3. The home (landing) page consists of a number of components (Hero, Feature, CTA, ...) - edit these components in `src/components` to customise.
+4. The `/contact` page displays an OpenStreetMaps map via Leaflet - customise by changing to your preferred set of coordinates.
+5. `gatsby-config.js` has all the site parameters - edit site metadata to suit.
+6. Create new MDX pages in `src/mdx` (using either `.md` or `.mdx` extension). Add React components to MDX in the `src/pages/{mdx.slug}.tsx` file.
+7. Any content created in the `src/mdx/blog` subdirectory will automatically be a blog post. Use `src/mdx/post/2000-01-01-template.md` as a base for creating a new blog post.
+8. If you create a new tag (eg. `newtag`) a new tag page will be created ie. `/tags/newtag`. The `/tags` page will enumerate all tags.
+9. If you want to change the navigation menu, edit `src/components/header.tsx`. Similarly, edit `src/components/footer.tsx` to customise the footer.
+10. If you make a lot of changes, use `yarn lint` and `yarn type-check` to check everything is okay.
+
 ## SendGrid configuration (for contact form)
 
 Insert the following environment variables (either in .env or on deployment host):
