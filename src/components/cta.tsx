@@ -11,16 +11,16 @@ export default function CTA() {
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <div className="inline-flex rounded-md shadow">
             <a
-              href="https://github.com/ChristineTham/hello-gatsby-starter.git"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700"
+              href="https://github.com/hellotham/hello-gatsby-starter/generate"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-pink-600"
             >
               Use Template
             </a>
           </div>
           <div className="ml-3 inline-flex rounded-md shadow">
             <a
-              href="https://github.com/ChristineTham/hello-gatsby-starter.git"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-purple-600 bg-white hover:bg-purple-50"
+              href="https://github.com/hellotham/hello-gatsby-starter"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-purple-600 bg-white hover:bg-purple-100"
             >
               Github Repo
             </a>

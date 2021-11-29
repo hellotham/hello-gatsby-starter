@@ -1,5 +1,7 @@
 # Hello Gatsby Starter
 
+![screenshot](https://github.com/hellotham/hello-gatsby-starter/raw/master/src/images/screenshot.png)
+
 This is starter template for a full featured marketing and blog website based on the following:
 
 - [Gatsby Starter Default](https://github.com/gatsbyjs/gatsby-starter-default)
