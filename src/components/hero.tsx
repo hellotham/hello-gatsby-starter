@@ -43,10 +43,12 @@ export default function Hero() {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="/contact"
+                    href="https://github.com/sponsors/hellotham"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-800 bg-purple-100 hover:bg-purple-200 md:py-4 md:text-lg md:px-10"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >
-                    Contact
+                    Sponsor Us
                   </a>
                 </div>
               </div>
