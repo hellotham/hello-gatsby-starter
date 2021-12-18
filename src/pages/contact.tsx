@@ -23,7 +23,7 @@ import OGImage from '@/images/undraw/undraw_contact_us_15o2.png'
 
 export default function ContactUs() {
   // Default coordinates are that of Sydney, NSW, Australia
-  const position: [number, number] = [-33.86785, 151.20732]
+  const [lat, lng] = [-33.86785, 151.20732]
 
   const [open, setOpen] = useState(false)
   const ogimage = {
@@ -84,7 +84,7 @@ export default function ContactUs() {
           </header>
         </article>
 
-        <Map lat={-33.86785} lng={151.20732} />
+        <Map lat={lat} lng={lng} />
 
         <div className="mt-10 sm:mt-0 p-8 bg-purple-100">
           <div className="lg:grid lg:grid-cols-3 lg:gap-6">
